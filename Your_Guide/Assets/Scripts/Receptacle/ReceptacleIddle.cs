@@ -2,25 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemieFollow : StateMachineBehaviour
+public class ReceptacleIddle : StateMachineBehaviour
 {
-    Enemi enemiScript;
+    private ReceptacleControler rControler;
+
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        enemiScript = animator.GetComponent<Enemi>();
-        enemiScript.InitializePath();
+        rControler = animator.GetComponent<ReceptacleControler>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        enemiScript.Follow();
-        /*if (enemiScript.IsUnfollow())
+        if (rControler.rMovement.IsInRangeToFollow())
         {
-            animator.SetTrigger(enemiScript.unfollowParameterName);
-        }*/
+            rControler.rStatue.isFollow = true;
+            animator.SetBool(rControler.rAnimator.followParameterName,true);
+        }
+       
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

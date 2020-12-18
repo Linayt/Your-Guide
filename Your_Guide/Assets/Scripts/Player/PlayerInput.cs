@@ -12,6 +12,8 @@ public class PlayerInput : MonoBehaviour
     [Header("Attaque Input")]
     public string attInput;
 
+    [Header("Switch Input")]
+    public string switchInput;
 
     public float GetHorizontalInputAxis()
     {
@@ -32,5 +34,10 @@ public class PlayerInput : MonoBehaviour
     public bool GetAttInputDown()
     {
         return Input.GetButtonDown(attInput);
+    }
+
+    public bool GetSwitchInputDown()
+    {
+        return Input.GetButtonDown(switchInput);
     }
 }

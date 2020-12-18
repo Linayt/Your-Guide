@@ -5,6 +5,11 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInput))]
 [RequireComponent(typeof(PlayerMovement))]
 [RequireComponent(typeof(PlayerAttaque))]
+[RequireComponent(typeof(PlayerSwitch))]
+[RequireComponent(typeof(PlayerAdrenaline))]
+[RequireComponent(typeof(PlayerStatue))]
+
+
 [RequireComponent(typeof(PlayerAnimator))]
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Animator))]
@@ -13,10 +18,13 @@ using UnityEngine;
 public class PlayerControler : MonoBehaviour
 {
 
-    private PlayerMovement pMovement;
     private PlayerAttaque pAttaque;
+    [HideInInspector] public PlayerMovement pMovement;
     [HideInInspector] public PlayerInput pInput;
     [HideInInspector] public PlayerAnimator pAnimator;
+    [HideInInspector] public PlayerSwitch pSwitch;
+    [HideInInspector] public PlayerAdrenaline pAdrenaline;
+    [HideInInspector] public PlayerStatue pStatue;
 
 
     private Rigidbody rigid;
@@ -29,13 +37,15 @@ public class PlayerControler : MonoBehaviour
         pMovement = transform.GetComponent<PlayerMovement>();
         pAttaque = transform.GetComponent<PlayerAttaque>();
         pAnimator = transform.GetComponent<PlayerAnimator>();
-
+        pSwitch = transform.GetComponent<PlayerSwitch>();
+        pAdrenaline = transform.GetComponent<PlayerAdrenaline>();
+        pStatue = transform.GetComponent<PlayerStatue>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        pAdrenaline.SetJaugeFillValue();
     }
 
     private void FixedUpdate()
@@ -43,5 +53,9 @@ public class PlayerControler : MonoBehaviour
         pMovement.Move(pInput.GetDirectionInput(), rigid);
     }
 
-
+    /*private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(new Vector3(0, 1, 0), 1);
+    }*/
 }
