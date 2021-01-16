@@ -95,7 +95,8 @@ GameObject:
   - component: {fileID: 5322074207971371189}
   - component: {fileID: 1762996966111480981}
   - component: {fileID: 1343277774501441975}
-  - component: {fileID: 8338677639578972331}
+  - component: {fileID: 9170988876606712523}
+  - component: {fileID: 4726094910039745582}
   m_Layer: 0
   m_Name: Receptacle
   m_TagString: Untagged
@@ -209,6 +210,7 @@ MonoBehaviour:
   minDistanceToFollow: 5
   minDistanceToSprint: 12
   minDistanceToStop: 3
+  minDistanceToBeScared: 6
 --- !u!114 &1762996966111480981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,8 +246,21 @@ MonoBehaviour:
   isSprint: 0
   isStun: 0
   isScared: 0
-  minDistanceToBeScared: 0
---- !u!114 &8338677639578972331
+--- !u!114 &9170988876606712523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5321679421470890324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72568b97db346294da4e770a9a066ae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLifeValue: 10
+  initialLifeValue: 10
+--- !u!114 &4726094910039745582
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,6 +275,7 @@ MonoBehaviour:
   rMovement: {fileID: 0}
   rAnimator: {fileID: 0}
   rStatue: {fileID: 0}
+  rLife: {fileID: 0}
 --- !u!1 &8175648790888756294
 GameObject:
   m_ObjectHideFlags: 0

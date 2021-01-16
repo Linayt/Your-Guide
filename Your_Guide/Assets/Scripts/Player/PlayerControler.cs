@@ -18,7 +18,7 @@ using UnityEngine;
 public class PlayerControler : MonoBehaviour
 {
 
-    private PlayerAttaque pAttaque;
+    [HideInInspector] public PlayerAttaque pAttaque;
     [HideInInspector] public PlayerMovement pMovement;
     [HideInInspector] public PlayerInput pInput;
     [HideInInspector] public PlayerAnimator pAnimator;

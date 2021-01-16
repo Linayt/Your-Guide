@@ -5,11 +5,12 @@ using UnityEngine.AI;
 
 public class EnemiMovement : AiMovementWithVelocity
 {
-    [SerializeField] private float vitesse;
+    [SerializeField] private float vitesse = 6;
 
     [Header("Distance")]
-    [SerializeField] private float minDistanceToFollowReceptacle;
-    [SerializeField] private float minDistanceToFollowPlayer;
+    [SerializeField] private float minDistanceToFollowReceptacle = 20;
+    [SerializeField] private float minDistanceToFollowPlayer = 6;
+    [SerializeField] private float minDistanceToAttack = 3;
 
 
     private ReceptacleControler rControler;
@@ -17,7 +18,7 @@ public class EnemiMovement : AiMovementWithVelocity
 
 
 
-    private Transform currentTarget;
+    [HideInInspector] public Transform currentTarget;
 
     private void Awake()
     {
@@ -42,6 +43,14 @@ public class EnemiMovement : AiMovementWithVelocity
         bool inRange = distance <= minDistanceToFollowPlayer;
         return inRange;
     }
+
+    public bool IsInRangeToAttackTarget()
+    {
+        float distance = Vector3.Distance(currentTarget.position, transform.position);
+        bool inRange = distance <= minDistanceToAttack;
+        return inRange;
+    }
+
 
     public void ChooseTarget()
     {
@@ -77,14 +86,16 @@ public class EnemiMovement : AiMovementWithVelocity
             CheckTargetReach(currentTarget);
 
         }
+
         MoveToCible(vitesse);
+
         if(!shouldMove && currentTarget)
         {
             InizialisePath();
         }
     }
 
-
+    
 
 
 

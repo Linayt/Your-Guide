@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  minValueToMove: 0.1
   turnSmoothTime: 0.1
   axeRota: {fileID: 1605002574244345227}
   cam: {fileID: 0}
@@ -135,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a539451e3f145479820ba277c44457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  degatValue: 1
 --- !u!114 &3047396202139740842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd60763900be9843bbe019a658447dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pAttaque: {fileID: 0}
   pMovement: {fileID: 0}
   pInput: {fileID: 0}
   pAnimator: {fileID: 0}
@@ -588,6 +591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5550510568442415476}
   - component: {fileID: 8322744602979833419}
+  - component: {fileID: 8019214859136036943}
   m_Layer: 0
   m_Name: SwordCollider
   m_TagString: Untagged
@@ -623,6 +627,18 @@ CapsuleCollider:
   m_Height: 4
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 2}
+--- !u!114 &8019214859136036943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7503734601939635119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a18156eb03aebc408097f7e49e09f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8108700908975423899
 GameObject:
   m_ObjectHideFlags: 0

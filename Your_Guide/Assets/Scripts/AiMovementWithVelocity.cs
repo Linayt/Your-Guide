@@ -22,7 +22,7 @@ public class AiMovementWithVelocity : MonoBehaviour
 
     //movement variable
     [Header("Movement")]
-    [SerializeField] private float pathMinDistance;
+    [SerializeField] private float pathMinDistance = 0.5f;
     
     
 

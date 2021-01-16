@@ -12,6 +12,7 @@ public class ReceptacleMovement : AiMovementWithVelocity
     [SerializeField] private float minDistanceToFollow;
     [SerializeField] private float minDistanceToSprint;
     [SerializeField] private float minDistanceToStop;
+    [SerializeField] private float minDistanceToBeScared;
 
     private PlayerControler player;
 
@@ -46,6 +47,29 @@ public class ReceptacleMovement : AiMovementWithVelocity
         float distance = Vector3.Distance(player.transform.position, transform.position);
         bool InRange = distance <= minDistanceToStop;
         return InRange;
+    }
+
+    public bool IsInrangeToBeScared()
+    {
+        EnemiControler[] enemiList = FindObjectsOfType<EnemiControler>();
+        if (enemiList.Length != 0)
+        {
+            foreach (EnemiControler eControler in enemiList)
+            {
+                Vector3 posE = eControler.transform.position;
+                float distance = Vector3.Distance(posE, transform.position);
+                bool InRange = distance <= minDistanceToBeScared;
+                if (InRange)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        else
+        {
+            return false;
+        }
     }
 
 

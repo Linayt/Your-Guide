@@ -9,10 +9,12 @@ public class EnemiStatue : MonoBehaviour
     public bool follow;
     public bool stun;
 
+    public bool death;
 
     private void Awake()
     {
         eControler = transform.GetComponent<EnemiControler>();
+        death = false;
     }
 
 

@@ -5,11 +5,12 @@ using UnityEngine;
 public class EnemiAnimator : MonoBehaviour
 {
     private EnemiControler eControler;
-    private Animator enemiAnimator;
+    [HideInInspector] public Animator enemiAnimator;
 
-    public string followParameterName;
-    public string stunParameterName;
-    public string attParameterName;
+    public string followParameterName = "Follow";
+    public string stunParameterName = "Stun";
+    public string attParameterName = "att";
+    public string deathParameterName = "Death";
 
     private void Awake()
     {
@@ -24,4 +25,9 @@ public class EnemiAnimator : MonoBehaviour
         enemiAnimator.SetBool(followParameterName, follow);
 
     }
+
+
+
+
+
 }

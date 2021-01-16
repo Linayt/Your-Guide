@@ -11,7 +11,7 @@ public class ReceptacleStatue : MonoBehaviour
 
     [Header("Battle")]
     public bool isScared;
-    [SerializeField] private float minDistanceToBeScared;
+    //[SerializeField] private float minDistanceToBeScared;
 
     private void Awake()
     {

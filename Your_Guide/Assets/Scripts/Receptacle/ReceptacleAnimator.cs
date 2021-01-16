@@ -33,5 +33,9 @@ public class ReceptacleAnimator : MonoBehaviour
         receptacleAnimator.SetBool(sprintParameterName, sprint);
         rControler.rStatue.isSprint = sprint;
 
+        bool scared = rControler.rMovement.IsInrangeToBeScared();
+        receptacleAnimator.SetBool(scaredParameterName, scared);
+        rControler.rStatue.isScared = scared;
+
     }
 }
