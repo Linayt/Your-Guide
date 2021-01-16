@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a539451e3f145479820ba277c44457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  degatValue: 1
+  degatValue: 5
 --- !u!114 &3047396202139740842
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6827119825850450479}
   - component: {fileID: 3005400221199339171}
   - component: {fileID: 6344429859202762435}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 5125474590457499682}
   - component: {fileID: 795952793865687216}
   - component: {fileID: 654094014413612411}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ennemi_Distance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!95 &5574704642746908276
 Animator:
@@ -182,7 +182,7 @@ Animator:
   m_GameObject: {fileID: 454686908365066240}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 781b59166e5aa164e8f6b6d334951a91, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -302,6 +302,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2de2974eb97524d94a95a7e04c0d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attaqueCooldown: 5
+  spawnPoint: {fileID: 7830692552390119546}
+  projectile: {fileID: 7200997632670164994, guid: 37fa40f0851a6644dab36806de2901f5,
+    type: 3}
+  vitesseProjectile: 50
+  arme: {fileID: 2174886881308487950}
 --- !u!1 &2274677111847892269
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9821918844151457}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2174886881308487950}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arme
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +383,7 @@ GameObject:
   - component: {fileID: 4558636231096105141}
   - component: {fileID: 5443439226076214290}
   - component: {fileID: 1254293471895586572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7830692552390119546}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: spawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

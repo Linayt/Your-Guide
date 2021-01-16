@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class EnemiProjectile : MonoBehaviour
 {
-    public float degatValue;
-
+    [HideInInspector] public int degatValue;
+    public Rigidbody rigid;
 
     private void OnCollisionEnter(Collision collision)
     {
-        
+        ReceptacleControler rControler = collision.transform.GetComponent<ReceptacleControler>();
+        if (rControler != null)
+        {
+            rControler.rLife.TakeDamage(degatValue);
+        }
+
+        Destroy(gameObject);
     }
 }

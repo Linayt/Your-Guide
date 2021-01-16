@@ -24,6 +24,9 @@ public class EnemiAnimator : MonoBehaviour
         eControler.eStatue.follow = follow;
         enemiAnimator.SetBool(followParameterName, follow);
 
+        bool attack = eControler.eMovement.IsInRangeToAttackTarget();
+        enemiAnimator.SetBool(attParameterName, attack);
+
     }
 
 
