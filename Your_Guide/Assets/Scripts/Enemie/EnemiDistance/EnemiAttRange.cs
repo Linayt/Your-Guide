@@ -20,7 +20,7 @@ public class EnemiAttRange : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timer += Time.deltaTime;
-        eAttStats.arme.LookAt(eControler.eMovement.currentTarget);
+        eAttStats.arme.LookAt(eControler.eMovement.currentTarget.position+eAttStats.targetOffset);
 
         if(timer>= eAttStats.attaqueCooldown)
         {

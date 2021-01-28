@@ -76,9 +76,11 @@ public class AiMovementWithVelocity : MonoBehaviour
     public void MoveToCible(float vitesse)
     {
         Vector3 toTargetPos = (currentTargetPos - transform.position).normalized;
+        Vector3 posToLook = transform.position + toTargetPos;
         if (shouldMove)
         {
             rigid.velocity = toTargetPos * vitesse;
+            transform.LookAt(posToLook);
         }
     }
 

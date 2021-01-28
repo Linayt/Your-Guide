@@ -11,6 +11,8 @@ public class EnemiAttack : MonoBehaviour
     public float forceDegatPlayer = 500;
     public float upwardForceModifier = 1;
 
+    
+
 
     private void Awake()
     {

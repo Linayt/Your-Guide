@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(Animator))]
+//[RequireComponent(typeof(Animator))]
 
 [RequireComponent(typeof(ReceptacleMovement))]
 [RequireComponent(typeof(ReceptacleAnimator))]

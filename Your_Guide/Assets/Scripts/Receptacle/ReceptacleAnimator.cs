@@ -6,7 +6,7 @@ public class ReceptacleAnimator : MonoBehaviour
 {
     private ReceptacleControler rControler;
 
-    [HideInInspector]
+    
     public Animator receptacleAnimator;
 
     public string followParameterName;
@@ -19,7 +19,11 @@ public class ReceptacleAnimator : MonoBehaviour
 
     private void Awake()
     {
-        receptacleAnimator = transform.GetComponent<Animator>();
+        if (receptacleAnimator == null)
+        {
+            receptacleAnimator = transform.GetComponent<Animator>();
+
+        }
         rControler = transform.GetComponent<ReceptacleControler>();
     }
 

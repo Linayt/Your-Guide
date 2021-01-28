@@ -9,7 +9,8 @@ public class PlayerCanMove : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        pControler = animator.GetComponent<PlayerControler>();
+        pControler = FindObjectOfType<PlayerControler>();
+        //pControler = animator.GetComponent<PlayerControler>();
         pControler.pStatue.canMove = canMove;
     }
 

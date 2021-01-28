@@ -46,9 +46,15 @@ public class EnemiMovement : AiMovementWithVelocity
 
     public bool IsInRangeToAttackTarget()
     {
-        float distance = Vector3.Distance(currentTarget.position, transform.position);
-        bool inRange = distance <= minDistanceToAttack;
-        return inRange;
+        if (currentTarget != null)
+        {
+            float distance = Vector3.Distance(currentTarget.position, transform.position);
+            bool inRange = distance <= minDistanceToAttack;
+            return inRange;
+
+        }
+
+        return false;
     }
 
 

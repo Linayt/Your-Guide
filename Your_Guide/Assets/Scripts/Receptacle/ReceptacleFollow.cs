@@ -11,7 +11,7 @@ public class ReceptacleFollow : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        rControler = animator.GetComponent<ReceptacleControler>();
+        rControler = FindObjectOfType<ReceptacleControler>();
         rControler.rMovement.InizialisePath();
     }
 

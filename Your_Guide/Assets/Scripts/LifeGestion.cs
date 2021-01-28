@@ -5,7 +5,7 @@ using UnityEngine;
 public class LifeGestion : MonoBehaviour
 {
 
-    [SerializeField] int maxLifeValue;
+    [SerializeField] protected int maxLifeValue;
     [SerializeField] protected int initialLifeValue;
 
     protected int lifeValue;
@@ -19,6 +19,8 @@ public class LifeGestion : MonoBehaviour
     {
         lifeValue -= DamageValue;
         lifeValue = Mathf.Clamp(lifeValue, 0, maxLifeValue);
+
+        Debug.Log(lifeValue, gameObject);
 
         if (lifeValue == 0)
         {

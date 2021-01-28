@@ -12,7 +12,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(PlayerAnimator))]
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(Animator))]
+//[RequireComponent(typeof(Animator))]
 
 
 public class PlayerControler : MonoBehaviour

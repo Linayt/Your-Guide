@@ -9,7 +9,8 @@ public class PlayerCanSwitch : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        pControler = animator.GetComponent<PlayerControler>();
+        //pControler = animator.GetComponent<PlayerControler>();
+        pControler = FindObjectOfType<PlayerControler>();
 
         bool canSwitch = pControler.pAdrenaline.IsAdrenalineMax() && pControler.pSwitch.IsInRange();
         pControler.pSwitch.ChangeSignEnable(canSwitch);

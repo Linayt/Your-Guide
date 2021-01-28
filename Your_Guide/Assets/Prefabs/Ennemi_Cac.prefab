@@ -542,7 +542,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!95 &4151162216110370723
 Animator:
@@ -583,6 +583,7 @@ MonoBehaviour:
   minDistanceToFollowReceptacle: 20
   minDistanceToFollowPlayer: 6
   minDistanceToAttack: 3
+  currentTarget: {fileID: 0}
 --- !u!114 &1605465395330996587
 MonoBehaviour:
   m_ObjectHideFlags: 0

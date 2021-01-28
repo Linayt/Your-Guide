@@ -12,6 +12,8 @@ public class EnnemiAttRangeStat : MonoBehaviour
     [SerializeField] private GameObject projectile;
     [SerializeField] private float vitesseProjectile;
 
+    public Vector3 targetOffset;
+
     public Transform arme;
 
     private void Awake()

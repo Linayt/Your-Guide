@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemiAnimator : MonoBehaviour
 {
     private EnemiControler eControler;
-    [HideInInspector] public Animator enemiAnimator;
+    public Animator enemiAnimator;
 
     public string followParameterName = "Follow";
     public string stunParameterName = "Stun";
@@ -14,7 +14,11 @@ public class EnemiAnimator : MonoBehaviour
 
     private void Awake()
     {
-        enemiAnimator = transform.GetComponent<Animator>();
+        if (enemiAnimator == null)
+        {
+            enemiAnimator = transform.GetComponent<Animator>();
+
+        }
         eControler = transform.GetComponent<EnemiControler>();
     }
 

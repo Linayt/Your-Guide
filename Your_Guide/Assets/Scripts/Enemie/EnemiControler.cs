@@ -48,5 +48,7 @@ public class EnemiControler : MonoBehaviour
         }
 
         eAnimator.SetParametreValue();
+
+        eLife.SetLifeBareValue();
     }
 }
