@@ -12,8 +12,8 @@ public class EnemiAttRange : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        eControler = animator.transform.GetComponent<EnemiControler>();
-        eAttStats = animator.transform.GetComponent<EnnemiAttRangeStat>();
+        eControler = animator.transform.GetComponent<EnemiRefControler>().eControler;
+        eAttStats = eControler.transform.GetComponent<EnnemiAttRangeStat>();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

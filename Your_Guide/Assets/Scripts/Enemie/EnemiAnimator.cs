@@ -9,6 +9,7 @@ public class EnemiAnimator : MonoBehaviour
 
     public string followParameterName = "Follow";
     public string stunParameterName = "Stun";
+    public string bumpParameterName = "Bump";
     public string attParameterName = "att";
     public string deathParameterName = "Death";
 
@@ -30,6 +31,12 @@ public class EnemiAnimator : MonoBehaviour
 
         bool attack = eControler.eMovement.IsInRangeToAttackTarget();
         enemiAnimator.SetBool(attParameterName, attack);
+
+        bool stun = eControler.eStatue.stun;
+        enemiAnimator.SetBool(stunParameterName, stun);
+
+        bool bump = eControler.eStatue.stun;
+        enemiAnimator.SetBool(bumpParameterName, bump);
 
     }
 

@@ -27,7 +27,7 @@ public class PlayerControler : MonoBehaviour
     [HideInInspector] public PlayerStatue pStatue;
 
 
-    private Rigidbody rigid;
+    [HideInInspector] public Rigidbody rigid;
 
     // Start is called before the first frame update
     void Awake()

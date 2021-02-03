@@ -6,6 +6,7 @@ public class EnemiProjectile : MonoBehaviour
 {
     [HideInInspector] public int degatValue;
     public Rigidbody rigid;
+    public float timeStunPlayer;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -14,7 +15,23 @@ public class EnemiProjectile : MonoBehaviour
         {
             rControler.rLife.TakeDamage(degatValue);
         }
+        else
+        {
+            PlayerControler pControler = collision.transform.GetComponent<PlayerControler>();
+
+            if (pControler != null)
+            {
+                pControler.pStatue.Stun(timeStunPlayer);
+            }
+        }
 
         Destroy(gameObject);
+    }
+
+    public void BumpRicochet(float force)
+    {
+        rigid.velocity.Set(0, 0, 0);
+        Vector3 newDirection = transform.forward.normalized * -1;
+        Vector3 newForce = newDirection * force;
     }
 }

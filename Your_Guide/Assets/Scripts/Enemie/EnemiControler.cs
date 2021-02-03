@@ -24,7 +24,7 @@ public class EnemiControler : MonoBehaviour
     [HideInInspector] public EnemiAnimator eAnimator;
     [HideInInspector] public EnemiLife eLife;
     [HideInInspector] public EnemiAttack eAttack;
-
+    [HideInInspector] public Rigidbody rigid;
     
     void Awake()
     {
@@ -33,7 +33,7 @@ public class EnemiControler : MonoBehaviour
         eAnimator = transform.GetComponent<EnemiAnimator>();
         eLife = transform.GetComponent<EnemiLife>();
         eAttack = transform.GetComponent<EnemiAttack>();
-
+        rigid = transform.GetComponent<Rigidbody>();
     }
 
 

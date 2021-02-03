@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollisionDegatPlayer : MonoBehaviour
 {
-    private PlayerControler pControler;
+    /*private PlayerControler pControler;
 
     private EnemiControler eControler;
 
@@ -29,6 +29,6 @@ public class CollisionDegatPlayer : MonoBehaviour
         eControler = null;
 
 
-    }
+    }*/
 
 }

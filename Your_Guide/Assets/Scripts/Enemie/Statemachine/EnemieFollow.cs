@@ -9,7 +9,7 @@ public class EnemieFollow : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        eControler = animator.GetComponent<EnemiControler>();
+        eControler = animator.GetComponent<EnemiRefControler>().eControler;
         eControler.eMovement.InizialisePath();
     }
 
