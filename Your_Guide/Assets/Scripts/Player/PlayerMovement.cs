@@ -28,7 +28,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(Vector3 directionMove, Rigidbody rigid)
     {
-        
+        pControler.pAnimator.SetVitesseParameterValue(directionMove.magnitude);
+
         if (directionMove.magnitude > minValueToMove && pControler.pStatue.canMove)
         {
             /*Vector3 moveDirection = directionMove.normalized;

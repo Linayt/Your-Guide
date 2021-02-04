@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6131078401597754636}
   - component: {fileID: 2485780515912512426}
   - component: {fileID: 1895489889816536116}
-  - component: {fileID: 5574704642746908276}
   - component: {fileID: 5589845207251396955}
   - component: {fileID: 2340642679827414456}
   - component: {fileID: 6956260772049194603}
@@ -94,25 +93,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!95 &5574704642746908276
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 454686908365066240}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 781b59166e5aa164e8f6b6d334951a91, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &5589845207251396955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +145,7 @@ MonoBehaviour:
   enemiAnimator: {fileID: 5793566663660335227}
   followParameterName: Follow
   stunParameterName: Stun
+  bumpParameterName: Bump
   attParameterName: att
   deathParameterName: Death
 --- !u!114 &570884458477390811
@@ -792,15 +773,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25fc23377d2523d44b51f39e272c014d, type: 3}
---- !u!1 &913240683261790603 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 25fc23377d2523d44b51f39e272c014d,
-    type: 3}
-  m_PrefabInstance: {fileID: 30700847076488410}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &569612154268898097 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 25fc23377d2523d44b51f39e272c014d,
+    type: 3}
+  m_PrefabInstance: {fileID: 30700847076488410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &913240683261790603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 25fc23377d2523d44b51f39e272c014d,
     type: 3}
   m_PrefabInstance: {fileID: 30700847076488410}
   m_PrefabAsset: {fileID: 0}

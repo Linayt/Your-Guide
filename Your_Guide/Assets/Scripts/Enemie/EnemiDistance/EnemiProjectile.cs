@@ -23,6 +23,15 @@ public class EnemiProjectile : MonoBehaviour
             {
                 pControler.pStatue.Stun(timeStunPlayer);
             }
+            else
+            {
+                EnemiControler eControler = collision.transform.GetComponent<EnemiControler>();
+                if (eControler != null)
+                {
+                    eControler.eLife.TakeDamage(degatValue);
+
+                }
+            }
         }
 
         Destroy(gameObject);

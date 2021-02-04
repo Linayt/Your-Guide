@@ -8,6 +8,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerSwitch))]
 [RequireComponent(typeof(PlayerAdrenaline))]
 [RequireComponent(typeof(PlayerStatue))]
+[RequireComponent(typeof(PlayerFX))]
 
 
 [RequireComponent(typeof(PlayerAnimator))]
@@ -25,6 +26,7 @@ public class PlayerControler : MonoBehaviour
     [HideInInspector] public PlayerSwitch pSwitch;
     [HideInInspector] public PlayerAdrenaline pAdrenaline;
     [HideInInspector] public PlayerStatue pStatue;
+    [HideInInspector] public PlayerFX pFX;
 
 
     [HideInInspector] public Rigidbody rigid;
@@ -40,6 +42,7 @@ public class PlayerControler : MonoBehaviour
         pSwitch = transform.GetComponent<PlayerSwitch>();
         pAdrenaline = transform.GetComponent<PlayerAdrenaline>();
         pStatue = transform.GetComponent<PlayerStatue>();
+        pFX = transform.GetComponent<PlayerFX>();
     }
 
     // Update is called once per frame

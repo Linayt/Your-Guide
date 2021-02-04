@@ -16,6 +16,9 @@ public class PlayerAnimator : MonoBehaviour
     [Header("Switch Parameter")]
     public string switchParameter;
 
+    [Header("Movement Parameter")]
+    public string speedParameter;
+
     public void TriggerSwitchParameter()
     {
         playerAnimator.SetTrigger(switchParameter);
@@ -24,5 +27,10 @@ public class PlayerAnimator : MonoBehaviour
     public void TriggerAttparameter()
     {
         playerAnimator.SetTrigger(attTrigger);
+    }
+
+    public void SetVitesseParameterValue(float value)
+    {
+        playerAnimator.SetFloat(speedParameter, value);
     }
 }

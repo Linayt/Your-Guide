@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(Animator))]
+//[RequireComponent(typeof(Animator))]
 
 [RequireComponent(typeof(EnemiMovement))]
 [RequireComponent(typeof(EnemiStatue))]
