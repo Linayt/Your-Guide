@@ -216,7 +216,7 @@ MonoBehaviour:
     x: -1410
     y: -1117
     width: 16455
-    height: 7410
+    height: 7408
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5931,19 +5931,19 @@ VisualEffectResource:
       uint tmp_bd = attributes.particleId ^ asuint(uniform_b);\n\t\t\t        float
       tmp_be = FixedRand(tmp_bd);\n\t\t\t        float tmp_bf = SampleCurve(uniform_c,tmp_bb);\n\t\t\t       
       float tmp_bg = tmp_bf - tmp_bc;\n\t\t\t        float tmp_bh = tmp_be * tmp_bg;\n\t\t\t       
-      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bj = saturate(tmp_bi);\n\t\t\t       
-      \n\t\t\t        AlphaIntensitySmoke__ = tmp_bj;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke
-      = AlphaIntensitySmoke__;float2 OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
-      OffsetSmoke__ = float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke
-      = OffsetSmoke__;float2 TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
-      TilingSmoke__ = float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke
-      = TilingSmoke__;float NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t       
-      NoiseDissolveSpeed__ = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed
-      = NoiseDissolveSpeed__;float2 NoiseDissolveTiling__ = (float2)0;{\n\t\t\t       
-      \n\t\t\t        NoiseDissolveTiling__ = float2(1, 1);\n\t\t\t    }\n\t\t\t   
-      o.NoiseDissolveTiling = NoiseDissolveTiling__;float2 NoiseDissolve2Tiling__
-      = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__ = float2(0.5,
-      0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
+      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bk = max(tmp_bi, (float)0);\n\t\t\t       
+      float tmp_bm = min(tmp_bk, (float)1);\n\t\t\t        \n\t\t\t        AlphaIntensitySmoke__
+      = tmp_bm;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke = AlphaIntensitySmoke__;float2
+      OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        OffsetSmoke__ =
+      float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke = OffsetSmoke__;float2
+      TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        TilingSmoke__ =
+      float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke = TilingSmoke__;float
+      NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveSpeed__
+      = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed = NoiseDissolveSpeed__;float2
+      NoiseDissolveTiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveTiling__
+      = float2(1, 1);\n\t\t\t    }\n\t\t\t    o.NoiseDissolveTiling = NoiseDissolveTiling__;float2
+      NoiseDissolve2Tiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__
+      = float2(0.5, 0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
       Color_7F422D6C__ = (float4)0;{\n\t\t\t        \n\t\t\t        Color_7F422D6C__
       = float4(0.773584902, 0.773584902, 0.773584902, 1);\n\t\t\t    }\n\t\t\t   
       o.Color_7F422D6C = Color_7F422D6C__;\n\n\t\t\t\t\n\t\t\t\treturn o;\n\t\t\t}\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t#include
@@ -6220,19 +6220,19 @@ VisualEffectResource:
       uint tmp_bd = attributes.particleId ^ asuint(uniform_b);\n\t\t\t        float
       tmp_be = FixedRand(tmp_bd);\n\t\t\t        float tmp_bf = SampleCurve(uniform_c,tmp_bb);\n\t\t\t       
       float tmp_bg = tmp_bf - tmp_bc;\n\t\t\t        float tmp_bh = tmp_be * tmp_bg;\n\t\t\t       
-      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bj = saturate(tmp_bi);\n\t\t\t       
-      \n\t\t\t        AlphaIntensitySmoke__ = tmp_bj;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke
-      = AlphaIntensitySmoke__;float2 OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
-      OffsetSmoke__ = float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke
-      = OffsetSmoke__;float2 TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
-      TilingSmoke__ = float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke
-      = TilingSmoke__;float NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t       
-      NoiseDissolveSpeed__ = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed
-      = NoiseDissolveSpeed__;float2 NoiseDissolveTiling__ = (float2)0;{\n\t\t\t       
-      \n\t\t\t        NoiseDissolveTiling__ = float2(1, 1);\n\t\t\t    }\n\t\t\t   
-      o.NoiseDissolveTiling = NoiseDissolveTiling__;float2 NoiseDissolve2Tiling__
-      = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__ = float2(0.5,
-      0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
+      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bk = max(tmp_bi, (float)0);\n\t\t\t       
+      float tmp_bm = min(tmp_bk, (float)1);\n\t\t\t        \n\t\t\t        AlphaIntensitySmoke__
+      = tmp_bm;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke = AlphaIntensitySmoke__;float2
+      OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        OffsetSmoke__ =
+      float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke = OffsetSmoke__;float2
+      TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        TilingSmoke__ =
+      float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke = TilingSmoke__;float
+      NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveSpeed__
+      = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed = NoiseDissolveSpeed__;float2
+      NoiseDissolveTiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveTiling__
+      = float2(1, 1);\n\t\t\t    }\n\t\t\t    o.NoiseDissolveTiling = NoiseDissolveTiling__;float2
+      NoiseDissolve2Tiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__
+      = float2(0.5, 0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
       Color_7F422D6C__ = (float4)0;{\n\t\t\t        \n\t\t\t        Color_7F422D6C__
       = float4(0.773584902, 0.773584902, 0.773584902, 1);\n\t\t\t    }\n\t\t\t   
       o.Color_7F422D6C = Color_7F422D6C__;\n\n\t\t\t\t\n\t\t\t\treturn o;\n\t\t\t}\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t#include
@@ -7471,8 +7471,7 @@ VisualEffectResource:
       1\n\t\t#define VFX_BLENDMODE_ALPHA 1\n\t\t#define VFX_HAS_INDIRECT_DRAW 1\n\t\t#define
       VFX_BYPASS_EXPOSURE 1\n\t\t#define USE_DEAD_LIST_COUNT 1\n\t\t#define VFX_SHADERGRAPH
       1\n\t\t#define HAS_SHADERGRAPH_PARAM_COLOR 1\n\t\t#define HAS_SHADERGRAPH_PARAM_ALPHA
-      1\n\t\t#define VFX_NEEDS_POSWS_INTERPOLATOR 1\n\t\t#define VFX_PRIMITIVE_QUAD
-      1\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t#define
+      1\n\t\t#define VFX_PRIMITIVE_QUAD 1\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t#define
       VFX_LOCAL_SPACE 1\n\t\t#include \"Packages/com.unity.render-pipelines.high-definition/Runtime/VFXGraph/Shaders/VFXDefines.hlsl\"\n\t\t\n\n\t\tCBUFFER_START(parameters)\n\t\t   
       float4 uniform_a;\n\t\tCBUFFER_END\n\t\t\n\t\tstruct Attributes\n\t\t{\n\t\t   
       float lifetime;\n\t\t    float size;\n\t\t    float3 position;\n\t\t    float
@@ -7698,8 +7697,8 @@ VisualEffectResource:
       DepthFaloff__ = (float)9.17000008;\n\t\t\t    }\n\t\t\t    o.DepthFaloff =
       DepthFaloff__;\n\n\t\t\t\n\t\t\t\treturn o;\n\t\t\t}\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t#include
       \"Packages/com.unity.visualeffectgraph/Shaders/VFXCommonOutput.hlsl\"\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t#if
-      VFX_PASSDEPTH == VFX_PASSDEPTH_SELECTION\n\t\t\tint _ObjectId;\n\t\t\tint _PassValue;\n\t\t\t#endif\n\t\t\t\n\t\t\t#define
-      REQUIRE_DEPTH_TEXTURE\n\t\t\t\n\t\t\t\t\t#include \"Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl\"\n\t\t\t\t\t#include
+      VFX_PASSDEPTH == VFX_PASSDEPTH_SELECTION\n\t\t\tint _ObjectId;\n\t\t\tint _PassValue;\n\t\t\t#endif\n\t\t\t\n\t\t\t\n\t\t\t\t\t#include
+      \"Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl\"\n\t\t\t\t\t#include
       \"Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl\"\n\t\t\t\t\t#include
       \"Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl\"\n\t\t\t\t\t#include
       \"Packages/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl\"\n\t\t\t\t\t#include
@@ -7707,43 +7706,18 @@ VisualEffectResource:
       SHADERPASS\n\t\t\t\t\t#error Shaderpass should be defined at this stage.\n\t\t\t\t\t#endif\n\t\t\t\t\t#include
       \"Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl\"\n\t\t\t\t\t\n\t\t\t\n\t\t\t#include
       \"Packages/com.unity.shadergraph/ShaderGraphLibrary/Functions.hlsl\"\n\t\t\t//
-      Node: Multiply, DepthFade\n\t\t\tvoid Unity_Multiply_float(float A, float B,
-      out float Out)\n\t\t\t{\n\t\t\t    Out = A * B;\n\t\t\t}\n\t\t\t\n\t\t\t//
-      Node: Tiling And Offset\n\t\t\tvoid Unity_TilingAndOffset_float(float2 UV,
-      float2 Tiling, float2 Offset, out float2 Out)\n\t\t\t{\n\t\t\t    Out = UV
-      * Tiling + Offset;\n\t\t\t}\n\t\t\t\n\t\t\t// Node: Remap\n\t\t\tvoid Unity_Remap_float4(float4
-      In, float2 InMinMax, float2 OutMinMax, out float4 Out)\n\t\t\t{\n\t\t\t   
-      Out = OutMinMax.x + (In - InMinMax.x) * (OutMinMax.y - OutMinMax.x) / (InMinMax.y
-      - InMinMax.x);\n\t\t\t}\n\t\t\t\n\t\t\t// Node: Clamp\n\t\t\tvoid Unity_Clamp_float4(float4
-      In, float4 Min, float4 Max, out float4 Out)\n\t\t\t{\n\t\t\t    Out = clamp(In,
-      Min, Max);\n\t\t\t}\n\t\t\t\n\t\t\t// Node: Multiply\n\t\t\tvoid Unity_Multiply_float(float4
-      A, float4 B, out float4 Out)\n\t\t\t{\n\t\t\t    Out = A * B;\n\t\t\t}\n\t\t\t\n\t\t\t//
-      Node: DepthFade\n\t\t\tvoid Unity_SceneDepth_Linear01_float(float4 UV, out
-      float Out)\n\t\t\t{\n\t\t\t    Out = Linear01Depth(SHADERGRAPH_SAMPLE_SCENE_DEPTH(UV.xy),
-      _ZBufferParams);\n\t\t\t}\n\t\t\t\n\t\t\t// Node: DepthFade\n\t\t\tvoid Unity_Subtract_float(float
-      A, float B, out float Out)\n\t\t\t{\n\t\t\t    Out = A - B;\n\t\t\t}\n\t\t\t\n\t\t\t//
-      Node: DepthFade\n\t\t\tvoid Unity_Smoothstep_float(float Edge1, float Edge2,
-      float In, out float Out)\n\t\t\t{\n\t\t\t    Out = smoothstep(Edge1, Edge2,
-      In);\n\t\t\t}\n\t\t\t\n\t\t\t// Node: DepthFade\n\t\t\tstruct Bindings_DepthFade_2aea6618b0e5950448de804ccf10dcbe\n\t\t\t{\n\t\t\t   
-      float4 ScreenPosition;\n\t\t\t};\n\t\t\t\n\t\t\tvoid SG_DepthFade_2aea6618b0e5950448de804ccf10dcbe(float
-      Vector1_132FB1B6, float Vector1_430CC043, Bindings_DepthFade_2aea6618b0e5950448de804ccf10dcbe
-      IN, out float Out_0)\n\t\t\t{\n\t\t\t    float _SceneDepth_2A7553A8_Out_1;\n\t\t\t   
-      Unity_SceneDepth_Linear01_float(float4(IN.ScreenPosition.xy / IN.ScreenPosition.w,
-      0, 0), _SceneDepth_2A7553A8_Out_1);\n\t\t\t    float _Multiply_441EC34_Out_2;\n\t\t\t   
-      Unity_Multiply_float(_SceneDepth_2A7553A8_Out_1, _ProjectionParams.z, _Multiply_441EC34_Out_2);\n\t\t\t   
-      float4 _ScreenPosition_88057BAB_Out_0 = IN.ScreenPosition;\n\t\t\t    float
-      _Split_31871D8D_R_1 = _ScreenPosition_88057BAB_Out_0[0];\n\t\t\t    float _Split_31871D8D_G_2
-      = _ScreenPosition_88057BAB_Out_0[1];\n\t\t\t    float _Split_31871D8D_B_3 =
-      _ScreenPosition_88057BAB_Out_0[2];\n\t\t\t    float _Split_31871D8D_A_4 = _ScreenPosition_88057BAB_Out_0[3];\n\t\t\t   
-      float _Property_E1D4DE47_Out_0 = Vector1_132FB1B6;\n\t\t\t    float _Subtract_F1BBF75C_Out_2;\n\t\t\t   
-      Unity_Subtract_float(_Split_31871D8D_A_4, _Property_E1D4DE47_Out_0, _Subtract_F1BBF75C_Out_2);\n\t\t\t   
-      float _Subtract_D2D8A139_Out_2;\n\t\t\t    Unity_Subtract_float(_Multiply_441EC34_Out_2,
-      _Subtract_F1BBF75C_Out_2, _Subtract_D2D8A139_Out_2);\n\t\t\t    float _Property_44C719F3_Out_0
-      = Vector1_430CC043;\n\t\t\t    float _Multiply_F145032D_Out_2;\n\t\t\t    Unity_Multiply_float(_Subtract_D2D8A139_Out_2,
-      _Property_44C719F3_Out_0, _Multiply_F145032D_Out_2);\n\t\t\t    float _Smoothstep_523EB95_Out_3;\n\t\t\t   
-      Unity_Smoothstep_float(0, 1, _Multiply_F145032D_Out_2, _Smoothstep_523EB95_Out_3);\n\t\t\t   
-      Out_0 = _Smoothstep_523EB95_Out_3;\n\t\t\t}\n\t\t\t\n\t\t\tstruct SG_Input_62bee437cc317f342b3fa9cff8131816\n\t\t\t{\n\t\t\t   
-      float4 ScreenPosition;\n\t\t\t    half4 uv0;\n\t\t\t    float3 TimeParameters;\n\t\t\t};\n\t\t\t\n\t\t\tstruct
+      Node: Multiply\n\t\t\tvoid Unity_Multiply_float(float A, float B, out float
+      Out)\n\t\t\t{\n\t\t\t    Out = A * B;\n\t\t\t}\n\t\t\t\n\t\t\t// Node: Tiling
+      And Offset\n\t\t\tvoid Unity_TilingAndOffset_float(float2 UV, float2 Tiling,
+      float2 Offset, out float2 Out)\n\t\t\t{\n\t\t\t    Out = UV * Tiling + Offset;\n\t\t\t}\n\t\t\t\n\t\t\t//
+      Node: Remap\n\t\t\tvoid Unity_Remap_float4(float4 In, float2 InMinMax, float2
+      OutMinMax, out float4 Out)\n\t\t\t{\n\t\t\t    Out = OutMinMax.x + (In - InMinMax.x)
+      * (OutMinMax.y - OutMinMax.x) / (InMinMax.y - InMinMax.x);\n\t\t\t}\n\t\t\t\n\t\t\t//
+      Node: Clamp\n\t\t\tvoid Unity_Clamp_float4(float4 In, float4 Min, float4 Max,
+      out float4 Out)\n\t\t\t{\n\t\t\t    Out = clamp(In, Min, Max);\n\t\t\t}\n\t\t\t\n\t\t\t//
+      Node: Multiply\n\t\t\tvoid Unity_Multiply_float(float4 A, float4 B, out float4
+      Out)\n\t\t\t{\n\t\t\t    Out = A * B;\n\t\t\t}\n\t\t\t\n\t\t\tstruct SG_Input_62bee437cc317f342b3fa9cff8131816\n\t\t\t{\n\t\t\t   
+      half4 uv0;\n\t\t\t    float3 TimeParameters;\n\t\t\t};\n\t\t\t\n\t\t\tstruct
       SG_Output_62bee437cc317f342b3fa9cff8131816\n\t\t\t{\n\t\t\t    float Alpha_4;\n\t\t\t};\n\t\t\t\n\t\t\tSG_Output_62bee437cc317f342b3fa9cff8131816
       SG_Evaluate_62bee437cc317f342b3fa9cff8131816(\n\t\t\t    SG_Input_62bee437cc317f342b3fa9cff8131816
       IN,\n\t\t\t    /* Property: Scrolling texture */ TEXTURE2D_PARAM(Texture2D_859B4A85,
@@ -7824,10 +7798,7 @@ VisualEffectResource:
       (_Property_D84414AD_Out_0.xxxx), _Multiply_A59BC78_Out_2);\n\t\t\t\n\t\t\t   
       // Node: Property\n\t\t\t    float _Property_175E9926_Out_0 = DepthOffset;\n\t\t\t\n\t\t\t   
       // Node: Property\n\t\t\t    float _Property_ECB1F3A9_Out_0 = DepthFaloff;\n\t\t\t\n\t\t\t   
-      // Node: DepthFade\n\t\t\t    Bindings_DepthFade_2aea6618b0e5950448de804ccf10dcbe
-      _DepthFade_B85624DA;\n\t\t\t    _DepthFade_B85624DA.ScreenPosition = IN.ScreenPosition;\n\t\t\t   
-      float _DepthFade_B85624DA_Out_0;\n\t\t\t    SG_DepthFade_2aea6618b0e5950448de804ccf10dcbe(_Property_175E9926_Out_0,
-      _Property_ECB1F3A9_Out_0, _DepthFade_B85624DA, _DepthFade_B85624DA_Out_0);\n\t\t\t\n\t\t\t   
+      // Node: DepthFade\n\t\t\t    float _DepthFade_B85624DA_Out_0 = 0;\n\t\t\t\n\t\t\t   
       // Node: Multiply\n\t\t\t    float4 _Multiply_3EDF213C_Out_2;\n\t\t\t    Unity_Multiply_float(_Multiply_A59BC78_Out_2,
       (_DepthFade_B85624DA_Out_0.xxxx), _Multiply_3EDF213C_Out_2);\n\t\t\t\n\t\t\t   
       // Visual Effect Master\n\t\t\t    SG_Output_62bee437cc317f342b3fa9cff8131816
@@ -7840,12 +7811,8 @@ VisualEffectResource:
       TilingTexture3 = i.TilingTexture3;float DepthOffset = i.DepthOffset;float DepthFaloff
       = i.DepthFaloff;\n\t\t\t        \n\t\t\t        //Call Shader Graph\n\t\t\t       
       SG_Input_62bee437cc317f342b3fa9cff8131816 INSG = (SG_Input_62bee437cc317f342b3fa9cff8131816)0;\n\t\t\t       
-      float3 posRelativeWS = VFXGetPositionRWS(i.VFX_VARYING_POSWS);\n\t\t\t       
-      float3 posAbsoluteWS = VFXGetPositionAWS(i.VFX_VARYING_POSWS);\n\t\t\t       
-      INSG.ScreenPosition = ComputeScreenPos(VFXTransformPositionWorldToClip(i.VFX_VARYING_POSWS),
-      _ProjectionParams.x);\n\t\t\t        INSG.uv0.xy = i.uv;\n\t\t\t        INSG.TimeParameters
-      = _TimeParameters.xyz;\n\t\t\t        \n\t\t\t        SG_Output_62bee437cc317f342b3fa9cff8131816
-      OUTSG = SG_Evaluate_62bee437cc317f342b3fa9cff8131816(INSG,Texture2D_859B4A85,
+      INSG.uv0.xy = i.uv;\n\t\t\t        INSG.TimeParameters = _TimeParameters.xyz;\n\t\t\t       
+      \n\t\t\t        SG_Output_62bee437cc317f342b3fa9cff8131816 OUTSG = SG_Evaluate_62bee437cc317f342b3fa9cff8131816(INSG,Texture2D_859B4A85,
       samplerTexture2D_859B4A85, Texture2D_859B4A85_TexelSize, Texture2D_AC6CBED5,
       samplerTexture2D_AC6CBED5, Texture2D_AC6CBED5_TexelSize, Texture2D_A3BEAC2,
       samplerTexture2D_A3BEAC2, Texture2D_A3BEAC2_TexelSize, SmokeAlphaIntensity,
@@ -8067,8 +8034,7 @@ VisualEffectResource:
       DepthFaloff__ = (float)9.17000008;\n\t\t\t    }\n\t\t\t    o.DepthFaloff =
       DepthFaloff__;\n\n\t\t\t\n\t\t\t\treturn o;\n\t\t\t}\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t#include
       \"Packages/com.unity.visualeffectgraph/Shaders/VFXCommonOutput.hlsl\"\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t#if
-      VFX_SHADERGRAPH\n\t\t\t#define REQUIRE_DEPTH_TEXTURE\n\t\t\t\n\t\t\t\t\t#include
-      \"Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl\"\n\t\t\t\t\t#include
+      VFX_SHADERGRAPH\n\t\t\t\n\t\t\t\t\t#include \"Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl\"\n\t\t\t\t\t#include
       \"Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl\"\n\t\t\t\t\t#include
       \"Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl\"\n\t\t\t\t\t#include
       \"Packages/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl\"\n\t\t\t\t\t#include
@@ -8076,43 +8042,18 @@ VisualEffectResource:
       SHADERPASS\n\t\t\t\t\t#error Shaderpass should be defined at this stage.\n\t\t\t\t\t#endif\n\t\t\t\t\t#include
       \"Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl\"\n\t\t\t\t\t\n\t\t\t\n\t\t\t#include
       \"Packages/com.unity.shadergraph/ShaderGraphLibrary/Functions.hlsl\"\n\t\t\t//
-      Node: Multiply, DepthFade\n\t\t\tvoid Unity_Multiply_float(float A, float B,
-      out float Out)\n\t\t\t{\n\t\t\t    Out = A * B;\n\t\t\t}\n\t\t\t\n\t\t\t//
-      Node: Tiling And Offset\n\t\t\tvoid Unity_TilingAndOffset_float(float2 UV,
-      float2 Tiling, float2 Offset, out float2 Out)\n\t\t\t{\n\t\t\t    Out = UV
-      * Tiling + Offset;\n\t\t\t}\n\t\t\t\n\t\t\t// Node: Remap\n\t\t\tvoid Unity_Remap_float4(float4
-      In, float2 InMinMax, float2 OutMinMax, out float4 Out)\n\t\t\t{\n\t\t\t   
-      Out = OutMinMax.x + (In - InMinMax.x) * (OutMinMax.y - OutMinMax.x) / (InMinMax.y
-      - InMinMax.x);\n\t\t\t}\n\t\t\t\n\t\t\t// Node: Clamp\n\t\t\tvoid Unity_Clamp_float4(float4
-      In, float4 Min, float4 Max, out float4 Out)\n\t\t\t{\n\t\t\t    Out = clamp(In,
-      Min, Max);\n\t\t\t}\n\t\t\t\n\t\t\t// Node: Multiply\n\t\t\tvoid Unity_Multiply_float(float4
-      A, float4 B, out float4 Out)\n\t\t\t{\n\t\t\t    Out = A * B;\n\t\t\t}\n\t\t\t\n\t\t\t//
-      Node: DepthFade\n\t\t\tvoid Unity_SceneDepth_Linear01_float(float4 UV, out
-      float Out)\n\t\t\t{\n\t\t\t    Out = Linear01Depth(SHADERGRAPH_SAMPLE_SCENE_DEPTH(UV.xy),
-      _ZBufferParams);\n\t\t\t}\n\t\t\t\n\t\t\t// Node: DepthFade\n\t\t\tvoid Unity_Subtract_float(float
-      A, float B, out float Out)\n\t\t\t{\n\t\t\t    Out = A - B;\n\t\t\t}\n\t\t\t\n\t\t\t//
-      Node: DepthFade\n\t\t\tvoid Unity_Smoothstep_float(float Edge1, float Edge2,
-      float In, out float Out)\n\t\t\t{\n\t\t\t    Out = smoothstep(Edge1, Edge2,
-      In);\n\t\t\t}\n\t\t\t\n\t\t\t// Node: DepthFade\n\t\t\tstruct Bindings_DepthFade_2aea6618b0e5950448de804ccf10dcbe\n\t\t\t{\n\t\t\t   
-      float4 ScreenPosition;\n\t\t\t};\n\t\t\t\n\t\t\tvoid SG_DepthFade_2aea6618b0e5950448de804ccf10dcbe(float
-      Vector1_132FB1B6, float Vector1_430CC043, Bindings_DepthFade_2aea6618b0e5950448de804ccf10dcbe
-      IN, out float Out_0)\n\t\t\t{\n\t\t\t    float _SceneDepth_2A7553A8_Out_1;\n\t\t\t   
-      Unity_SceneDepth_Linear01_float(float4(IN.ScreenPosition.xy / IN.ScreenPosition.w,
-      0, 0), _SceneDepth_2A7553A8_Out_1);\n\t\t\t    float _Multiply_441EC34_Out_2;\n\t\t\t   
-      Unity_Multiply_float(_SceneDepth_2A7553A8_Out_1, _ProjectionParams.z, _Multiply_441EC34_Out_2);\n\t\t\t   
-      float4 _ScreenPosition_88057BAB_Out_0 = IN.ScreenPosition;\n\t\t\t    float
-      _Split_31871D8D_R_1 = _ScreenPosition_88057BAB_Out_0[0];\n\t\t\t    float _Split_31871D8D_G_2
-      = _ScreenPosition_88057BAB_Out_0[1];\n\t\t\t    float _Split_31871D8D_B_3 =
-      _ScreenPosition_88057BAB_Out_0[2];\n\t\t\t    float _Split_31871D8D_A_4 = _ScreenPosition_88057BAB_Out_0[3];\n\t\t\t   
-      float _Property_E1D4DE47_Out_0 = Vector1_132FB1B6;\n\t\t\t    float _Subtract_F1BBF75C_Out_2;\n\t\t\t   
-      Unity_Subtract_float(_Split_31871D8D_A_4, _Property_E1D4DE47_Out_0, _Subtract_F1BBF75C_Out_2);\n\t\t\t   
-      float _Subtract_D2D8A139_Out_2;\n\t\t\t    Unity_Subtract_float(_Multiply_441EC34_Out_2,
-      _Subtract_F1BBF75C_Out_2, _Subtract_D2D8A139_Out_2);\n\t\t\t    float _Property_44C719F3_Out_0
-      = Vector1_430CC043;\n\t\t\t    float _Multiply_F145032D_Out_2;\n\t\t\t    Unity_Multiply_float(_Subtract_D2D8A139_Out_2,
-      _Property_44C719F3_Out_0, _Multiply_F145032D_Out_2);\n\t\t\t    float _Smoothstep_523EB95_Out_3;\n\t\t\t   
-      Unity_Smoothstep_float(0, 1, _Multiply_F145032D_Out_2, _Smoothstep_523EB95_Out_3);\n\t\t\t   
-      Out_0 = _Smoothstep_523EB95_Out_3;\n\t\t\t}\n\t\t\t\n\t\t\tstruct SG_Input_62bee437cc317f342b3fa9cff8131816\n\t\t\t{\n\t\t\t   
-      float4 ScreenPosition;\n\t\t\t    half4 uv0;\n\t\t\t    float3 TimeParameters;\n\t\t\t};\n\t\t\t\n\t\t\tstruct
+      Node: Multiply\n\t\t\tvoid Unity_Multiply_float(float A, float B, out float
+      Out)\n\t\t\t{\n\t\t\t    Out = A * B;\n\t\t\t}\n\t\t\t\n\t\t\t// Node: Tiling
+      And Offset\n\t\t\tvoid Unity_TilingAndOffset_float(float2 UV, float2 Tiling,
+      float2 Offset, out float2 Out)\n\t\t\t{\n\t\t\t    Out = UV * Tiling + Offset;\n\t\t\t}\n\t\t\t\n\t\t\t//
+      Node: Remap\n\t\t\tvoid Unity_Remap_float4(float4 In, float2 InMinMax, float2
+      OutMinMax, out float4 Out)\n\t\t\t{\n\t\t\t    Out = OutMinMax.x + (In - InMinMax.x)
+      * (OutMinMax.y - OutMinMax.x) / (InMinMax.y - InMinMax.x);\n\t\t\t}\n\t\t\t\n\t\t\t//
+      Node: Clamp\n\t\t\tvoid Unity_Clamp_float4(float4 In, float4 Min, float4 Max,
+      out float4 Out)\n\t\t\t{\n\t\t\t    Out = clamp(In, Min, Max);\n\t\t\t}\n\t\t\t\n\t\t\t//
+      Node: Multiply\n\t\t\tvoid Unity_Multiply_float(float4 A, float4 B, out float4
+      Out)\n\t\t\t{\n\t\t\t    Out = A * B;\n\t\t\t}\n\t\t\t\n\t\t\tstruct SG_Input_62bee437cc317f342b3fa9cff8131816\n\t\t\t{\n\t\t\t   
+      half4 uv0;\n\t\t\t    float3 TimeParameters;\n\t\t\t};\n\t\t\t\n\t\t\tstruct
       SG_Output_62bee437cc317f342b3fa9cff8131816\n\t\t\t{\n\t\t\t    float3 Color_6;\n\t\t\t   
       float Alpha_4;\n\t\t\t};\n\t\t\t\n\t\t\tSG_Output_62bee437cc317f342b3fa9cff8131816
       SG_Evaluate_62bee437cc317f342b3fa9cff8131816(\n\t\t\t    SG_Input_62bee437cc317f342b3fa9cff8131816
@@ -8195,10 +8136,7 @@ VisualEffectResource:
       (_Property_D84414AD_Out_0.xxxx), _Multiply_A59BC78_Out_2);\n\t\t\t\n\t\t\t   
       // Node: Property\n\t\t\t    float _Property_175E9926_Out_0 = DepthOffset;\n\t\t\t\n\t\t\t   
       // Node: Property\n\t\t\t    float _Property_ECB1F3A9_Out_0 = DepthFaloff;\n\t\t\t\n\t\t\t   
-      // Node: DepthFade\n\t\t\t    Bindings_DepthFade_2aea6618b0e5950448de804ccf10dcbe
-      _DepthFade_B85624DA;\n\t\t\t    _DepthFade_B85624DA.ScreenPosition = IN.ScreenPosition;\n\t\t\t   
-      float _DepthFade_B85624DA_Out_0;\n\t\t\t    SG_DepthFade_2aea6618b0e5950448de804ccf10dcbe(_Property_175E9926_Out_0,
-      _Property_ECB1F3A9_Out_0, _DepthFade_B85624DA, _DepthFade_B85624DA_Out_0);\n\t\t\t\n\t\t\t   
+      // Node: DepthFade\n\t\t\t    float _DepthFade_B85624DA_Out_0 = 0;\n\t\t\t\n\t\t\t   
       // Node: Multiply\n\t\t\t    float4 _Multiply_3EDF213C_Out_2;\n\t\t\t    Unity_Multiply_float(_Multiply_A59BC78_Out_2,
       (_DepthFade_B85624DA_Out_0.xxxx), _Multiply_3EDF213C_Out_2);\n\t\t\t\n\t\t\t   
       // Visual Effect Master\n\t\t\t    SG_Output_62bee437cc317f342b3fa9cff8131816
@@ -8228,12 +8166,8 @@ VisualEffectResource:
       TilingTexture3 = i.TilingTexture3;float DepthOffset = i.DepthOffset;float DepthFaloff
       = i.DepthFaloff;\n\t\t        \n\t\t        //Call Shader Graph\n\t\t       
       SG_Input_62bee437cc317f342b3fa9cff8131816 INSG = (SG_Input_62bee437cc317f342b3fa9cff8131816)0;\n\t\t       
-      float3 posRelativeWS = VFXGetPositionRWS(i.VFX_VARYING_POSWS);\n\t\t       
-      float3 posAbsoluteWS = VFXGetPositionAWS(i.VFX_VARYING_POSWS);\n\t\t       
-      INSG.ScreenPosition = ComputeScreenPos(VFXTransformPositionWorldToClip(i.VFX_VARYING_POSWS),
-      _ProjectionParams.x);\n\t\t        INSG.uv0.xy = i.uv;\n\t\t        INSG.TimeParameters
-      = _TimeParameters.xyz;\n\t\t        \n\t\t        SG_Output_62bee437cc317f342b3fa9cff8131816
-      OUTSG = SG_Evaluate_62bee437cc317f342b3fa9cff8131816(INSG,Texture2D_859B4A85,
+      INSG.uv0.xy = i.uv;\n\t\t        INSG.TimeParameters = _TimeParameters.xyz;\n\t\t       
+      \n\t\t        SG_Output_62bee437cc317f342b3fa9cff8131816 OUTSG = SG_Evaluate_62bee437cc317f342b3fa9cff8131816(INSG,Texture2D_859B4A85,
       samplerTexture2D_859B4A85, Texture2D_859B4A85_TexelSize, Texture2D_AC6CBED5,
       samplerTexture2D_AC6CBED5, Texture2D_AC6CBED5_TexelSize, Texture2D_A3BEAC2,
       samplerTexture2D_A3BEAC2, Texture2D_A3BEAC2_TexelSize, SmokeAlphaIntensity,
@@ -15775,7 +15709,7 @@ VisualEffectResource:
         - m_ExpressionIndex: 98
           m_Value: {fileID: 2800000, guid: 276d9e395ae18fe40a9b4988549f2349, type: 3}
         - m_ExpressionIndex: 103
-          m_Value: {fileID: 2800000, guid: 038d62b62259dae419a4ff85416a3fed, type: 3}
+          m_Value: {fileID: 10307, guid: 0000000000000000f000000000000000, type: 0}
         - m_ExpressionIndex: 108
           m_Value: {fileID: 2800000, guid: 24e43c6dee92bf04a97a8126b850aeb6, type: 3}
         - m_ExpressionIndex: 110
@@ -70670,7 +70604,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"038d62b62259dae419a4ff85416a3fed","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":10307,"guid":"0000000000000000f000000000000000","type":0}}'
     m_Space: 2147483647
   m_Property:
     name: Texture2D_57491F03
