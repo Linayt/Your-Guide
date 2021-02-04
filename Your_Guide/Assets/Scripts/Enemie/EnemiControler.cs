@@ -12,6 +12,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(EnemiAnimator))]
 [RequireComponent(typeof(EnemiLife))]
 [RequireComponent(typeof(EnemiAttack))]
+[RequireComponent(typeof(EnemiFX))]
 
 
 
@@ -24,6 +25,7 @@ public class EnemiControler : MonoBehaviour
     [HideInInspector] public EnemiAnimator eAnimator;
     [HideInInspector] public EnemiLife eLife;
     [HideInInspector] public EnemiAttack eAttack;
+    [HideInInspector] public EnemiFX eFx;
     [HideInInspector] public Rigidbody rigid;
     
     void Awake()
@@ -33,6 +35,7 @@ public class EnemiControler : MonoBehaviour
         eAnimator = transform.GetComponent<EnemiAnimator>();
         eLife = transform.GetComponent<EnemiLife>();
         eAttack = transform.GetComponent<EnemiAttack>();
+        eFx = transform.GetComponent<EnemiFX>();
         rigid = transform.GetComponent<Rigidbody>();
     }
 

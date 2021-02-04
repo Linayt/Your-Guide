@@ -34,4 +34,10 @@ public class PlayerAdrenaline : MonoBehaviour
         bool isMax = adrenalineValue == adrenalineMaxValue;
         return isMax;
     }
+
+    public void AddAdrenalineValue(float value)
+    {
+        adrenalineValue += value;
+        adrenalineValue = Mathf.Clamp(adrenalineValue, 0, adrenalineMaxValue);
+    }
 }

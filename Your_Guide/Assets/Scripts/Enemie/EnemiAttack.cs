@@ -41,7 +41,7 @@ public class EnemiAttack : MonoBehaviour
                 if (rControler)
                 {
                     rControler.rLife.TakeDamage(degat);
-                    
+                    eControler.eFx.StartFxDegat(rControler.transform.position);
                 }
                 else
                 {
@@ -49,23 +49,21 @@ public class EnemiAttack : MonoBehaviour
                     if (pControler != null)
                     {
                         pControler.pStatue.Bump(knockBackDirection, timeBumpPlayer);
+                        eControler.eFx.StartFxDegat(pControler.transform.position);
                     }
                 }
             }
         }
     }
 
-    public void StartDamageCoroutine(AnimatorStateInfo stateInfo, float effectiveTimeBeforeDegat, bool useConeDetection, int degatValue, float attRange, float effectiveRange, float bumpForce)
+    public void StartDamageCoroutine( float effectiveTimeBeforeDegat, int degatValue, float attRange, float effectiveRange, float bumpForce)
     {
-        StartCoroutine(InflictDamage(stateInfo, effectiveTimeBeforeDegat, useConeDetection, degatValue, attRange, effectiveRange, bumpForce));
+        StartCoroutine(InflictDamage( effectiveTimeBeforeDegat,  degatValue, attRange, effectiveRange, bumpForce));
     }
 
-    public IEnumerator InflictDamage(AnimatorStateInfo stateInfo, float effectiveTimeBeforeDegat, bool useConeDetection, int degatValue, float attRange, float effectiveRange, float bumpForce)
+    public IEnumerator InflictDamage( float effectiveTimeBeforeDegat, int degatValue, float attRange, float effectiveRange, float bumpForce)
     {
-        while (stateInfo.normalizedTime < effectiveTimeBeforeDegat)
-        {
-            yield return new WaitForEndOfFrame();
-        }
+        yield return new WaitForSeconds(effectiveTimeBeforeDegat);
         DegatCone(degatValue, attRange, effectiveRange, bumpForce);
     }
 

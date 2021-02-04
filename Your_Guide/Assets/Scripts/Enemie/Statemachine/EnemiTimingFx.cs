@@ -2,29 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemiTimingAttack : StateMachineBehaviour
+public class EnemiTimingFx : StateMachineBehaviour
 {
     EnemiControler eControler;
 
-    
-
-    [Header("Degat Parameter")]
-    
-    [SerializeField] private float attRange;
-
-    [Header("HitBox Parameter")]
-    [SerializeField] private float effectiveRange;
-
-    [Header("Timing")]
-    [SerializeField] private float effectiveTimeBeforeDegat;
+    [SerializeField] private float effectiveTime;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         eControler = animator.GetComponent<EnemiRefControler>().eControler;
-        int degatValue = eControler.eAttack.degatValue;
-        float bumpForce = eControler.eAttack.forceDegatPlayer;
-        eControler.eAttack.StartDamageCoroutine(effectiveTimeBeforeDegat, degatValue, attRange, effectiveRange, bumpForce);
+        eControler.eFx.startCoroutineFxAttack(effectiveTime);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

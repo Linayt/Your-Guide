@@ -26,8 +26,8 @@ public class PlayerDegatDetection : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        pControler = animator.GetComponent<PlayerControler>();
-        pControler.pAttaque.StartDamageCoroutine(stateInfo, effectiveTimeBeforeDegat, useConeDetection, degatValue, attRange, effectiveRange, bumpForce, typeOfAttack);
+        pControler = FindObjectOfType<PlayerControler>();
+        pControler.pAttaque.StartDamageCoroutine( effectiveTimeBeforeDegat, useConeDetection, degatValue, attRange, effectiveRange, bumpForce, typeOfAttack);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

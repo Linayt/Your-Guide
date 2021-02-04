@@ -6,15 +6,18 @@ using UnityEngine.VFX;
 public class PlayerFX : MonoBehaviour
 {
     PlayerControler pControler;
-    public enum typeOfAttack { Attack1,Attack2,Attack3}
+    public enum typeOfAttack { Attack1,Attack2,Attack3,Switch}
     public string attackEventName;
     public string degatEventName;
 
     public string positionDegatParameterName;
 
-    public VisualEffect Attack1;
-    public VisualEffect Attack2;
-    public VisualEffect Attack3;
+    [Header("Visual Effect")]
+    [SerializeField] private VisualEffect Attack1;
+    [SerializeField] private VisualEffect Attack2;
+    [SerializeField] private VisualEffect Attack3;
+    [SerializeField] private VisualEffect Switch;
+
 
     private void Awake()
     {
@@ -41,6 +44,10 @@ public class PlayerFX : MonoBehaviour
             case typeOfAttack.Attack3:
 
                 Attack3.SendEvent(attackEventName);
+
+                break;
+            case typeOfAttack.Switch:
+                Switch.SendEvent(attackEventName);
 
                 break;
 
@@ -74,6 +81,14 @@ public class PlayerFX : MonoBehaviour
                 Attack2.SendEvent(degatEventName);
 
                 break;
+
+            case typeOfAttack.Switch:
+                Switch.SetVector3(positionDegatParameterName, position);
+                Switch.SendEvent(degatEventName);
+                break;
         }
     }
+
+
+
 }

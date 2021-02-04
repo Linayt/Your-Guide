@@ -17,6 +17,8 @@ public class PlayerAttaque : MonoBehaviour
 
     public float timeBumpEnemi;
 
+    [SerializeField] private float adrenalineGain;
+
     /*[Header("VFX")]
 
     public VisualEffect Attack1VFX;
@@ -46,17 +48,18 @@ public class PlayerAttaque : MonoBehaviour
                 if (eControler)
                 {
                     eControler.eLife.TakeDamage(degat);
-                    pControler.pFX.startFXDegat(type,cible.transform.position);
+                    //pControler.pFX.startFXDegat(type,cible.transform.position);
                     eControler.eStatue.Bump(knockBackDirection, timeBumpEnemi);
+                    pControler.pAdrenaline.AddAdrenalineValue(adrenalineGain);
                 }
                 else
                 {
                     EnemiProjectile eProjectile = cible.GetComponent<EnemiProjectile>();
                     if (eProjectile != null)
                     {
-                        pControler.pFX.startFXDegat(type, cible.transform.position);
+                        //pControler.pFX.startFXDegat(type, cible.transform.position);
                         eProjectile.BumpRicochet(knockBackForce);
-
+                        pControler.pAdrenaline.AddAdrenalineValue(adrenalineGain);
                     }
                 }
             }
@@ -94,17 +97,14 @@ public class PlayerAttaque : MonoBehaviour
     }
 
 
-    public void StartDamageCoroutine(AnimatorStateInfo stateInfo, float effectiveTimeBeforeDegat, bool useConeDetection, int degatValue, float attRange, float effectiveRange, float bumpForce, PlayerFX.typeOfAttack type)
+    public void StartDamageCoroutine( float effectiveTimeBeforeDegat, bool useConeDetection, int degatValue, float attRange, float effectiveRange, float bumpForce, PlayerFX.typeOfAttack type)
     {
-        StartCoroutine(InflictDamage(stateInfo, effectiveTimeBeforeDegat, useConeDetection, degatValue, attRange, effectiveRange, bumpForce,type));
+        StartCoroutine(InflictDamage( effectiveTimeBeforeDegat, useConeDetection, degatValue, attRange, effectiveRange, bumpForce,type));
     }
 
-    public IEnumerator InflictDamage(AnimatorStateInfo stateInfo, float effectiveTimeBeforeDegat, bool useConeDetection, int degatValue, float attRange, float effectiveRange, float bumpForce, PlayerFX.typeOfAttack type)
+    public IEnumerator InflictDamage( float effectiveTimeBeforeDegat, bool useConeDetection, int degatValue, float attRange, float effectiveRange, float bumpForce, PlayerFX.typeOfAttack type)
     {
-        while (stateInfo.normalizedTime < effectiveTimeBeforeDegat)
-        {
-            yield return new WaitForEndOfFrame();
-        }
+        yield return new WaitForSeconds(effectiveTimeBeforeDegat);
         if (useConeDetection)
         {
             DegatCone(degatValue, attRange, effectiveRange, bumpForce,type);

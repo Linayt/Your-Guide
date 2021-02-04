@@ -206,7 +206,7 @@ MonoBehaviour:
     x: -1410
     y: -1117
     width: 16455
-    height: 7408
+    height: 7410
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5977,19 +5977,19 @@ VisualEffectResource:
       uint tmp_bd = attributes.particleId ^ asuint(uniform_b);\n\t\t\t        float
       tmp_be = FixedRand(tmp_bd);\n\t\t\t        float tmp_bf = SampleCurve(uniform_c,tmp_bb);\n\t\t\t       
       float tmp_bg = tmp_bf - tmp_bc;\n\t\t\t        float tmp_bh = tmp_be * tmp_bg;\n\t\t\t       
-      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bj = saturate(tmp_bi);\n\t\t\t       
-      \n\t\t\t        AlphaIntensitySmoke__ = tmp_bj;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke
-      = AlphaIntensitySmoke__;float2 OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
-      OffsetSmoke__ = float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke
-      = OffsetSmoke__;float2 TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
-      TilingSmoke__ = float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke
-      = TilingSmoke__;float NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t       
-      NoiseDissolveSpeed__ = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed
-      = NoiseDissolveSpeed__;float2 NoiseDissolveTiling__ = (float2)0;{\n\t\t\t       
-      \n\t\t\t        NoiseDissolveTiling__ = float2(1, 1);\n\t\t\t    }\n\t\t\t   
-      o.NoiseDissolveTiling = NoiseDissolveTiling__;float2 NoiseDissolve2Tiling__
-      = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__ = float2(0.5,
-      0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
+      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bk = max(tmp_bi, (float)0);\n\t\t\t       
+      float tmp_bm = min(tmp_bk, (float)1);\n\t\t\t        \n\t\t\t        AlphaIntensitySmoke__
+      = tmp_bm;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke = AlphaIntensitySmoke__;float2
+      OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        OffsetSmoke__ =
+      float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke = OffsetSmoke__;float2
+      TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        TilingSmoke__ =
+      float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke = TilingSmoke__;float
+      NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveSpeed__
+      = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed = NoiseDissolveSpeed__;float2
+      NoiseDissolveTiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveTiling__
+      = float2(1, 1);\n\t\t\t    }\n\t\t\t    o.NoiseDissolveTiling = NoiseDissolveTiling__;float2
+      NoiseDissolve2Tiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__
+      = float2(0.5, 0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
       Color_7F422D6C__ = (float4)0;{\n\t\t\t        \n\t\t\t        Color_7F422D6C__
       = float4(0.773584902, 0.773584902, 0.773584902, 1);\n\t\t\t    }\n\t\t\t   
       o.Color_7F422D6C = Color_7F422D6C__;\n\n\t\t\t\t\n\t\t\t\treturn o;\n\t\t\t}\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t#include
@@ -6266,19 +6266,19 @@ VisualEffectResource:
       uint tmp_bd = attributes.particleId ^ asuint(uniform_b);\n\t\t\t        float
       tmp_be = FixedRand(tmp_bd);\n\t\t\t        float tmp_bf = SampleCurve(uniform_c,tmp_bb);\n\t\t\t       
       float tmp_bg = tmp_bf - tmp_bc;\n\t\t\t        float tmp_bh = tmp_be * tmp_bg;\n\t\t\t       
-      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bj = saturate(tmp_bi);\n\t\t\t       
-      \n\t\t\t        AlphaIntensitySmoke__ = tmp_bj;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke
-      = AlphaIntensitySmoke__;float2 OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
-      OffsetSmoke__ = float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke
-      = OffsetSmoke__;float2 TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
-      TilingSmoke__ = float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke
-      = TilingSmoke__;float NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t       
-      NoiseDissolveSpeed__ = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed
-      = NoiseDissolveSpeed__;float2 NoiseDissolveTiling__ = (float2)0;{\n\t\t\t       
-      \n\t\t\t        NoiseDissolveTiling__ = float2(1, 1);\n\t\t\t    }\n\t\t\t   
-      o.NoiseDissolveTiling = NoiseDissolveTiling__;float2 NoiseDissolve2Tiling__
-      = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__ = float2(0.5,
-      0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
+      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bk = max(tmp_bi, (float)0);\n\t\t\t       
+      float tmp_bm = min(tmp_bk, (float)1);\n\t\t\t        \n\t\t\t        AlphaIntensitySmoke__
+      = tmp_bm;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke = AlphaIntensitySmoke__;float2
+      OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        OffsetSmoke__ =
+      float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke = OffsetSmoke__;float2
+      TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        TilingSmoke__ =
+      float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke = TilingSmoke__;float
+      NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveSpeed__
+      = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed = NoiseDissolveSpeed__;float2
+      NoiseDissolveTiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveTiling__
+      = float2(1, 1);\n\t\t\t    }\n\t\t\t    o.NoiseDissolveTiling = NoiseDissolveTiling__;float2
+      NoiseDissolve2Tiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__
+      = float2(0.5, 0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
       Color_7F422D6C__ = (float4)0;{\n\t\t\t        \n\t\t\t        Color_7F422D6C__
       = float4(0.773584902, 0.773584902, 0.773584902, 1);\n\t\t\t    }\n\t\t\t   
       o.Color_7F422D6C = Color_7F422D6C__;\n\n\t\t\t\t\n\t\t\t\treturn o;\n\t\t\t}\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t#include

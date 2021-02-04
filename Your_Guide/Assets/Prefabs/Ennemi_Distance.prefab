@@ -160,8 +160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9d77acf1b5de6478c992a60a564c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLifeValue: 10
-  initialLifeValue: 10
+  maxLifeValue: 2
+  initialLifeValue: 2
   lifeFillImage: {fileID: 4945757369566741143}
 --- !u!114 &5125474590457499682
 MonoBehaviour:
@@ -178,6 +178,11 @@ MonoBehaviour:
   degatValue: 1
   forceDegatPlayer: 500
   upwardForceModifier: 1
+  origineAtt: {fileID: 0}
+  timeBumpPlayer: 0
+  colliderAttackLayer:
+    serializedVersion: 2
+    m_Bits: 3072
 --- !u!114 &795952793865687216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +200,7 @@ MonoBehaviour:
   eAnimator: {fileID: 0}
   eLife: {fileID: 0}
   eAttack: {fileID: 0}
+  eFx: {fileID: 0}
   rigid: {fileID: 0}
 --- !u!114 &654094014413612411
 MonoBehaviour:
@@ -208,11 +214,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2de2974eb97524d94a95a7e04c0d5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attaqueCooldown: 5
+  attaqueCooldown: 6
   spawnPoint: {fileID: 7830692552390119546}
   projectile: {fileID: 7200997632670164994, guid: 37fa40f0851a6644dab36806de2901f5,
     type: 3}
-  vitesseProjectile: 20
+  vitesseProjectile: 10
   targetOffset: {x: 0, y: 0.5, z: 0}
   arme: {fileID: 2174886881308487950}
 --- !u!95 &5793566663660335227
@@ -682,7 +688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &187141534904751107
 RectTransform:
   m_ObjectHideFlags: 0

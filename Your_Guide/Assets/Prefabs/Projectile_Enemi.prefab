@@ -156,3 +156,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   degatValue: 0
   rigid: {fileID: 7941596783515370323}
+  timeStunPlayer: 1
