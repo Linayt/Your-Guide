@@ -41,7 +41,7 @@ public class EnemiAttack : MonoBehaviour
                 if (rControler)
                 {
                     rControler.rLife.TakeDamage(degat);
-                    eControler.eFx.StartFxDegat(rControler.transform.position);
+                    //eControler.eFx.StartFxDegat(rControler.transform.position);
                 }
                 else
                 {
@@ -49,7 +49,7 @@ public class EnemiAttack : MonoBehaviour
                     if (pControler != null)
                     {
                         pControler.pStatue.Bump(knockBackDirection, timeBumpPlayer);
-                        eControler.eFx.StartFxDegat(pControler.transform.position);
+                        //eControler.eFx.StartFxDegat(pControler.transform.position);
                     }
                 }
             }
