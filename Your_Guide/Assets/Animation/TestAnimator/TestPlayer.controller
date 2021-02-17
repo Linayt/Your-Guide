@@ -901,7 +901,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Windup2
-  m_Speed: 10
+  m_Speed: 50
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -6576461602827169013}
@@ -1046,7 +1046,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Recovery1
-  m_Speed: 6
+  m_Speed: 20
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8213226776898389711}
@@ -2097,7 +2097,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Attack2
-  m_Speed: 6
+  m_Speed: 10
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 5233997141474932126}
@@ -2131,7 +2131,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Recovery3
-  m_Speed: 6
+  m_Speed: 20
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -2905289705238296489}
@@ -2496,7 +2496,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Windup3
-  m_Speed: 14
+  m_Speed: 45
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 4869709937498401197}
@@ -2524,7 +2524,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Recovery2
-  m_Speed: 6
+  m_Speed: 20
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 6290824515398195469}
@@ -2556,7 +2556,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Attack3
-  m_Speed: 10
+  m_Speed: 15
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1653384240844889674}
@@ -2601,7 +2601,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Attack1
-  m_Speed: 6
+  m_Speed: 10
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 2477840202931186581}
@@ -2694,7 +2694,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Windup1
-  m_Speed: 10
+  m_Speed: 40
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 2071710683065727566}

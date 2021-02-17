@@ -901,7 +901,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Windup2
-  m_Speed: 10
+  m_Speed: 35
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -6576461602827169013}
@@ -2496,7 +2496,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Windup3
-  m_Speed: 14
+  m_Speed: 35
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 4869709937498401197}
@@ -2694,7 +2694,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Windup1
-  m_Speed: 10
+  m_Speed: 35
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 2071710683065727566}
