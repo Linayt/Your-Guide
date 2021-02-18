@@ -9,10 +9,12 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerAdrenaline))]
 [RequireComponent(typeof(PlayerStatue))]
 [RequireComponent(typeof(PlayerFX))]
+[RequireComponent(typeof(PlayerSFX))]
 
 
 [RequireComponent(typeof(PlayerAnimator))]
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(AudioSource))]
 //[RequireComponent(typeof(Animator))]
 
 
@@ -27,9 +29,11 @@ public class PlayerControler : MonoBehaviour
     [HideInInspector] public PlayerAdrenaline pAdrenaline;
     [HideInInspector] public PlayerStatue pStatue;
     [HideInInspector] public PlayerFX pFX;
+    [HideInInspector] public PlayerSFX pSFX;
 
 
     [HideInInspector] public Rigidbody rigid;
+    
 
     // Start is called before the first frame update
     void Awake()
@@ -43,6 +47,7 @@ public class PlayerControler : MonoBehaviour
         pAdrenaline = transform.GetComponent<PlayerAdrenaline>();
         pStatue = transform.GetComponent<PlayerStatue>();
         pFX = transform.GetComponent<PlayerFX>();
+        pSFX = transform.GetComponent<PlayerSFX>();
     }
 
     // Update is called once per frame
