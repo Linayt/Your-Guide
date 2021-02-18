@@ -12,6 +12,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(ReceptacleAnimator))]
 [RequireComponent(typeof(ReceptacleStatue))]
 [RequireComponent(typeof(ReceptacleLife))]
+[RequireComponent(typeof(ReceptacleSFX))]
 
 
 
@@ -25,14 +26,16 @@ public class ReceptacleControler : MonoBehaviour
     public ReceptacleStatue rStatue;
 
     [HideInInspector] public ReceptacleLife rLife;
+    [HideInInspector] public ReceptacleSFX rSFX;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rMovement = transform.GetComponent<ReceptacleMovement>();
         rAnimator = transform.GetComponent<ReceptacleAnimator>();
         rStatue = transform.GetComponent<ReceptacleStatue>();
         rLife = transform.GetComponent<ReceptacleLife>();
+        rSFX = transform.GetComponent<ReceptacleSFX>();
     }
 
     // Update is called once per frame
