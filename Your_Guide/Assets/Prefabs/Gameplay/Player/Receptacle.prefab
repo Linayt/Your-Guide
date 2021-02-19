@@ -1155,7 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5568c635454ebe4aaf3d55daa638cd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receptacleAnimator: {fileID: 0}
+  receptacleAnimator: {fileID: 1468152778878929538}
   followParameterName: follow
   sprintParameterName: sprint
   stunParameterName: stun
