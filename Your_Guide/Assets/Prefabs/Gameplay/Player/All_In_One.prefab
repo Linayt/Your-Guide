@@ -808,6 +808,11 @@ PrefabInstance:
       propertyPath: sprintParameterName
       value: Sprint
       objectReference: {fileID: 0}
+    - target: {fileID: 3011762688788077549, guid: 630968795b7c08843b4e50cf73767a80,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 5321679421470890324, guid: 630968795b7c08843b4e50cf73767a80,
         type: 3}
       propertyPath: m_Name
