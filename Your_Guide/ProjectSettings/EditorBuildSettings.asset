@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Test_LD.unity
     guid: d795958173d8ba64ca36058ff26b3b51
+  - enabled: 1
+    path: Assets/Exo_Rocks/Showroom_Rocks_YourGuide.unity
+    guid: 1a968f42d835c5a438decc35c7d18ddf
   m_configObjects: {}
