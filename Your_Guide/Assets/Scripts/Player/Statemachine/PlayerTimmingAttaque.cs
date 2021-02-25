@@ -7,22 +7,22 @@ public class PlayerTimmingAttaque : StateMachineBehaviour
     private PlayerControler pControler;
 
     [Header("Combo")]
-    [SerializeField] bool canCombo;
+    bool canCombo;
     [SerializeField] float minNormalizedTimeToCombo;
     [SerializeField] float maxNormalizedTimeToCombo;
 
-    [Header("Reset")]
-    [SerializeField] bool canReset;
-    [SerializeField] float timeToResetCombo;
+    
 
-    float timer;
+    
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         //pControler = animator.GetComponent<PlayerControler>();
         pControler = FindObjectOfType<PlayerControler>();
 
-        timer = 0;
+        canCombo = true;
+        
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -36,19 +36,13 @@ public class PlayerTimmingAttaque : StateMachineBehaviour
             //Debug.Log(getIsOnTime(stateInfo));
             if (Input.GetButtonDown(pControler.pInput.attInput) && getIsOnTime(stateInfo))
             {
+                canCombo = false;
                 Debug.Log("attack");
                 animator.SetTrigger(pControler.pAnimator.attTrigger);
             }
 
         }
-        if (canReset)
-        {
-            timer += Time.deltaTime;
-            if (timer >= timeToResetCombo)
-            {
-                animator.SetTrigger(pControler.pAnimator.attResetTrigger);
-            }
-        }
+        
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

@@ -93,7 +93,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 6846437948611278565, guid: 0855c8ea1a5c1dc46b7464cbfdf9a860,
+  m_Motion: {fileID: 5568293919733815942, guid: 3965c8feb212bdd499c7e331afcf28be,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -174,7 +174,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 317307801556816576, guid: 0855c8ea1a5c1dc46b7464cbfdf9a860, type: 3}
+  m_Motion: {fileID: -1260028839169066540, guid: 3965c8feb212bdd499c7e331afcf28be,
+    type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -202,7 +203,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 3734248623466554397, guid: 3965c8feb212bdd499c7e331afcf28be,
+    type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -287,7 +289,8 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a97a58b812565cf4eb9c3dfa636c3a7f, type: 2}
+  m_Motion: {fileID: -5900463213649299657, guid: 3965c8feb212bdd499c7e331afcf28be,
+    type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -470,7 +473,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -8809681362641191600, guid: 0855c8ea1a5c1dc46b7464cbfdf9a860,
+  m_Motion: {fileID: 6888041289572196305, guid: 3965c8feb212bdd499c7e331afcf28be,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -500,7 +503,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 6612137889595090629, guid: 0855c8ea1a5c1dc46b7464cbfdf9a860,
+  m_Motion: {fileID: 3480400827798355671, guid: 3965c8feb212bdd499c7e331afcf28be,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

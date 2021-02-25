@@ -28,7 +28,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(Vector3 directionMove, Rigidbody rigid)
     {
-        pControler.pAnimator.SetVitesseParameterValue(directionMove.magnitude);
+        pControler.pAnimator.SetVitesseParameterValue(rigid.velocity.magnitude);
+        //pControler.pAnimator.SetVitesseParameterValue(pControler.pInput.GetDirectionInput().magnitude);
 
         if (directionMove.magnitude > minValueToMove && pControler.pStatue.canMove)
         {
@@ -59,9 +60,9 @@ public class PlayerMovement : MonoBehaviour
             float angle = Mathf.SmoothDampAngle(axeRota.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             axeRota.rotation = Quaternion.Euler(0f, angle, 0f);
 
-            Vector3 moveDirec = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+            Vector3 moveDirec = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward * speed;
             moveDirec.y = rigid.velocity.y;
-            rigid.velocity = moveDirec * speed;
+            rigid.velocity = moveDirec;
         }
     }
 

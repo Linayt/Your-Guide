@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 8598216514473256353}
   - component: {fileID: 4058003528778094586}
   - component: {fileID: 6759614346504529619}
+  - component: {fileID: 143372825427631004}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -73,7 +74,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!82 &9129506306058157235
 AudioSource:
   m_ObjectHideFlags: 0
@@ -235,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c18b1ce305147f4fa4273e138d8422f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAnimator: {fileID: 5826533831861027523}
+  playerAnimator: {fileID: 143372825427631004}
   attTrigger: Att
   attResetTrigger: Reset_Att
   stunParameter: Stun
@@ -350,6 +351,25 @@ MonoBehaviour:
   pFX: {fileID: 0}
   pSFX: {fileID: 0}
   rigid: {fileID: 0}
+--- !u!95 &143372825427631004
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159128464596119340}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ae293b234e83070499ef435b4e85af4c, type: 3}
+  m_Controller: {fileID: 9100000, guid: 45010c394cacaa849b4dff34a7fe8fe1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &226549538976598805
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,12 +631,12 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2613913209406868833}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Enabled: 0
+  m_Avatar: {fileID: 9000000, guid: ae293b234e83070499ef435b4e85af4c, type: 3}
   m_Controller: {fileID: 9100000, guid: 45010c394cacaa849b4dff34a7fe8fe1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
