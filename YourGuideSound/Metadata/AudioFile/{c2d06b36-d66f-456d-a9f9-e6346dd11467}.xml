@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{c2d06b36-d66f-456d-a9f9-e6346dd11467}">
+		<property name="assetPath">
+			<value>Projectile/Acid/Acid_01.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>151.35480725623583</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{558dc03e-bb79-4301-87a4-a3541a24c0b0}</destination>
+		</relationship>
+	</object>
+</objects>

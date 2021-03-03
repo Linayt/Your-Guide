@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{c11013d1-4922-4ada-8791-1afc63a95663}">
+		<property name="assetPath">
+			<value>Player/SlashAttack/Impact/cling.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.99671201814058952</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{558dc03e-bb79-4301-87a4-a3541a24c0b0}</destination>
+		</relationship>
+	</object>
+</objects>

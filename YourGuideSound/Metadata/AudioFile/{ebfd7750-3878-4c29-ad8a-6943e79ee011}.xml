@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{ebfd7750-3878-4c29-ad8a-6943e79ee011}">
+		<property name="assetPath">
+			<value>Souls/soulsWhisper_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>9.032721088435375</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{558dc03e-bb79-4301-87a4-a3541a24c0b0}</destination>
+		</relationship>
+	</object>
+</objects>
