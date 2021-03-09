@@ -8,13 +8,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Boulder2
-  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 8ff16a4f92face9478daa0a010ad96e9,
+    type: 3}
   m_ShaderKeywords: _MASKMAP _NORMALMAP _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    MotionVector: User
   disabledShaderPasses:
   - DistortionVectors
   - MOTIONVECTORS
@@ -24,6 +26,30 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_3B300F16:
+        m_Texture: {fileID: 2800000, guid: 24267f7c83e2952439b0730f00231532, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_536799C4:
+        m_Texture: {fileID: 2800000, guid: 1c14a36c8e25919479160cdd237a756d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_5B10052B:
+        m_Texture: {fileID: 2800000, guid: 0536a85c92e57b542b3e83f54aba5a3c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_6543EBFC:
+        m_Texture: {fileID: 2800000, guid: 970a76867a2280e4d99c2311b0eb7388, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_981775AD:
+        m_Texture: {fileID: 2800000, guid: df29f1b2f0d37ff428424b9492716fbd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F1F5026D:
+        m_Texture: {fileID: 2800000, guid: be5fc284f82ac73498652d50fbb5f235, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -109,6 +135,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_101D7C7F: 1.88
+    - Vector1_95F86C55: 0
+    - Vector1_B82CE8C4: 3.3
+    - Vector1_FCB2B388: 0.543
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
