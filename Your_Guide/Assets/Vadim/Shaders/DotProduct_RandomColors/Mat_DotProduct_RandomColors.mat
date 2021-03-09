@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mat_DotProduct_RandomColors
+  m_Shader: {fileID: -6465566751694194690, guid: 8a28ad24acf096e4b9d2d8097a088ef4,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_1D48507D:
+        m_Texture: {fileID: 2800000, guid: 0dab29da7cf83304887d0b41bc65abfb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_D40A861B:
+        m_Texture: {fileID: 2800000, guid: 773164412be394347a76cb18334eaa17, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_DB86D04A:
+        m_Texture: {fileID: 2800000, guid: 1c14a36c8e25919479160cdd237a756d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_EFDBB321:
+        m_Texture: {fileID: 2800000, guid: d568d0b9dbf0b4c44bec08f4201c74f6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_71EF638_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_3869136A: 4.08
+    - Vector1_45E2A9D7: 0.594
+    - Vector1_4FB80B83: 50
+    - Vector1_5B6BDBED: 1.6
+    - Vector1_9400BCA: 6
+    - Vector1_BCD9FF15: 0
+    m_Colors:
+    - Color_96CA1F5D: {r: 0.37915894, g: 0.6792453, b: 0.253115, a: 0}
+    - Color_D4ABF800: {r: 0.11627797, g: 0.6320754, b: 0.24723777, a: 0}
+    - Vector3_620E58C4: {r: 0, g: 1, b: 0, a: 0}
