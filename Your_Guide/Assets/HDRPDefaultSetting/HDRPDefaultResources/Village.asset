@@ -88,7 +88,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.4
     min: 0
     max: 4
   directLightingStrength:
@@ -221,7 +221,7 @@ MonoBehaviour:
     showEyeDropper: 1
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 319.91
+    m_Value: 76.3
     min: 1
   enableVolumetricFog:
     m_OverrideState: 1
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   mode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 3
   meteringMode:
     m_OverrideState: 0
     m_Value: 2
@@ -294,10 +294,10 @@ MonoBehaviour:
     m_Value: 1
   fixedExposure:
     m_OverrideState: 1
-    m_Value: -1.48
+    m_Value: -1.4
   compensation:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 17.55
   limitMin:
     m_OverrideState: 0
     m_Value: -10
@@ -418,11 +418,11 @@ MonoBehaviour:
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 0
-    m_Value: 0.974403
+    m_Value: 0.24408442
     min: 0
   upperHemisphereLuxColor:
     m_OverrideState: 0
-    m_Value: {x: 0.48627025, y: 0.36086094, z: 0.5}
+    m_Value: {x: 0.11050449, y: 0.2369893, z: 0.5}
   desiredLuxValue:
     m_OverrideState: 0
     m_Value: 20000
@@ -438,7 +438,7 @@ MonoBehaviour:
     m_Value: 0
   hdriSky:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: 6d32fc95076a6344ba639191366ad4f4, type: 3}
+    m_Value: {fileID: 8900000, guid: e8e057076e4194f42928f38d4a33150a, type: 3}
   enableBackplate:
     m_OverrideState: 0
     m_Value: 0
