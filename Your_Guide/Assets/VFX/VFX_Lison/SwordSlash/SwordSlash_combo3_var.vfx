@@ -5979,19 +5979,19 @@ VisualEffectResource:
       uint tmp_bd = attributes.particleId ^ asuint(uniform_b);\n\t\t\t        float
       tmp_be = FixedRand(tmp_bd);\n\t\t\t        float tmp_bf = SampleCurve(uniform_c,tmp_bb);\n\t\t\t       
       float tmp_bg = tmp_bf - tmp_bc;\n\t\t\t        float tmp_bh = tmp_be * tmp_bg;\n\t\t\t       
-      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bk = max(tmp_bi, (float)0);\n\t\t\t       
-      float tmp_bm = min(tmp_bk, (float)1);\n\t\t\t        \n\t\t\t        AlphaIntensitySmoke__
-      = tmp_bm;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke = AlphaIntensitySmoke__;float2
-      OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        OffsetSmoke__ =
-      float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke = OffsetSmoke__;float2
-      TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        TilingSmoke__ =
-      float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke = TilingSmoke__;float
-      NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveSpeed__
-      = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed = NoiseDissolveSpeed__;float2
-      NoiseDissolveTiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveTiling__
-      = float2(1, 1);\n\t\t\t    }\n\t\t\t    o.NoiseDissolveTiling = NoiseDissolveTiling__;float2
-      NoiseDissolve2Tiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__
-      = float2(0.5, 0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
+      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bj = saturate(tmp_bi);\n\t\t\t       
+      \n\t\t\t        AlphaIntensitySmoke__ = tmp_bj;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke
+      = AlphaIntensitySmoke__;float2 OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
+      OffsetSmoke__ = float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke
+      = OffsetSmoke__;float2 TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
+      TilingSmoke__ = float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke
+      = TilingSmoke__;float NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t       
+      NoiseDissolveSpeed__ = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed
+      = NoiseDissolveSpeed__;float2 NoiseDissolveTiling__ = (float2)0;{\n\t\t\t       
+      \n\t\t\t        NoiseDissolveTiling__ = float2(1, 1);\n\t\t\t    }\n\t\t\t   
+      o.NoiseDissolveTiling = NoiseDissolveTiling__;float2 NoiseDissolve2Tiling__
+      = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__ = float2(0.5,
+      0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
       Color_7F422D6C__ = (float4)0;{\n\t\t\t        \n\t\t\t        Color_7F422D6C__
       = float4(0.773584902, 0.773584902, 0.773584902, 1);\n\t\t\t    }\n\t\t\t   
       o.Color_7F422D6C = Color_7F422D6C__;\n\n\t\t\t\t\n\t\t\t\treturn o;\n\t\t\t}\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t#include
@@ -6268,19 +6268,19 @@ VisualEffectResource:
       uint tmp_bd = attributes.particleId ^ asuint(uniform_b);\n\t\t\t        float
       tmp_be = FixedRand(tmp_bd);\n\t\t\t        float tmp_bf = SampleCurve(uniform_c,tmp_bb);\n\t\t\t       
       float tmp_bg = tmp_bf - tmp_bc;\n\t\t\t        float tmp_bh = tmp_be * tmp_bg;\n\t\t\t       
-      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bk = max(tmp_bi, (float)0);\n\t\t\t       
-      float tmp_bm = min(tmp_bk, (float)1);\n\t\t\t        \n\t\t\t        AlphaIntensitySmoke__
-      = tmp_bm;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke = AlphaIntensitySmoke__;float2
-      OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        OffsetSmoke__ =
-      float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke = OffsetSmoke__;float2
-      TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t        TilingSmoke__ =
-      float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke = TilingSmoke__;float
-      NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveSpeed__
-      = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed = NoiseDissolveSpeed__;float2
-      NoiseDissolveTiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolveTiling__
-      = float2(1, 1);\n\t\t\t    }\n\t\t\t    o.NoiseDissolveTiling = NoiseDissolveTiling__;float2
-      NoiseDissolve2Tiling__ = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__
-      = float2(0.5, 0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
+      float tmp_bi = tmp_bc + tmp_bh;\n\t\t\t        float tmp_bj = saturate(tmp_bi);\n\t\t\t       
+      \n\t\t\t        AlphaIntensitySmoke__ = tmp_bj;\n\t\t\t    }\n\t\t\t    o.AlphaIntensitySmoke
+      = AlphaIntensitySmoke__;float2 OffsetSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
+      OffsetSmoke__ = float2(0, -0.449999988);\n\t\t\t    }\n\t\t\t    o.OffsetSmoke
+      = OffsetSmoke__;float2 TilingSmoke__ = (float2)0;{\n\t\t\t        \n\t\t\t       
+      TilingSmoke__ = float2(1.39999998, 1.39999998);\n\t\t\t    }\n\t\t\t    o.TilingSmoke
+      = TilingSmoke__;float NoiseDissolveSpeed__ = (float)0;{\n\t\t\t        \n\t\t\t       
+      NoiseDissolveSpeed__ = (float)-0.150000006;\n\t\t\t    }\n\t\t\t    o.NoiseDissolveSpeed
+      = NoiseDissolveSpeed__;float2 NoiseDissolveTiling__ = (float2)0;{\n\t\t\t       
+      \n\t\t\t        NoiseDissolveTiling__ = float2(1, 1);\n\t\t\t    }\n\t\t\t   
+      o.NoiseDissolveTiling = NoiseDissolveTiling__;float2 NoiseDissolve2Tiling__
+      = (float2)0;{\n\t\t\t        \n\t\t\t        NoiseDissolve2Tiling__ = float2(0.5,
+      0.5);\n\t\t\t    }\n\t\t\t    o.NoiseDissolve2Tiling = NoiseDissolve2Tiling__;float4
       Color_7F422D6C__ = (float4)0;{\n\t\t\t        \n\t\t\t        Color_7F422D6C__
       = float4(0.773584902, 0.773584902, 0.773584902, 1);\n\t\t\t    }\n\t\t\t   
       o.Color_7F422D6C = Color_7F422D6C__;\n\n\t\t\t\t\n\t\t\t\treturn o;\n\t\t\t}\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t#include
@@ -12848,59 +12848,65 @@ VisualEffectResource:
         data[0]: -1
         data[1]: -1
         data[2]: -1
+        data[3]: 3
+      - op: 9
+        valueIndex: 4
+        data[0]: -1
+        data[1]: -1
+        data[2]: -1
+        data[3]: -1
+      - op: 1
+        valueIndex: 20
+        data[0]: -1
+        data[1]: -1
+        data[2]: -1
+        data[3]: 3
+      - op: 1
+        valueIndex: 23
+        data[0]: -1
+        data[1]: -1
+        data[2]: -1
         data[3]: 6
       - op: 1
-        valueIndex: 2
+        valueIndex: 24
         data[0]: -1
         data[1]: -1
         data[2]: -1
         data[3]: 13
       - op: 8
-        valueIndex: 3
+        valueIndex: 25
         data[0]: -1
         data[1]: -1
         data[2]: -1
         data[3]: -1
+      - op: 42
+        valueIndex: 26
+        data[0]: 2
+        data[1]: 1
+        data[2]: -1
+        data[3]: -1
       - op: 56
-        valueIndex: 4
+        valueIndex: 29
         data[0]: 0
         data[1]: -1
         data[2]: -1
         data[3]: 0
       - op: 1
-        valueIndex: 8
+        valueIndex: 33
         data[0]: -1
         data[1]: -1
         data[2]: -1
-        data[3]: 3
-      - op: 9
-        valueIndex: 11
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: -1
-      - op: 1
-        valueIndex: 27
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 3
+        data[3]: 13
       - op: 62
-        valueIndex: 30
-        data[0]: 1
-        data[1]: 3
+        valueIndex: 34
+        data[0]: 4
+        data[1]: 6
         data[2]: -1
         data[3]: 6
-      - op: 56
-        valueIndex: 31
-        data[0]: 2
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
-      - op: 42
+      - op: 44
         valueIndex: 35
-        data[0]: 6
-        data[1]: 5
+        data[0]: 2
+        data[1]: 3
         data[2]: -1
         data[3]: -1
       - op: 1
@@ -12909,18 +12915,12 @@ VisualEffectResource:
         data[1]: -1
         data[2]: -1
         data[3]: 13
-      - op: 44
+      - op: 56
         valueIndex: 39
-        data[0]: 6
-        data[1]: 7
-        data[2]: -1
-        data[3]: -1
-      - op: 1
-        valueIndex: 42
-        data[0]: -1
+        data[0]: 5
         data[1]: -1
         data[2]: -1
-        data[3]: 13
+        data[3]: 1
       - op: 1
         valueIndex: 43
         data[0]: -1
@@ -12929,13 +12929,13 @@ VisualEffectResource:
         data[3]: 13
       - op: 56
         valueIndex: 44
-        data[0]: 11
+        data[0]: 9
         data[1]: -1
         data[2]: -1
         data[3]: 2
       - op: 56
         valueIndex: 48
-        data[0]: 13
+        data[0]: 12
         data[1]: -1
         data[2]: -1
         data[3]: 3
@@ -12959,8 +12959,8 @@ VisualEffectResource:
         data[3]: 13
       - op: 26
         valueIndex: 55
-        data[0]: 10
-        data[1]: 12
+        data[0]: 7
+        data[1]: 11
         data[2]: -1
         data[3]: 3
       - op: 1
@@ -13290,7 +13290,7 @@ VisualEffectResource:
       - op: 34
         valueIndex: 160
         data[0]: 59
-        data[1]: 5
+        data[1]: 1
         data[2]: 48
         data[3]: -1
       - op: 1
@@ -13481,7 +13481,7 @@ VisualEffectResource:
         data[3]: 13
       - op: 5
         valueIndex: 243
-        data[0]: 12
+        data[0]: 11
         data[1]: -1
         data[2]: 1
         data[3]: 3
@@ -13493,7 +13493,7 @@ VisualEffectResource:
         data[3]: 1
       - op: 5
         valueIndex: 245
-        data[0]: 12
+        data[0]: 11
         data[1]: -1
         data[2]: 2
         data[3]: 3
@@ -13505,7 +13505,7 @@ VisualEffectResource:
         data[3]: 1
       - op: 5
         valueIndex: 247
-        data[0]: 12
+        data[0]: 11
         data[1]: -1
         data[2]: 0
         data[3]: 3
@@ -13715,7 +13715,7 @@ VisualEffectResource:
         data[3]: 1
       - op: 43
         valueIndex: 307
-        data[0]: 6
+        data[0]: 2
         data[1]: 48
         data[2]: -1
         data[3]: -1
@@ -14279,8 +14279,8 @@ VisualEffectResource:
         data[3]: 7
       - op: 43
         valueIndex: 495
-        data[0]: 6
-        data[1]: 5
+        data[0]: 2
+        data[1]: 1
         data[2]: -1
         data[3]: -1
       - op: 1
@@ -14471,9 +14471,9 @@ VisualEffectResource:
           m_Value: {x: 0.95, y: 1}
       m_Vector3f:
         m_Array:
-        - m_ExpressionIndex: 5
+        - m_ExpressionIndex: 1
           m_Value: {x: 0, y: 0, z: 0}
-        - m_ExpressionIndex: 7
+        - m_ExpressionIndex: 3
           m_Value: {x: 0, y: 1, z: 0}
         - m_ExpressionIndex: 48
           m_Value: {x: 1, y: 1, z: 1}
@@ -14525,7 +14525,7 @@ VisualEffectResource:
           m_Value: {x: 0.7735849, y: 0.7735849, z: 0.7735849, w: 1}
       m_Uint:
         m_Array:
-        - m_ExpressionIndex: 1
+        - m_ExpressionIndex: 4
           m_Value: 0
         - m_ExpressionIndex: 185
           m_Value: 4294967295
@@ -14607,7 +14607,7 @@ VisualEffectResource:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-        - m_ExpressionIndex: 2
+        - m_ExpressionIndex: 5
           m_Value:
             serializedVersion: 2
             m_Curve:
@@ -14659,7 +14659,7 @@ VisualEffectResource:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-        - m_ExpressionIndex: 11
+        - m_ExpressionIndex: 9
           m_Value:
             serializedVersion: 2
             m_Curve:
@@ -14693,7 +14693,7 @@ VisualEffectResource:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-        - m_ExpressionIndex: 13
+        - m_ExpressionIndex: 12
           m_Value:
             serializedVersion: 2
             m_Curve:
@@ -18003,7 +18003,7 @@ VisualEffectResource:
       index: 21
     values:
     - nameId: bounds_center
-      index: 7
+      index: 3
     - nameId: bounds_size
       index: 183
     tasks:
@@ -18023,7 +18023,7 @@ VisualEffectResource:
         index: 181
       params:
       - nameId: bounds_center
-        index: 7
+        index: 3
       - nameId: bounds_size
         index: 183
       processor: {fileID: 0}
@@ -18060,7 +18060,7 @@ VisualEffectResource:
       temporaryBuffers: []
       values:
       - nameId: localToWorld
-        index: 6
+        index: 2
       params: []
       processor: {fileID: 0}
       shaderSourceIndex: 48
@@ -18116,7 +18116,7 @@ VisualEffectResource:
       index: 27
     values:
     - nameId: bounds_center
-      index: 7
+      index: 3
     - nameId: bounds_size
       index: 183
     tasks:
@@ -18136,7 +18136,7 @@ VisualEffectResource:
         index: 181
       params:
       - nameId: bounds_center
-        index: 7
+        index: 3
       - nameId: bounds_size
         index: 183
       processor: {fileID: 0}
@@ -18173,7 +18173,7 @@ VisualEffectResource:
       temporaryBuffers: []
       values:
       - nameId: localToWorld
-        index: 6
+        index: 2
       params: []
       processor: {fileID: 0}
       shaderSourceIndex: 49
@@ -18225,7 +18225,7 @@ VisualEffectResource:
       index: 33
     values:
     - nameId: bounds_center
-      index: 7
+      index: 3
     - nameId: bounds_size
       index: 183
     tasks:
@@ -18245,7 +18245,7 @@ VisualEffectResource:
         index: 181
       params:
       - nameId: bounds_center
-        index: 7
+        index: 3
       - nameId: bounds_size
         index: 183
       processor: {fileID: 0}
@@ -18282,7 +18282,7 @@ VisualEffectResource:
       temporaryBuffers: []
       values:
       - nameId: localToWorld
-        index: 6
+        index: 2
       params: []
       processor: {fileID: 0}
       shaderSourceIndex: 50
@@ -18328,7 +18328,7 @@ VisualEffectResource:
       index: 13
     values:
     - nameId: bounds_center
-      index: 5
+      index: 1
     - nameId: bounds_size
       index: 48
     tasks:
@@ -18350,7 +18350,7 @@ VisualEffectResource:
         index: 50
       params:
       - nameId: bounds_center
-        index: 5
+        index: 1
       - nameId: bounds_size
         index: 48
       processor: {fileID: 0}
@@ -18402,7 +18402,7 @@ VisualEffectResource:
       index: 12
     values:
     - nameId: bounds_center
-      index: 5
+      index: 1
     - nameId: bounds_size
       index: 48
     tasks:
@@ -18424,7 +18424,7 @@ VisualEffectResource:
         index: 75
       params:
       - nameId: bounds_center
-        index: 5
+        index: 1
       - nameId: bounds_size
         index: 48
       processor: {fileID: 0}
@@ -18476,7 +18476,7 @@ VisualEffectResource:
       index: 11
     values:
     - nameId: bounds_center
-      index: 5
+      index: 1
     - nameId: bounds_size
       index: 48
     tasks:
@@ -18495,12 +18495,12 @@ VisualEffectResource:
       - nameId: Velocity_a
         index: 240
       - nameId: ArcCircle_circle_center_e
-        index: 10
+        index: 7
       - nameId: uniform_a
         index: 84
       params:
       - nameId: bounds_center
-        index: 5
+        index: 1
       - nameId: bounds_size
         index: 48
       processor: {fileID: 0}
@@ -18531,7 +18531,7 @@ VisualEffectResource:
       temporaryBuffers: []
       values:
       - nameId: Up_b
-        index: 12
+        index: 11
       - nameId: mainTexture
         index: 224
       params:
@@ -18556,7 +18556,7 @@ VisualEffectResource:
       index: 10
     values:
     - nameId: bounds_center
-      index: 5
+      index: 1
     - nameId: bounds_size
       index: 48
     tasks:
@@ -18573,12 +18573,12 @@ VisualEffectResource:
       temporaryBuffers: []
       values:
       - nameId: ArcSphere_sphere_center_c
-        index: 10
+        index: 7
       - nameId: uniform_a
         index: 75
       params:
       - nameId: bounds_center
-        index: 5
+        index: 1
       - nameId: bounds_size
         index: 48
       processor: {fileID: 0}
@@ -18634,7 +18634,7 @@ VisualEffectResource:
       index: 9
     values:
     - nameId: bounds_center
-      index: 7
+      index: 3
     - nameId: bounds_size
       index: 183
     tasks:
@@ -18656,7 +18656,7 @@ VisualEffectResource:
         index: 59
       params:
       - nameId: bounds_center
-        index: 7
+        index: 3
       - nameId: bounds_size
         index: 183
       processor: {fileID: 0}
@@ -18683,11 +18683,11 @@ VisualEffectResource:
       temporaryBuffers: []
       values:
       - nameId: uniform_a
-        index: 4
-      - nameId: uniform_b
         index: 8
+      - nameId: uniform_b
+        index: 10
       - nameId: uniform_c
-        index: 9
+        index: 13
       - nameId: SmokeTexture
         index: 214
       - nameId: NoiseDissolve
@@ -18720,7 +18720,7 @@ VisualEffectResource:
       index: 8
     values:
     - nameId: bounds_center
-      index: 7
+      index: 3
     - nameId: bounds_size
       index: 183
     tasks:
@@ -18742,7 +18742,7 @@ VisualEffectResource:
         index: 59
       params:
       - nameId: bounds_center
-        index: 7
+        index: 3
       - nameId: bounds_size
         index: 183
       processor: {fileID: 0}
@@ -18810,7 +18810,7 @@ VisualEffectResource:
       index: 57
     values:
     - nameId: bounds_center
-      index: 5
+      index: 1
     - nameId: bounds_size
       index: 48
     tasks:
@@ -18827,12 +18827,12 @@ VisualEffectResource:
       temporaryBuffers: []
       values:
       - nameId: ArcSphere_sphere_center_c
-        index: 10
+        index: 7
       - nameId: uniform_a
         index: 75
       params:
       - nameId: bounds_center
-        index: 5
+        index: 1
       - nameId: bounds_size
         index: 48
       processor: {fileID: 0}
@@ -18923,7 +18923,7 @@ VisualEffectResource:
       index: 63
     values:
     - nameId: bounds_center
-      index: 5
+      index: 1
     - nameId: bounds_size
       index: 48
     tasks:
@@ -18942,12 +18942,12 @@ VisualEffectResource:
       - nameId: Velocity_a
         index: 146
       - nameId: ArcCone_center_d
-        index: 10
+        index: 7
       - nameId: uniform_a
         index: 75
       params:
       - nameId: bounds_center
-        index: 5
+        index: 1
       - nameId: bounds_size
         index: 48
       processor: {fileID: 0}
@@ -18969,15 +18969,15 @@ VisualEffectResource:
       - nameId: uniform_b
         index: 51
       - nameId: uniform_c
-        index: 6
+        index: 2
       - nameId: uniform_d
         index: 16
       - nameId: deltaTime_c
         index: 164
       - nameId: Plane_position_d
-        index: 10
+        index: 7
       - nameId: Plane_normal_d
-        index: 12
+        index: 11
       - nameId: plane_d
         index: 156
       params: []
@@ -19044,7 +19044,7 @@ VisualEffectResource:
       index: 69
     values:
     - nameId: bounds_center
-      index: 5
+      index: 1
     - nameId: bounds_size
       index: 48
     tasks:
@@ -19063,12 +19063,12 @@ VisualEffectResource:
       - nameId: Velocity_a
         index: 146
       - nameId: ArcCone_center_d
-        index: 10
+        index: 7
       - nameId: uniform_a
         index: 75
       params:
       - nameId: bounds_center
-        index: 5
+        index: 1
       - nameId: bounds_size
         index: 48
       processor: {fileID: 0}
@@ -19090,15 +19090,15 @@ VisualEffectResource:
       - nameId: uniform_b
         index: 64
       - nameId: uniform_c
-        index: 6
+        index: 2
       - nameId: uniform_d
         index: 15
       - nameId: deltaTime_c
         index: 164
       - nameId: Plane_position_d
-        index: 10
+        index: 7
       - nameId: Plane_normal_d
-        index: 12
+        index: 11
       - nameId: plane_d
         index: 156
       params: []
@@ -19165,7 +19165,7 @@ VisualEffectResource:
       index: 75
     values:
     - nameId: bounds_center
-      index: 5
+      index: 1
     - nameId: bounds_size
       index: 48
     tasks:
@@ -19187,7 +19187,7 @@ VisualEffectResource:
         index: 75
       params:
       - nameId: bounds_center
-        index: 5
+        index: 1
       - nameId: bounds_size
         index: 48
       processor: {fileID: 0}
@@ -19266,7 +19266,7 @@ VisualEffectResource:
       index: 81
     values:
     - nameId: bounds_center
-      index: 5
+      index: 1
     - nameId: bounds_size
       index: 48
     tasks:
@@ -19288,7 +19288,7 @@ VisualEffectResource:
         index: 75
       params:
       - nameId: bounds_center
-        index: 5
+        index: 1
       - nameId: bounds_size
         index: 48
       processor: {fileID: 0}
@@ -19367,7 +19367,7 @@ VisualEffectResource:
       index: 87
     values:
     - nameId: bounds_center
-      index: 5
+      index: 1
     - nameId: bounds_size
       index: 48
     tasks:
@@ -19389,7 +19389,7 @@ VisualEffectResource:
         index: 59
       params:
       - nameId: bounds_center
-        index: 5
+        index: 1
       - nameId: bounds_size
         index: 48
       processor: {fileID: 0}
@@ -19468,7 +19468,7 @@ VisualEffectResource:
       index: 93
     values:
     - nameId: bounds_center
-      index: 5
+      index: 1
     - nameId: bounds_size
       index: 48
     tasks:
@@ -19490,7 +19490,7 @@ VisualEffectResource:
         index: 59
       params:
       - nameId: bounds_center
-        index: 5
+        index: 1
       - nameId: bounds_size
         index: 48
       processor: {fileID: 0}
