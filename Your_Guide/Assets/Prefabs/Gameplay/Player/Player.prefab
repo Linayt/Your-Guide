@@ -796,9 +796,6 @@ VFXRenderer:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -905,9 +902,6 @@ VFXRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1422,6 +1416,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3102226497849942570, guid: ae293b234e83070499ef435b4e85af4c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e5ab6fcff902bad4193e6d6413471318, type: 2}
     - target: {fileID: 3211268120270327947, guid: ae293b234e83070499ef435b4e85af4c,
         type: 3}
       propertyPath: m_Layer
@@ -1487,6 +1486,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6098780856586746046, guid: ae293b234e83070499ef435b4e85af4c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 24962ace7de35354392b50c99e9bece6, type: 2}
     - target: {fileID: 6172712706702745096, guid: ae293b234e83070499ef435b4e85af4c,
         type: 3}
       propertyPath: m_Layer

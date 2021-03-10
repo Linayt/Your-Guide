@@ -23,6 +23,12 @@
                 "fullName": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty"
             },
             "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"042b3ceb-55e5-4b7c-b0c1-314e2f34be6a\"\n    },\n    \"m_Name\": \"Color\",\n    \"m_DefaultReferenceName\": \"Color_BEEA009F\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": {\n        \"r\": 0.0,\n        \"g\": 0.0,\n        \"b\": 0.0,\n        \"a\": 0.0\n    },\n    \"m_ColorMode\": 0\n}"
+        },
+        {
+            "typeInfo": {
+                "fullName": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty"
+            },
+            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"95e044c8-ccb6-4488-9a01-b7b553bb0c0a\"\n    },\n    \"m_Name\": \"Albedo\",\n    \"m_DefaultReferenceName\": \"Texture2D_BD1CE07B\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": {\n        \"m_SerializedTexture\": \"{\\\"texture\\\":{\\\"instanceID\\\":0}}\",\n        \"m_Guid\": \"\"\n    },\n    \"m_Modifiable\": true,\n    \"m_DefaultType\": 0\n}"
         }
     ],
     "m_SerializedKeywords": [],
