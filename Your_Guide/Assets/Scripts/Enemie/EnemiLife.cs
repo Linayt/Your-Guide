@@ -12,6 +12,7 @@ public class EnemiLife : LifeGestion
     private void Awake()
     {
         lifeValue = initialLifeValue;
+        Debug.Log(lifeValue);
         eControler = transform.GetComponent<EnemiControler>();
     }
 
@@ -25,7 +26,8 @@ public class EnemiLife : LifeGestion
     {
         if (lifeFillImage != null)
         {
-            float fillValue = lifeValue / initialLifeValue;
+            float fillValue = lifeValue/maxLifeValue;
+            Debug.Log(fillValue);
             lifeFillImage.fillAmount = fillValue;
 
         }

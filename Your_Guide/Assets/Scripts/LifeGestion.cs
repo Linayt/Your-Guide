@@ -5,10 +5,10 @@ using UnityEngine;
 public class LifeGestion : MonoBehaviour
 {
 
-    [SerializeField] protected int maxLifeValue;
-    [SerializeField] protected int initialLifeValue;
+    [SerializeField] protected float maxLifeValue;
+    [SerializeField] protected float initialLifeValue;
 
-    protected int lifeValue;
+    protected float lifeValue;
 
     private void Awake()
     {

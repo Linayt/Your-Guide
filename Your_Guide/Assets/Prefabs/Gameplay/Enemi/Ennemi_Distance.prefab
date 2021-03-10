@@ -115,6 +115,7 @@ MonoBehaviour:
   minDistanceToFollowReceptacle: 30
   minDistanceToFollowPlayer: 0
   minDistanceToAttack: 20
+  refreshFrequency: 0.25
   currentTarget: {fileID: 0}
 --- !u!114 &2340642679827414456
 MonoBehaviour:
@@ -162,8 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9d77acf1b5de6478c992a60a564c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLifeValue: 2
-  initialLifeValue: 2
+  maxLifeValue: 3
+  initialLifeValue: 3
   lifeFillImage: {fileID: 4945757369566741143}
 --- !u!114 &5125474590457499682
 MonoBehaviour:
@@ -1128,7 +1129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &187141534904751107
 RectTransform:
   m_ObjectHideFlags: 0
