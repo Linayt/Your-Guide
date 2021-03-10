@@ -12,10 +12,14 @@ public class EnemiMovement : AiMovementWithVelocity
     [SerializeField] private float minDistanceToFollowPlayer = 6;
     [SerializeField] private float minDistanceToAttack = 3;
 
+    [Header("Timer")]
+    [SerializeField] private float refreshFrequency = 0.25f;
 
+    private EnemiControler eControler;
     private ReceptacleControler rControler;
     private PlayerControler pControler;
 
+    float timer;
 
 
     [HideInInspector] public Transform currentTarget;
@@ -28,6 +32,8 @@ public class EnemiMovement : AiMovementWithVelocity
         path = new NavMeshPath();
         rControler = FindObjectOfType<ReceptacleControler>();
         pControler = FindObjectOfType<PlayerControler>();
+        eControler = GetComponent<EnemiControler>();
+        timer = 0f;
     }
 
     public bool IsInRangeToFollowReceptacle()
@@ -87,17 +93,29 @@ public class EnemiMovement : AiMovementWithVelocity
 
     public void Follow()
     {
+
         if (currentTarget)
         {
             CheckTargetReach(currentTarget);
+            timer += Time.deltaTime;
 
         }
 
-        MoveToCible(vitesse);
+        if(!eControler.eStatue.stun && !eControler.eStatue.bump)
+        {
+            MoveToCible(vitesse);
+
+        }
 
         if(!shouldMove && currentTarget)
         {
             InizialisePath();
+        }
+
+        if (timer >= refreshFrequency)
+        {
+            InizialisePath();
+            timer = 0;
         }
     }
 

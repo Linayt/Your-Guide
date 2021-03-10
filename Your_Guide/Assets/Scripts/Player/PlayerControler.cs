@@ -38,16 +38,16 @@ public class PlayerControler : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        rigid = transform.GetComponent<Rigidbody>();
-        pInput = transform.GetComponent<PlayerInput>();
-        pMovement = transform.GetComponent<PlayerMovement>();
-        pAttaque = transform.GetComponent<PlayerAttaque>();
-        pAnimator = transform.GetComponent<PlayerAnimator>();
-        pSwitch = transform.GetComponent<PlayerSwitch>();
-        pAdrenaline = transform.GetComponent<PlayerAdrenaline>();
-        pStatue = transform.GetComponent<PlayerStatue>();
-        pFX = transform.GetComponent<PlayerFX>();
-        pSFX = transform.GetComponent<PlayerSFX>();
+        rigid = GetComponent<Rigidbody>();
+        pInput = GetComponent<PlayerInput>();
+        pMovement = GetComponent<PlayerMovement>();
+        pAttaque = GetComponent<PlayerAttaque>();
+        pAnimator = GetComponent<PlayerAnimator>();
+        pSwitch = GetComponent<PlayerSwitch>();
+        pAdrenaline = GetComponent<PlayerAdrenaline>();
+        pStatue = GetComponent<PlayerStatue>();
+        pFX = GetComponent<PlayerFX>();
+        pSFX = GetComponent<PlayerSFX>();
     }
 
     // Update is called once per frame

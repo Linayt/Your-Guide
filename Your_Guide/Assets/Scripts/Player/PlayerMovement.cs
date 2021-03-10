@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement value")]
     [SerializeField] float speed = 10;
+    [SerializeField] AnimationCurve accelerationCurve = AnimationCurve.EaseInOut(0,0,1,1);
+    [SerializeField] float accelerationDuration = 1;
+    float timer;
     [Range(0,1)]
     [SerializeField] float minValueToMove = 0.1f;
     [SerializeField] float turnSmoothTime = 0.1f;
@@ -19,20 +22,22 @@ public class PlayerMovement : MonoBehaviour
 
     float turnSmoothVelocity;
 
-    Vector3 lastDirection;
+    
 
     private void Awake()
     {
         pControler = transform.GetComponent<PlayerControler>();
+        timer = 0;
     }
 
     public void Move(Vector3 directionMove, Rigidbody rigid)
     {
-        pControler.pAnimator.SetVitesseParameterValue(rigid.velocity.magnitude);
-        //pControler.pAnimator.SetVitesseParameterValue(pControler.pInput.GetDirectionInput().magnitude);
+        //pControler.pAnimator.SetVitesseParameterValue(rigid.velocity.magnitude);
+        pControler.pAnimator.SetVitesseParameterValue(pControler.pInput.GetDirectionInput().magnitude);
 
         if (directionMove.magnitude > minValueToMove && pControler.pStatue.canMove)
         {
+            timer = Mathf.Clamp(timer + Time.deltaTime, 0, accelerationDuration * directionMove.magnitude);
             /*Vector3 moveDirection = directionMove.normalized;
             moveDirection.y = rigid.velocity.y;
             Transform pTransform = rigid.transform;
@@ -60,9 +65,18 @@ public class PlayerMovement : MonoBehaviour
             float angle = Mathf.SmoothDampAngle(axeRota.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             axeRota.rotation = Quaternion.Euler(0f, angle, 0f);
 
-            Vector3 moveDirec = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward * speed;
+            Vector3 moveDirec = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward * speed ;
+            float accelerationValue = accelerationCurve.Evaluate(timer / accelerationDuration);
+            moveDirec *= accelerationValue;
             moveDirec.y = rigid.velocity.y;
             rigid.velocity = moveDirec;
+        }
+        else
+        {
+            timer = 0;
+            Vector3 velocity = Vector3.zero;
+            velocity.y = rigid.velocity.y;
+            rigid.velocity = velocity;
         }
     }
 

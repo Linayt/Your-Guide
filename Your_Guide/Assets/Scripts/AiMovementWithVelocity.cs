@@ -20,6 +20,8 @@ public class AiMovementWithVelocity : MonoBehaviour
     private Vector3 currentTargetPos;
     protected bool shouldMove;
 
+
+
     //movement variable
     [Header("Movement")]
     [SerializeField] private float pathMinDistance = 0.5f;

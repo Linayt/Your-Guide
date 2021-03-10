@@ -8,15 +8,19 @@ public class PlayerSFX : MonoBehaviour
 
     public AudioSource source;
 
-    public AudioClip swordSlash;
+    /*public AudioClip swordSlash;
     public AudioClip switchSlash;
     public AudioClip switchPossible;
-    public AudioClip Stun;
+    public AudioClip Stun;*/
     
 
     private void Awake()
     {
         pControler = transform.GetComponent<PlayerControler>();
+        if (source == null)
+        {
+            source = GetComponent<AudioSource>();
+        }
     }
 
     public IEnumerator startSound(float timing, bool loop, AudioClip clip)

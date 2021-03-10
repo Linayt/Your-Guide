@@ -39,6 +39,7 @@ public class EnemiStatue : MonoBehaviour
     {
         if (!stun && !bump)
         {
+            Debug.Log("enemiBump");
             StartCoroutine(SetBump(bumpForce, timeBump));
         }
     }
@@ -46,7 +47,8 @@ public class EnemiStatue : MonoBehaviour
     public IEnumerator SetBump(Vector3 bumpForce, float timeBump)
     {
         bump = true;
-        eControler.rigid.AddForce(bumpForce);
+        
+        eControler.rigid.AddForce(bumpForce,ForceMode.Impulse);
         yield return new WaitForSeconds(timeBump);
         bump = false;
     }

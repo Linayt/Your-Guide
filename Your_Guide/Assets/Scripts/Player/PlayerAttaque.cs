@@ -30,6 +30,12 @@ public class PlayerAttaque : MonoBehaviour
 
     public string degatPositionNameParameter;*/
 
+    private void Awake()
+    {
+        pControler = GetComponent<PlayerControler>();
+    }
+
+
     public void DegatCone(int degat, float rangeAtt, float effectiveRange, float knockBackForce, PlayerFX.typeOfAttack type)
     {
         Collider[] colliderEntities = Physics.OverlapSphere(origineAttCone.position, rangeAtt, colliderAttackLayer);
@@ -47,6 +53,8 @@ public class PlayerAttaque : MonoBehaviour
                 EnemiControler eControler = cible.GetComponent<EnemiControler>();
                 if (eControler)
                 {
+                    Debug.Log("enemiHit");
+                    
                     eControler.eLife.TakeDamage(degat);
                     //pControler.pFX.startFXDegat(type,cible.transform.position);
                     eControler.eStatue.Bump(knockBackDirection, timeBumpEnemi);
@@ -81,7 +89,7 @@ public class PlayerAttaque : MonoBehaviour
             if (eControler)
             {
                 eControler.eLife.TakeDamage(degat);
-                pControler.pFX.startFXDegat(type, cible.transform.position);
+                //pControler.pFX.startFXDegat(type, cible.transform.position);
                 eControler.eStatue.Bump(knockBackDirection, timeBumpEnemi);
             }
             else
@@ -89,7 +97,7 @@ public class PlayerAttaque : MonoBehaviour
                 EnemiProjectile eProjectile = cible.GetComponent<EnemiProjectile>();
                 if (eProjectile != null)
                 {
-                    pControler.pFX.startFXDegat(type, cible.transform.position);
+                    //pControler.pFX.startFXDegat(type, cible.transform.position);
                     eProjectile.BumpRicochet(knockBackForce);
                 }
             }
