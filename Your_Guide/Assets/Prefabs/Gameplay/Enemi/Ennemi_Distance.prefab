@@ -148,9 +148,12 @@ MonoBehaviour:
   enemiAnimator: {fileID: 5793566663660335227}
   followParameterName: Follow
   stunParameterName: Stun
+  stunBoolParameterName: StunBool
   bumpParameterName: Bump
-  attParameterName: att
+  bumpBoolParameterName: BumpBool
+  attParameterName: Attack
   deathParameterName: Death
+  speedParameterName: Speed
 --- !u!114 &570884458477390811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxLifeValue: 3
   initialLifeValue: 3
+  godMode: 0
   lifeFillImage: {fileID: 4945757369566741143}
 --- !u!114 &5125474590457499682
 MonoBehaviour:

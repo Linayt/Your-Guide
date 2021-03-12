@@ -9,9 +9,9 @@ public class EnemiAnimator : MonoBehaviour
 
     public string followParameterName = "Follow";
     public string stunParameterName = "Stun";
-    public string stunBoolParameterName = "Stun";
+    public string stunBoolParameterName = "StunBool";
     public string bumpParameterName = "Bump";
-    public string bumpBoolParameterName = "Bump";
+    public string bumpBoolParameterName = "BumpBool";
     public string attParameterName = "att";
     public string deathParameterName = "Death";
     public string speedParameterName = "Speed";
