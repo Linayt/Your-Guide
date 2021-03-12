@@ -6,17 +6,38 @@ public class EnemieFollow : StateMachineBehaviour
 {
     private EnemiControler eControler;
 
+    bool isAttacking;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         eControler = animator.GetComponent<EnemiRefControler>().eControler;
         eControler.eMovement.InizialisePath();
+        isAttacking = false;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        eControler.eMovement.Follow();
+        bool canMove = eControler.eMovement.IsInRangeToFollowReceptacle() || eControler.eMovement.IsInRangeToFollowPlayer();
+        bool canAttack = eControler.eMovement.IsInRangeToAttackTarget();
+
+        if (canMove && !canAttack)
+        {
+            eControler.eMovement.Follow();
+            eControler.eAnimator.SetVitesseParameterValue(2f);
+        }
+        else
+        {
+            eControler.eAnimator.SetVitesseParameterValue(0f);
+
+        }
+
+        if(canAttack && !isAttacking)
+        {
+            isAttacking = true;
+            animator.SetTrigger(eControler.eAnimator.attParameterName);
+        }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

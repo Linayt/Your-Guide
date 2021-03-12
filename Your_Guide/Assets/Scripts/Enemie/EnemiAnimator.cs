@@ -9,9 +9,13 @@ public class EnemiAnimator : MonoBehaviour
 
     public string followParameterName = "Follow";
     public string stunParameterName = "Stun";
+    public string stunBoolParameterName = "Stun";
     public string bumpParameterName = "Bump";
+    public string bumpBoolParameterName = "Bump";
     public string attParameterName = "att";
     public string deathParameterName = "Death";
+    public string speedParameterName = "Speed";
+
 
     private void Awake()
     {
@@ -23,9 +27,14 @@ public class EnemiAnimator : MonoBehaviour
         eControler = transform.GetComponent<EnemiControler>();
     }
 
+    public void SetVitesseParameterValue(float value)
+    {
+        enemiAnimator.SetFloat(speedParameterName, value);
+    }
+
     public void SetParametreValue()
     {
-        bool follow = eControler.eMovement.IsInRangeToFollowPlayer() || eControler.eMovement.IsInRangeToFollowReceptacle();
+        /*bool follow = eControler.eMovement.IsInRangeToFollowPlayer() || eControler.eMovement.IsInRangeToFollowReceptacle();
         eControler.eStatue.follow = follow;
         enemiAnimator.SetBool(followParameterName, follow);
 
@@ -36,7 +45,7 @@ public class EnemiAnimator : MonoBehaviour
         enemiAnimator.SetBool(stunParameterName, stun);
 
         bool bump = eControler.eStatue.stun;
-        enemiAnimator.SetBool(bumpParameterName, bump);
+        enemiAnimator.SetBool(bumpParameterName, bump);*/
 
     }
 

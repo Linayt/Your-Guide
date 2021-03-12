@@ -36,7 +36,7 @@ public class PlayerAttaque : MonoBehaviour
     }
 
 
-    public void DegatCone(int degat, float rangeAtt, float effectiveRange, float knockBackForce, PlayerFX.typeOfAttack type)
+    public void DegatCone(int degat, float rangeAtt, float effectiveRange, float knockBackForce, PlayerFX.typeOfAttack type, bool getAdrenaline)
     {
         Collider[] colliderEntities = Physics.OverlapSphere(origineAttCone.position, rangeAtt, colliderAttackLayer);
 
@@ -58,7 +58,10 @@ public class PlayerAttaque : MonoBehaviour
                     eControler.eLife.TakeDamage(degat);
                     //pControler.pFX.startFXDegat(type,cible.transform.position);
                     eControler.eStatue.Bump(knockBackDirection, timeBumpEnemi);
-                    pControler.pAdrenaline.AddAdrenalineValue(adrenalineGain);
+                    if (getAdrenaline)
+                    {
+                        pControler.pAdrenaline.AddAdrenalineValue(adrenalineGain);
+                    }
                 }
                 else
                 {
@@ -67,7 +70,11 @@ public class PlayerAttaque : MonoBehaviour
                     {
                         //pControler.pFX.startFXDegat(type, cible.transform.position);
                         eProjectile.BumpRicochet(knockBackForce);
-                        pControler.pAdrenaline.AddAdrenalineValue(adrenalineGain);
+
+                        if (getAdrenaline)
+                        {
+                            pControler.pAdrenaline.AddAdrenalineValue(adrenalineGain);
+                        }
                     }
                 }
             }
@@ -75,7 +82,7 @@ public class PlayerAttaque : MonoBehaviour
     }
 
 
-    public void DegatSphere(int degat, float rangeAtt, float knockBackForce, PlayerFX.typeOfAttack type)
+    public void DegatSphere(int degat, float rangeAtt, float knockBackForce, PlayerFX.typeOfAttack type, bool getAdrenaline)
     {
         Collider[] colliderEntities = Physics.OverlapSphere(origineAttCone.position, rangeAtt, colliderAttackLayer);
 
@@ -91,6 +98,10 @@ public class PlayerAttaque : MonoBehaviour
                 eControler.eLife.TakeDamage(degat);
                 //pControler.pFX.startFXDegat(type, cible.transform.position);
                 eControler.eStatue.Bump(knockBackDirection, timeBumpEnemi);
+                if (getAdrenaline)
+                {
+                    pControler.pAdrenaline.AddAdrenalineValue(adrenalineGain);
+                }
             }
             else
             {
@@ -99,28 +110,32 @@ public class PlayerAttaque : MonoBehaviour
                 {
                     //pControler.pFX.startFXDegat(type, cible.transform.position);
                     eProjectile.BumpRicochet(knockBackForce);
+                    if (getAdrenaline)
+                    {
+                        pControler.pAdrenaline.AddAdrenalineValue(adrenalineGain);
+                    }
                 }
             }
         }
     }
 
 
-    public void StartDamageCoroutine( float effectiveTimeBeforeDegat, bool useConeDetection, int degatValue, float attRange, float effectiveRange, float bumpForce, PlayerFX.typeOfAttack type)
+    public void StartDamageCoroutine( float effectiveTimeBeforeDegat, bool useConeDetection, int degatValue, float attRange, float effectiveRange, float bumpForce, PlayerFX.typeOfAttack type, bool getAdrenaline)
     {
-        StartCoroutine(InflictDamage( effectiveTimeBeforeDegat, useConeDetection, degatValue, attRange, effectiveRange, bumpForce,type));
+        StartCoroutine(InflictDamage( effectiveTimeBeforeDegat, useConeDetection, degatValue, attRange, effectiveRange, bumpForce,type, getAdrenaline));
     }
 
-    public IEnumerator InflictDamage( float effectiveTimeBeforeDegat, bool useConeDetection, int degatValue, float attRange, float effectiveRange, float bumpForce, PlayerFX.typeOfAttack type)
+    public IEnumerator InflictDamage( float effectiveTimeBeforeDegat, bool useConeDetection, int degatValue, float attRange, float effectiveRange, float bumpForce, PlayerFX.typeOfAttack type, bool getAdrenaline)
     {
         yield return new WaitForSeconds(effectiveTimeBeforeDegat);
         if (useConeDetection)
         {
-            DegatCone(degatValue, attRange, effectiveRange, bumpForce,type);
+            DegatCone(degatValue, attRange, effectiveRange, bumpForce,type, getAdrenaline);
 
         }
         else
         {
-            DegatSphere(degatValue, attRange, bumpForce,type);
+            DegatSphere(degatValue, attRange, bumpForce,type, getAdrenaline);
         }
     }
 

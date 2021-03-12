@@ -14,10 +14,14 @@ public class ReceptacleLife : LifeGestion
         Destroy(gameObject);
     }
 
-    public void SetLifeValue()
+    public void SetLifeBareValue()
     {
-        float fillValue = lifeValue / maxLifeValue;
-        lifeBarFill.fillAmount = fillValue;
+        if (lifeBarFill != null)
+        {
+            float fillValue = lifeValue / maxLifeValue;
+            lifeBarFill.fillAmount = fillValue;
+
+        }
     }
 
 }

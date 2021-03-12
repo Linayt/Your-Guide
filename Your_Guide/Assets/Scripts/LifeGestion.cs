@@ -7,7 +7,7 @@ public class LifeGestion : MonoBehaviour
 
     [SerializeField] protected float maxLifeValue;
     [SerializeField] protected float initialLifeValue;
-
+    [SerializeField] private bool godMode = false;
     protected float lifeValue;
 
     private void Awake()
@@ -22,7 +22,7 @@ public class LifeGestion : MonoBehaviour
 
         Debug.Log(lifeValue, gameObject);
 
-        if (lifeValue == 0)
+        if (lifeValue == 0 && !godMode)
         {
             Death();
         }

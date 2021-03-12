@@ -8,6 +8,7 @@ public class EnemiLife : LifeGestion
     private EnemiControler eControler;
     [SerializeField] private Image lifeFillImage;
     
+    
 
     private void Awake()
     {
