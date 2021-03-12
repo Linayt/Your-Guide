@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class EnemiMovement : AiMovementWithVelocity
 {
     [SerializeField] private float vitesse = 6;
+    /*[SerializeField] private AnimationCurve accelerationCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    [SerializeField] private float accelerationDuration = 1;*/
 
     [Header("Distance")]
     [SerializeField] private float minDistanceToFollowReceptacle = 20;
@@ -104,8 +106,9 @@ public class EnemiMovement : AiMovementWithVelocity
         if(!eControler.eStatue.stun && !eControler.eStatue.bump)
         {
             MoveToCible(vitesse);
-
+            
         }
+        
 
         if(!shouldMove && currentTarget)
         {

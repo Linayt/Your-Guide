@@ -42,5 +42,6 @@ public class ReceptacleControler : MonoBehaviour
     void Update()
     {
         rAnimator.SetParameterValue();
+        rLife.SetLifeBareValue();
     }
 }

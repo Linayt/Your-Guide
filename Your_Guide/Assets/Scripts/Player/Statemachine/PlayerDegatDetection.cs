@@ -12,6 +12,7 @@ public class PlayerDegatDetection : StateMachineBehaviour
     public int degatValue;
     public float attRange;
     public float bumpForce;
+    public bool getAdrenaline;
 
     [Header("HitBox Parameter")]
     public bool useConeDetection;
@@ -27,7 +28,7 @@ public class PlayerDegatDetection : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         pControler = FindObjectOfType<PlayerControler>();
-        pControler.pAttaque.StartDamageCoroutine( effectiveTimeBeforeDegat, useConeDetection, degatValue, attRange, effectiveRange, bumpForce, typeOfAttack);
+        pControler.pAttaque.StartDamageCoroutine( effectiveTimeBeforeDegat, useConeDetection, degatValue, attRange, effectiveRange, bumpForce, typeOfAttack, getAdrenaline);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

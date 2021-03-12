@@ -14,7 +14,7 @@ public class ReceptacleTimingSFX : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        rControler = animator.GetComponent<ReceptacleControler>();
+        rControler = animator.GetComponentInParent<ReceptacleControler>();
         rControler.rSFX.startCoroutineSound(Timing, loop, sound);
     }
 

@@ -22,7 +22,6 @@ public class EnemiAttack : MonoBehaviour
         eControler = transform.GetComponent<EnemiControler>();
     }
 
-
     public void DegatCone(int degat, float rangeAtt, float effectiveRange, float knockBackForce)
     {
         Collider[] colliderEntities = Physics.OverlapSphere(origineAtt.position, rangeAtt, colliderAttackLayer);
@@ -67,6 +66,6 @@ public class EnemiAttack : MonoBehaviour
         DegatCone(degatValue, attRange, effectiveRange, bumpForce);
     }
 
-
+    
 
 }

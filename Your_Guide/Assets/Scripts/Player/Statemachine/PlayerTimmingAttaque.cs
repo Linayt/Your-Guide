@@ -28,21 +28,12 @@ public class PlayerTimmingAttaque : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
-        if (canCombo)
+        if (Input.GetButtonDown(pControler.pInput.attInput) && getIsOnTime(stateInfo) && canCombo)
         {
-            //Debug.Log("Can Combo");
-            //getIsOnTime(stateInfo);
-            //Debug.Log(getIsOnTime(stateInfo));
-            if (Input.GetButtonDown(pControler.pInput.attInput) && getIsOnTime(stateInfo))
-            {
-                canCombo = false;
-                Debug.Log("attack");
-                animator.SetTrigger(pControler.pAnimator.attTrigger);
-            }
-
+            canCombo = false;
+            Debug.Log("attack");
+            animator.SetTrigger(pControler.pAnimator.attTrigger);
         }
-        
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

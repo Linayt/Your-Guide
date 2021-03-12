@@ -952,8 +952,9 @@ MonoBehaviour:
   followParameterName: Follow
   stunParameterName: Stun
   bumpParameterName: Bump
-  attParameterName: att
+  attParameterName: Attack
   deathParameterName: Death
+  speedParameterName: Speed
 --- !u!114 &2882777850298303172
 MonoBehaviour:
   m_ObjectHideFlags: 0
