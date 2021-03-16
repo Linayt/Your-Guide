@@ -1043,9 +1043,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
   m_Bindings:
-  - {fileID: 1542231418}
+  - {fileID: 8945122623982350009}
   m_VisualEffect: {fileID: 5209015963725321659}
---- !u!114 &1542231418
+--- !u!114 &8945122623982350009
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6592965745561674497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07c3070554d0a8944a95ff8f018c2c9f, type: 3}
+  m_Script: {fileID: 11500000, guid: 24279ee835d6c4c48ae512c6e29b9808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Property:
@@ -1236,6 +1236,11 @@ PrefabInstance:
       propertyPath: m_Time
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 1861441901439430258, guid: ea1ee02480a4fa646bdc83c501d302f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1934243670333544136, guid: ea1ee02480a4fa646bdc83c501d302f2,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -1285,6 +1290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[8]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934243670333544136, guid: ea1ee02480a4fa646bdc83c501d302f2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3048230454487116702, guid: ea1ee02480a4fa646bdc83c501d302f2,
         type: 3}
@@ -1457,6 +1467,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[6]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3917253109696044600, guid: ea1ee02480a4fa646bdc83c501d302f2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6076705647464370365, guid: ea1ee02480a4fa646bdc83c501d302f2,
         type: 3}
       propertyPath: jaugeFillImage
@@ -1472,6 +1487,16 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 5221351343397097647}
+    - target: {fileID: 6908726814971489875, guid: ea1ee02480a4fa646bdc83c501d302f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374762357643524011, guid: ea1ee02480a4fa646bdc83c501d302f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7792307442815534431, guid: ea1ee02480a4fa646bdc83c501d302f2,
         type: 3}
       propertyPath: m_Mesh
@@ -1596,6 +1621,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[6]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932231670314848763, guid: ea1ee02480a4fa646bdc83c501d302f2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8713491260939683904, guid: ea1ee02480a4fa646bdc83c501d302f2,
         type: 3}
