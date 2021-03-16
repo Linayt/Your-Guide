@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCanMove : StateMachineBehaviour
+public class FakeRootMotion : StateMachineBehaviour
 {
     PlayerControler pControler;
-    [SerializeField] private bool canMove;
+
+    [SerializeField] float vitesse =10;
+    [SerializeField] float duration = 0.5f;
+    [SerializeField] AnimationCurve animeCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         pControler = animator.GetComponentInParent<PlayerControler>();
-        //pControler = animator.GetComponent<PlayerControler>();
-        pControler.pStatue.canMove = canMove;
+        pControler.pMovement.StartCoroutineFakeRootMotion(vitesse, animeCurve, duration);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

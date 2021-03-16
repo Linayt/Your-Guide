@@ -71,13 +71,40 @@ public class PlayerMovement : MonoBehaviour
             moveDirec.y = rigid.velocity.y;
             rigid.velocity = moveDirec;
         }
-        else
+        else if (!pControler.pStatue.onRootMotion)
         {
             timer = 0;
             Vector3 velocity = Vector3.zero;
             velocity.y = rigid.velocity.y;
             rigid.velocity = velocity;
         }
+    }
+
+    public void StartCoroutineFakeRootMotion(float vitesse, AnimationCurve curve, float duration)
+    {
+        StartCoroutine(FakeRootMotion(vitesse, curve, duration));
+    }
+
+    public IEnumerator FakeRootMotion(float vitesse, AnimationCurve curve, float duration)
+    {
+        pControler.pStatue.onRootMotion = true;
+        Debug.Log("rootMotionOn");
+        Rigidbody rigid = pControler.rigid;
+        Vector3 direction = axeRota.forward.normalized;
+        float rootTimer = 0f;
+        while (rootTimer < duration)
+        {
+            //Debug.Log(timer);
+            float effectiveTime = rootTimer / duration;
+            Vector3 newVelocity = direction * curve.Evaluate(effectiveTime);
+            
+            rigid.velocity = newVelocity * vitesse;
+            rootTimer += Time.deltaTime;
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
+
+        pControler.pStatue.onRootMotion = false;
+        Debug.Log("rootMotionOff");
     }
 
 }

@@ -10,6 +10,9 @@ public class PlayerStatue : MonoBehaviour
     public bool canMove;
     [HideInInspector]
     public bool onSwitch;
+    [HideInInspector]
+    public bool onRootMotion;
+
 
     public bool stun;
 
@@ -23,6 +26,7 @@ public class PlayerStatue : MonoBehaviour
         stun = false;
         bump = false;
         hyperArmor = false;
+        onRootMotion = false;
     }
 
     public void Stun(float timeStun)
