@@ -88,7 +88,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 1.63
     min: 0
     max: 4
   directLightingStrength:
@@ -221,7 +221,7 @@ MonoBehaviour:
     showEyeDropper: 1
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 76.3
+    m_Value: 191.8
     min: 1
   enableVolumetricFog:
     m_OverrideState: 1
@@ -297,7 +297,7 @@ MonoBehaviour:
     m_Value: -1.4
   compensation:
     m_OverrideState: 1
-    m_Value: 17.55
+    m_Value: 17.1
   limitMin:
     m_OverrideState: 0
     m_Value: -10
