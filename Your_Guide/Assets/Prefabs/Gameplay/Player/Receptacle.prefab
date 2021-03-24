@@ -1126,8 +1126,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0.3622784}
-    m_Extent: {x: 0.175, y: 0, z: 0.3622784}
+    m_Center: {x: 0, y: 0, z: 0.496839}
+    m_Extent: {x: 0.24000001, y: 0, z: 0.496839}
   m_DirtyAABB: 0
 --- !u!1 &4992816159599884547
 GameObject:
@@ -1169,7 +1169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6630515709981190761}
-  - component: {fileID: 3856865854611545650}
+  - component: {fileID: 429956331926201928}
   - component: {fileID: 6730118362185692649}
   - component: {fileID: 3644863601051462435}
   - component: {fileID: 5322074207971371189}
@@ -1202,8 +1202,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3856865854611545650
-BoxCollider:
+--- !u!136 &429956331926201928
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1212,9 +1212,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Radius: 0.7
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!195 &6730118362185692649
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1275,6 +1276,7 @@ MonoBehaviour:
   minDistanceToSprint: 12
   minDistanceToStop: 3
   minDistanceToBeScared: 6
+  refreshFrequency: 0.25
 --- !u!114 &1762996966111480981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,6 +1296,7 @@ MonoBehaviour:
   scaredParameterName: scared
   switchParametername: Switch
   switchTriggerParametername: SwitchTrigger
+  vitesseParameterName: 
 --- !u!114 &1343277774501441975
 MonoBehaviour:
   m_ObjectHideFlags: 0

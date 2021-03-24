@@ -15,7 +15,7 @@ public class ReceptacleAnimator : MonoBehaviour
     public string scaredParameterName;
     public string switchParametername;
     public string switchTriggerParametername;
-
+    public string vitesseParameterName;
 
     private void Awake()
     {
@@ -29,7 +29,7 @@ public class ReceptacleAnimator : MonoBehaviour
 
     public void SetParameterValue()
     {
-        bool follow = rControler.rMovement.IsInRangeToFollow();
+        /*bool follow = rControler.rMovement.IsInRangeToFollow();
         receptacleAnimator.SetBool(followParameterName, follow);
         rControler.rStatue.isFollow = follow;
 
@@ -39,7 +39,7 @@ public class ReceptacleAnimator : MonoBehaviour
 
         bool scared = rControler.rMovement.IsInrangeToBeScared();
         receptacleAnimator.SetBool(scaredParameterName, scared);
-        rControler.rStatue.isScared = scared;
+        rControler.rStatue.isScared = scared;*/
 
     }
 }
