@@ -44,7 +44,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9254902, g: 0.54664797, b: 0.30196077, a: 1}
-  m_Intensity: 31.830988
+  m_Intensity: 15.915494
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 400
+  m_Intensity: 200
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -951,7 +951,9 @@ MonoBehaviour:
   enemiAnimator: {fileID: 2163668665857741820}
   followParameterName: Follow
   stunParameterName: Stun
+  stunBoolParameterName: StunBool
   bumpParameterName: Bump
+  bumpBoolParameterName: BumpBool
   attParameterName: Attack
   deathParameterName: Death
   speedParameterName: Speed
@@ -969,6 +971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxLifeValue: 4
   initialLifeValue: 4
+  godMode: 0
   lifeFillImage: {fileID: 6570036483254700482}
 --- !u!114 &3235543616495478836
 MonoBehaviour:

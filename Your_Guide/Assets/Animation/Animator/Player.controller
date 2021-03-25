@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01a58a0ea117d64486cd2988684f5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 15
+  vitesse: 8
   duration: 0.3
   animeCurve:
     serializedVersion: 2
@@ -850,7 +850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01a58a0ea117d64486cd2988684f5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 20
+  vitesse: 13
   duration: 0.3
   animeCurve:
     serializedVersion: 2
@@ -2031,7 +2031,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Movement
-  m_Speed: 8
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -9208566595450565666}
@@ -2381,7 +2381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01a58a0ea117d64486cd2988684f5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 25
+  vitesse: 17
   duration: 0.3
   animeCurve:
     serializedVersion: 2
@@ -2974,7 +2974,7 @@ BlendTree:
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
+    m_TimeScale: 0.5
     m_CycleOffset: 0
     m_DirectBlendParameter: Speed
     m_Mirror: 0
@@ -2983,7 +2983,7 @@ BlendTree:
       type: 3}
     m_Threshold: 0.2
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1.2
+    m_TimeScale: 9
     m_CycleOffset: 0
     m_DirectBlendParameter: Speed
     m_Mirror: 0
@@ -2992,7 +2992,7 @@ BlendTree:
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1.3
+    m_TimeScale: 10
     m_CycleOffset: 0
     m_DirectBlendParameter: Speed
     m_Mirror: 0
