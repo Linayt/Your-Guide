@@ -1126,8 +1126,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: 0, y: 0, z: 0.496839}
-    m_Extent: {x: 0.24000001, y: 0, z: 0.496839}
+    m_Center: {x: 0, y: 0, z: 0.33122596}
+    m_Extent: {x: 0.16, y: 0, z: 0.33122596}
   m_DirtyAABB: 0
 --- !u!1 &4992816159599884547
 GameObject:
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   scaredParameterName: scared
   switchParametername: Switch
   switchTriggerParametername: SwitchTrigger
-  vitesseParameterName: 
+  vitesseParameterName: Speed
 --- !u!114 &1343277774501441975
 MonoBehaviour:
   m_ObjectHideFlags: 0

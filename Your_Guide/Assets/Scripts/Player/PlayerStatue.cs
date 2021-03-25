@@ -55,7 +55,7 @@ public class PlayerStatue : MonoBehaviour
     public IEnumerator SetBump(Vector3 bumpForce, float timeBump)
     {
         bump = true;
-        pControler.rigid.AddForce(bumpForce);
+        //pControler.rigid.AddForce(bumpForce);
         yield return new WaitForSeconds(timeBump);
         bump = false; 
     }
