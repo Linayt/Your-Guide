@@ -132,34 +132,13 @@ MonoBehaviour:
     - model: {fileID: 8926484042661616078}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661616079}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661616081}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661616084}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661616106}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661616110}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 0}
       id: 0
       isStickyNote: 0
     - model: {fileID: 8926484042661616117}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661616271}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661616235}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661616250}
       id: 0
       isStickyNote: 0
   - title: Displacement following bezier curve
@@ -211,25 +190,10 @@ MonoBehaviour:
     - model: {fileID: 8926484042661616119}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661616120}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 0}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661616151}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661616218}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661616233}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661616158}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661616366}
       id: 0
       isStickyNote: 0
   - title: INNER SPHERE
@@ -243,22 +207,10 @@ MonoBehaviour:
     - model: {fileID: 8926484042661616160}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661616161}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 0}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661616192}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661616199}
       id: 0
       isStickyNote: 0
     - model: {fileID: 8926484042661616201}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661616216}
       id: 0
       isStickyNote: 0
   - title: Displacement following bezier curve
@@ -316,16 +268,7 @@ MonoBehaviour:
     - model: {fileID: 8926484042661616468}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661616485}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661616486}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661616481}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661616502}
       id: 0
       isStickyNote: 0
   stickyNoteInfos:
@@ -469,10 +412,10 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: -1092
+    x: -1067
     y: -714
-    width: 6900
-    height: 4072
+    width: 6850
+    height: 4074
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10055,7 +9998,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615995}
   m_ExposedName: Sphere color 1
   m_Exposed: 1
-  m_Order: 6
+  m_Order: 5
   m_Category: 
   m_Min:
     m_Type:
@@ -10828,7 +10771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78581a96eae8bf4398c282eb0b098bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
@@ -11998,7 +11941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78581a96eae8bf4398c282eb0b098bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
@@ -12769,7 +12712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78581a96eae8bf4398c282eb0b098bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
@@ -13540,7 +13483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78581a96eae8bf4398c282eb0b098bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
@@ -15445,7 +15388,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616256}
   m_ExposedName: CircleColor
   m_Exposed: 1
-  m_Order: 7
+  m_Order: 6
   m_Category: 
   m_Min:
     m_Type:
@@ -22110,7 +22053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78581a96eae8bf4398c282eb0b098bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
@@ -23505,7 +23448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78581a96eae8bf4398c282eb0b098bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
@@ -24764,142 +24707,6 @@ MonoBehaviour:
   Source: 0
   Random: 1
   channels: 6
---- !u!114 &8926484042661616605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac39bd03fca81b849929b9c966f1836a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
-  m_Children:
-  - {fileID: 8926484042661616606}
-  - {fileID: 8926484042661616607}
-  - {fileID: 8926484042661616608}
-  m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
-  m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 8926484042661616605}
-  m_MasterData:
-    m_Owner: {fileID: 0}
-    m_Value:
-      m_Type:
-        m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":0.0,"z":0.0}'
-    m_Space: 2147483647
-  m_Property:
-    name: Angle
-    m_serializedType:
-      m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    attributes: []
-  m_Direction: 0
-  m_LinkedSlots: []
---- !u!114 &8926484042661616606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Parent: {fileID: 8926484042661616605}
-  m_Children: []
-  m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
-  m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 8926484042661616605}
-  m_MasterData:
-    m_Owner: {fileID: 0}
-    m_Value:
-      m_Type:
-        m_SerializableType: 
-      m_SerializableObject: 
-    m_Space: 2147483647
-  m_Property:
-    name: x
-    m_serializedType:
-      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-    attributes: []
-  m_Direction: 0
-  m_LinkedSlots: []
---- !u!114 &8926484042661616607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Parent: {fileID: 8926484042661616605}
-  m_Children: []
-  m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
-  m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 8926484042661616605}
-  m_MasterData:
-    m_Owner: {fileID: 0}
-    m_Value:
-      m_Type:
-        m_SerializableType: 
-      m_SerializableObject: 
-    m_Space: 2147483647
-  m_Property:
-    name: y
-    m_serializedType:
-      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-    attributes: []
-  m_Direction: 0
-  m_LinkedSlots: []
---- !u!114 &8926484042661616608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Parent: {fileID: 8926484042661616605}
-  m_Children: []
-  m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
-  m_UISuperCollapsed: 0
-  m_MasterSlot: {fileID: 8926484042661616605}
-  m_MasterData:
-    m_Owner: {fileID: 0}
-    m_Value:
-      m_Type:
-        m_SerializableType: 
-      m_SerializableObject: 
-    m_Space: 2147483647
-  m_Property:
-    name: z
-    m_serializedType:
-      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-    attributes: []
-  m_Direction: 0
-  m_LinkedSlots: []
 --- !u!114 &8926484042661616617
 MonoBehaviour:
   m_ObjectHideFlags: 0
