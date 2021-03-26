@@ -21,4 +21,15 @@ public class LoadSceneOnInput : MonoBehaviour
             SceneManager.LoadScene(sceneName);
         }
     }
+
+    public void resetScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+    }
+
+    public void LoadScene(string name)
+    {
+        SceneManager.LoadScene(name);
+    }
 }

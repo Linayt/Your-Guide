@@ -13,8 +13,10 @@ using UnityEngine;
 
 
 [RequireComponent(typeof(PlayerAnimator))]
-[RequireComponent(typeof(Rigidbody))]
+//[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(CharacterController))]
+
 //[RequireComponent(typeof(Animator))]
 
 
@@ -30,15 +32,16 @@ public class PlayerControler : MonoBehaviour
     [HideInInspector] public PlayerStatue pStatue;
     [HideInInspector] public PlayerFX pFX;
     [HideInInspector] public PlayerSFX pSFX;
+    [HideInInspector] public CharacterController pCharacterController;
 
 
-    [HideInInspector] public Rigidbody rigid;
+    //[HideInInspector] public Rigidbody rigid;
     
 
     // Start is called before the first frame update
     void Awake()
     {
-        rigid = GetComponent<Rigidbody>();
+        //rigid = GetComponent<Rigidbody>();
         pInput = GetComponent<PlayerInput>();
         pMovement = GetComponent<PlayerMovement>();
         pAttaque = GetComponent<PlayerAttaque>();
@@ -48,18 +51,19 @@ public class PlayerControler : MonoBehaviour
         pStatue = GetComponent<PlayerStatue>();
         pFX = GetComponent<PlayerFX>();
         pSFX = GetComponent<PlayerSFX>();
+        pCharacterController = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
         pAdrenaline.SetJaugeFillValue();
+        pMovement.Move(pInput.GetDirectionInput(), pCharacterController);
     }
 
-    private void FixedUpdate()
+    /*private void FixedUpdate()
     {
-        pMovement.Move(pInput.GetDirectionInput(), rigid);
-    }
+    }*/
 
     /*private void OnDrawGizmos()
     {

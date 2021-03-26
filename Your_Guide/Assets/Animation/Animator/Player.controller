@@ -121,11 +121,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.3
   m_TransitionOffset: 0
-  m_ExitTime: 0.9142858
+  m_ExitTime: 0.7
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -215,11 +215,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.15
   m_TransitionOffset: 0
-  m_ExitTime: 0.5
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -396,16 +396,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01a58a0ea117d64486cd2988684f5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 5
-  duration: 0.5
+  vitesse: 8
+  duration: 0.3
   animeCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.20281982
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -436,11 +436,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.15
   m_TransitionOffset: 0
-  m_ExitTime: 0.7600003
+  m_ExitTime: 0.85
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -528,8 +528,8 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_AnyStatePosition: {x: 20, y: -130, z: 0}
+  m_EntryPosition: {x: 20, y: -30, z: 0}
   m_ExitPosition: {x: 1100, y: 370, z: 0}
   m_ParentStateMachinePosition: {x: 1080, y: -40, z: 0}
   m_DefaultState: {fileID: 7771327033809012744}
@@ -784,7 +784,7 @@ MonoBehaviour:
   bumpForce: 10
   getAdrenaline: 0
   useConeDetection: 1
-  effectiveRange: 0.4
+  effectiveRange: 0.2
   effectiveTimeBeforeDegat: 0.1
   typeOfAttack: 0
 --- !u!1102 &-5032788426620246602
@@ -850,16 +850,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01a58a0ea117d64486cd2988684f5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 7
-  duration: 0.5
+  vitesse: 13
+  duration: 0.3
   animeCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.20281982
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -1165,11 +1165,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.3
   m_TransitionOffset: 0
-  m_ExitTime: 0.96
+  m_ExitTime: 0.7
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -1181,7 +1181,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Recovery1
-  m_Speed: 6
+  m_Speed: 4
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8213226776898389711}
@@ -1233,11 +1233,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.3
   m_TransitionOffset: 0
-  m_ExitTime: 0.93406594
+  m_ExitTime: 0.7
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -1670,7 +1670,7 @@ MonoBehaviour:
   bumpForce: 12
   getAdrenaline: 0
   useConeDetection: 1
-  effectiveRange: 0.4
+  effectiveRange: 0.2
   effectiveTimeBeforeDegat: 0.2
   typeOfAttack: 1
 --- !u!114 &-135529178549307797
@@ -2015,11 +2015,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0.75
+  m_ExitTime: 1
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -2031,7 +2031,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Movement
-  m_Speed: 8
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -9208566595450565666}
@@ -2102,11 +2102,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.15
   m_TransitionOffset: 0
   m_ExitTime: 0.85000014
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -2275,7 +2275,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Recovery3
-  m_Speed: 6
+  m_Speed: 3
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -2905289705238296489}
@@ -2381,16 +2381,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01a58a0ea117d64486cd2988684f5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 10
-  duration: 0.5
+  vitesse: 17
+  duration: 0.3
   animeCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.20281982
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -2509,11 +2509,11 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.15
   m_TransitionOffset: 0
-  m_ExitTime: 0.9478261
+  m_ExitTime: 0.85
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -2653,18 +2653,21 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Att
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6382081360651418779}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.15
   m_TransitionOffset: 0
   m_ExitTime: 0.5
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasExitTime: 0
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -2704,7 +2707,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Recovery2
-  m_Speed: 6
+  m_Speed: 4
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 6290824515398195469}
@@ -2971,7 +2974,7 @@ BlendTree:
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
+    m_TimeScale: 0.5
     m_CycleOffset: 0
     m_DirectBlendParameter: Speed
     m_Mirror: 0
@@ -2980,7 +2983,7 @@ BlendTree:
       type: 3}
     m_Threshold: 0.2
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1.2
+    m_TimeScale: 9
     m_CycleOffset: 0
     m_DirectBlendParameter: Speed
     m_Mirror: 0
@@ -2989,7 +2992,7 @@ BlendTree:
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1.3
+    m_TimeScale: 10
     m_CycleOffset: 0
     m_DirectBlendParameter: Speed
     m_Mirror: 0
