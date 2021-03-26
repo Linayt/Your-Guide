@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{6cf141fb-436d-4cc4-8e59-309fce9a32f3}">
 		<property name="name">
-			<value>SwordSlash1-2</value>
+			<value>SwordSlash1-2_backup</value>
 		</property>
 		<property name="outputFormat">
 			<value>3</value>
 		</property>
 		<relationship name="folder">
-			<destination>{bce8315c-0ac5-444c-81d0-bbcfee34c56a}</destination>
+			<destination>{afaf563d-6f31-4ec8-9ae5-8452f73c42a8}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{bda93380-0cb6-4444-aa43-0e0116b68649}</destination>
@@ -33,9 +33,6 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{584456e4-f28c-45e4-90b8-78c058a53199}</destination>
-		</relationship>
-		<relationship name="banks">
-			<destination>{0e3b0b89-db12-4c83-81cc-dfdffcbd641e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{bda93380-0cb6-4444-aa43-0e0116b68649}">
