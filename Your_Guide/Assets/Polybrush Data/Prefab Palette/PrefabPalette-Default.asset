@@ -16,12 +16,12 @@ MonoBehaviour:
   - gameObject: {fileID: 4000750726468868580, guid: 6a7d6acef35c09a4683323539e29f559,
       type: 3}
     settings:
-      m_Strength: 68.80252
+      m_Strength: 79.617645
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.14093968, y: 0.637584}
+      m_UniformScale: {x: 0.1409397, y: 0.36912757}
       m_UniformBool: 1
       m_XRotationBool: 1
       m_YRotationBool: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.86577183, y: 1.9060402}
+      m_UniformScale: {x: 0.86577183, y: 1.5369127}
       m_UniformBool: 1
       m_XRotationBool: 1
       m_YRotationBool: 1
@@ -55,7 +55,7 @@ MonoBehaviour:
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1.0671141, y: 2.0067115}
+      m_UniformScale: {x: 1.0671141, y: 1.671141}
       m_UniformBool: 1
       m_XRotationBool: 1
       m_YRotationBool: 1
@@ -89,7 +89,7 @@ MonoBehaviour:
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.9328859, y: 1.8724833}
+      m_UniformScale: {x: 0.9328859, y: 1.6040269}
       m_UniformBool: 1
       m_XRotationBool: 1
       m_YRotationBool: 1
@@ -106,7 +106,7 @@ MonoBehaviour:
       m_RotationRangeMax: {x: 0, y: 360, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
       m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 0.50335574, y: 1.3087249}
+      m_UniformScale: {x: 0.50335574, y: 1.1073825}
       m_UniformBool: 1
       m_XRotationBool: 1
       m_YRotationBool: 1
@@ -115,3 +115,20 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: pebble1
+  - gameObject: {fileID: 8685679429299272342, guid: 5ae48eb8025853043a38a5fecb76be82,
+      type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 360, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 0.49664426, y: 1.1006712}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 1
+      m_ZRotationBool: 1
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Moss_plane5

@@ -6,26 +6,51 @@ public class ReceptacleFollow : StateMachineBehaviour
 {
     private ReceptacleControler rControler;
 
-    [SerializeField] private bool sprint;
+    private bool alreadyScared;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        rControler = FindObjectOfType<ReceptacleControler>();
+        rControler = animator.GetComponentInParent<ReceptacleControler>();
         rControler.rMovement.InizialisePath();
+        alreadyScared = false;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (sprint)
+        bool canFollow = rControler.rMovement.IsInRangeToFollow();
+        bool canSprint = rControler.rMovement.IsInRangeToSprint();
+        bool canStop = rControler.rMovement.IsInRangeToStop();
+        bool isScared = rControler.rMovement.IsInrangeToBeScared();
+
+        if (canFollow && !canStop && !isScared)
         {
-            rControler.rMovement.Sprint();
+            if (canSprint)
+            {
+                animator.SetFloat(rControler.rAnimator.vitesseParameterName, 1f);
+                float vitesse = rControler.rMovement.vitesseSprint;
+                rControler.rMovement.Follow(vitesse);
+            }
+            else
+            {
+                animator.SetFloat(rControler.rAnimator.vitesseParameterName, 0.5f);
+                float vitesse = rControler.rMovement.vitesseFollow;
+                rControler.rMovement.Follow(vitesse);
+
+            }
         }
-        else
+
+        if (canStop)
         {
-            rControler.rMovement.Follow();            
-        }                
+            animator.SetFloat(rControler.rAnimator.vitesseParameterName, 0f);
+        }
+
+        if (isScared&& !alreadyScared)
+        {
+            alreadyScared = true;
+            animator.SetBool(rControler.rAnimator.scaredParameterName, true);
+        }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

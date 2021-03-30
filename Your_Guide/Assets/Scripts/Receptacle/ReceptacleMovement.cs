@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class ReceptacleMovement : AiMovementWithVelocity
 {
-    [SerializeField] private float vitesseFollow;
-    [SerializeField] private float vitesseSprint;
+    public float vitesseFollow;
+    public float vitesseSprint;
 
     [Header("Movement Distance")]
     [SerializeField] private float minDistanceToFollow;
@@ -14,7 +14,14 @@ public class ReceptacleMovement : AiMovementWithVelocity
     [SerializeField] private float minDistanceToStop;
     [SerializeField] private float minDistanceToBeScared;
 
+    [Header("Timer")]
+    [SerializeField] private float refreshFrequency = 0.25f;
+
     private PlayerControler player;
+    private ReceptacleControler rControler;
+
+
+    float timer;
 
     private void Awake()
     {
@@ -22,9 +29,10 @@ public class ReceptacleMovement : AiMovementWithVelocity
         agent.enabled = false;
         rigid = transform.GetComponent<Rigidbody>();
         path = new NavMeshPath();
-
+        timer = 0;
         player = FindObjectOfType<PlayerControler>();
         Calculatepath(player.transform);
+        rControler = GetComponent<ReceptacleControler>();
     }
 
 
@@ -78,13 +86,27 @@ public class ReceptacleMovement : AiMovementWithVelocity
         Calculatepath(player.transform);
     }
 
-    public void Follow()
+    public void Follow(float speed)
     {
+        
         CheckTargetReach(player.transform);
-        MoveToCible(vitesseFollow);
+        timer += Time.deltaTime;
+
+        if(!rControler.rStatue.isStun && !rControler.rStatue.isScared)
+        {
+            MoveToCible(speed);
+
+        }
+
         if(!shouldMove && IsInRangeToFollow())
         {
             InizialisePath();
+        }
+
+        if (timer >= refreshFrequency)
+        {
+            InizialisePath();
+            timer = 0;
         }
     }
 

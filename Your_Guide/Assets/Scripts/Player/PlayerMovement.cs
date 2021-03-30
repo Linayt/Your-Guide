@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Transform axeRota;
     [SerializeField] Transform cam;
 
+    
 
     float turnSmoothVelocity;
 
@@ -30,10 +31,12 @@ public class PlayerMovement : MonoBehaviour
         timer = 0;
     }
 
-    public void Move(Vector3 directionMove, Rigidbody rigid)
+    public void Move(Vector3 directionMove,CharacterController charaController /*Rigidbody rigid*/)
     {
         //pControler.pAnimator.SetVitesseParameterValue(rigid.velocity.magnitude);
         pControler.pAnimator.SetVitesseParameterValue(pControler.pInput.GetDirectionInput().magnitude);
+
+        Vector3 moveDirec=Vector3.zero;
 
         if (directionMove.magnitude > minValueToMove && pControler.pStatue.canMove)
         {
@@ -65,19 +68,22 @@ public class PlayerMovement : MonoBehaviour
             float angle = Mathf.SmoothDampAngle(axeRota.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             axeRota.rotation = Quaternion.Euler(0f, angle, 0f);
 
-            Vector3 moveDirec = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward * speed ;
+            moveDirec = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward * speed ;
             float accelerationValue = accelerationCurve.Evaluate(timer / accelerationDuration);
             moveDirec *= accelerationValue;
-            moveDirec.y = rigid.velocity.y;
-            rigid.velocity = moveDirec;
+            //Debug.Log(moveDirec);
+            
         }
         else if (!pControler.pStatue.onRootMotion)
         {
             timer = 0;
-            Vector3 velocity = Vector3.zero;
+            moveDirec = Vector3.zero;
+            /*Vector3 velocity = Vector3.zero;
             velocity.y = rigid.velocity.y;
-            rigid.velocity = velocity;
+            rigid.velocity = velocity;*/
         }
+
+        charaController.SimpleMove(moveDirec);
     }
 
     public void StartCoroutineFakeRootMotion(float vitesse, AnimationCurve curve, float duration)
@@ -89,7 +95,8 @@ public class PlayerMovement : MonoBehaviour
     {
         pControler.pStatue.onRootMotion = true;
         Debug.Log("rootMotionOn");
-        Rigidbody rigid = pControler.rigid;
+        //Rigidbody rigid = pControler.rigid;
+        CharacterController charaController = pControler.pCharacterController;
         Vector3 direction = axeRota.forward.normalized;
         float rootTimer = 0f;
         while (rootTimer < duration)
@@ -97,8 +104,9 @@ public class PlayerMovement : MonoBehaviour
             //Debug.Log(timer);
             float effectiveTime = rootTimer / duration;
             Vector3 newVelocity = direction * curve.Evaluate(effectiveTime);
-            
-            rigid.velocity = newVelocity * vitesse;
+
+            //rigid.velocity = newVelocity * vitesse;
+            charaController.SimpleMove(newVelocity * vitesse);
             rootTimer += Time.deltaTime;
             yield return new WaitForSeconds(Time.deltaTime);
         }
