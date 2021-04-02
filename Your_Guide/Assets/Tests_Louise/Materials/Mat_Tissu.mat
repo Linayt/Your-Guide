@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Mat_Tissu
   m_Shader: {fileID: 4800000, guid: c4edd00ff2db5b24391a4fcb1762e459, type: 3}
-  m_ShaderKeywords: _DOUBLESIDED_ON _NORMALMAP_TANGENT_SPACE
+  m_ShaderKeywords: _DOUBLESIDED_ON _EMISSIVE_COLOR_MAP _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -50,7 +50,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissiveColorMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: a7906c2ccfcee5840b478f64bd59b64a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _HeightMap:
@@ -66,7 +66,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: a7906c2ccfcee5840b478f64bd59b64a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
@@ -157,7 +157,7 @@ Material:
     - _DstBlend: 0
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 1
-    - _EmissiveIntensity: 0.1
+    - _EmissiveIntensity: 2
     - _EmissiveIntensityUnit: 0
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
@@ -234,12 +234,12 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 0.96813846, b: 0.6839622, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.1, g: 0.08628413, b: 0.024056599, a: 0.1}
+    - _Color: {r: 2, g: 1.7225735, b: 0.46226412, a: 2}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 0.1, g: 0.08628413, b: 0.024056599, a: 0.1}
-    - _EmissiveColorLDR: {r: 1, g: 0.86284137, b: 0.24056602, a: 1}
+    - _EmissiveColor: {r: 2, g: 1.7225735, b: 0.46226412, a: 2}
+    - _EmissiveColorLDR: {r: 1, g: 0.86128676, b: 0.23113209, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
@@ -248,7 +248,7 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
-    - _UnlitColor: {r: 1, g: 0.8651123, b: 0.25, a: 1}
+    - _UnlitColor: {r: 1, g: 0.8856132, b: 0.5424528, a: 1}
 --- !u!114 &3499910259290977907
 MonoBehaviour:
   m_ObjectHideFlags: 11
