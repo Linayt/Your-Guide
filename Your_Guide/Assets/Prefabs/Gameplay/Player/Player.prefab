@@ -268,9 +268,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistanceToSwtich: 20
   minDistanceToSwtich: 2
-  timeToSwitch: 0.5
+  timeToSwitch: 0
   timeAnimeAttSwitch: 0.5
-  timePlayerStun: 0.5
+  timePlayerStun: 1
   signCanSwitch: {fileID: 632471632419573928}
 --- !u!114 &6076705647464370365
 MonoBehaviour:
