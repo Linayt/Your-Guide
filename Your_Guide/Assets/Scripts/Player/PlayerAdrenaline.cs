@@ -19,6 +19,7 @@ public class PlayerAdrenaline : MonoBehaviour
     
     [SerializeField] private Gradient EmissionColor;
     [SerializeField] private float maxEmissionIntensity;
+    [SerializeField] private float minEmissionIntensity;
     private enum adrenalineEtat { Nothing, Switch,Heal}
     private adrenalineEtat etat;
 
