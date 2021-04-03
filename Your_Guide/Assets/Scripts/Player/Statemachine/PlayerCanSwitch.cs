@@ -13,7 +13,7 @@ public class PlayerCanSwitch : StateMachineBehaviour
         pControler = FindObjectOfType<PlayerControler>();
 
         bool canSwitch = pControler.pAdrenaline.IsAdrenalineMax() && pControler.pSwitch.IsInRange();
-        pControler.pSwitch.ChangeSignEnable(canSwitch);
+        //pControler.pSwitch.ChangeSignEnable(canSwitch);
 
     }
 
@@ -21,7 +21,7 @@ public class PlayerCanSwitch : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         bool canSwitch = pControler.pAdrenaline.IsAdrenalineMax() && pControler.pSwitch.IsInRange();
-        pControler.pSwitch.ChangeSignEnable(canSwitch);
+        //pControler.pSwitch.ChangeSignEnable(canSwitch);
 
         if (pControler.pInput.GetSwitchInputDown() && canSwitch)
         {
@@ -34,7 +34,7 @@ public class PlayerCanSwitch : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        pControler.pSwitch.ChangeSignEnable(false);
+        //pControler.pSwitch.ChangeSignEnable(false);
         
     }
 
