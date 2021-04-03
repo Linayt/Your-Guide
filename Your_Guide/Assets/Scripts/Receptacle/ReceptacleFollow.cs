@@ -40,17 +40,21 @@ public class ReceptacleFollow : StateMachineBehaviour
 
             }
         }
-
-        if (canStop)
+        else if (isScared)
         {
-            animator.SetFloat(rControler.rAnimator.vitesseParameterName, 0f);
+            animator.SetFloat(rControler.rAnimator.vitesseParameterName, -1f);
+            /*alreadyScared = true;
+            animator.SetBool(rControler.rAnimator.scaredParameterName, true);*/
+        }
+        else
+        {
+            animator.SetFloat(rControler.rAnimator.vitesseParameterName, 0f);                          
         }
 
-        if (isScared&& !alreadyScared)
+        /*if (canStop)
         {
-            alreadyScared = true;
-            animator.SetBool(rControler.rAnimator.scaredParameterName, true);
-        }
+        }*/
+
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

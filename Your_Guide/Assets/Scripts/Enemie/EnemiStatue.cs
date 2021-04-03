@@ -35,7 +35,7 @@ public class EnemiStatue : MonoBehaviour
         eControler.eAnimator.enemiAnimator.SetBool(eControler.eAnimator.stunBoolParameterName, true);
         yield return new WaitForSeconds(timeStun);
         stun = false;
-        eControler.eAnimator.enemiAnimator.SetBool(eControler.eAnimator.stunBoolParameterName, true);
+        eControler.eAnimator.enemiAnimator.SetBool(eControler.eAnimator.stunBoolParameterName, false);
     }
 
     public void Bump(Vector3 bumpForce, float timeBump)
@@ -56,7 +56,7 @@ public class EnemiStatue : MonoBehaviour
         eControler.rigid.AddForce(bumpForce,ForceMode.Impulse);
         yield return new WaitForSeconds(timeBump);
         bump = false;
-        eControler.eAnimator.enemiAnimator.SetBool(eControler.eAnimator.bumpBoolParameterName,true);
+        eControler.eAnimator.enemiAnimator.SetBool(eControler.eAnimator.bumpBoolParameterName,false);
 
     }
 

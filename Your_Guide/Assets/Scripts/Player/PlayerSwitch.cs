@@ -52,14 +52,14 @@ public class PlayerSwitch : MonoBehaviour
 
         yield return new WaitForSeconds(timeToSwitch);
 
-        pControler.pAnimator.TriggerAttparameter();
+        //pControler.pAnimator.TriggerAttparameter();
 
         rControler.transform.position = newPosReceptacle;
         transform.position = newPosPlayer;
 
         yield return new WaitForSeconds(timeAnimeAttSwitch);
 
-        pControler.pAnimator.TriggerAttparameter();
+       // pControler.pAnimator.TriggerAttparameter();
 
         yield return new WaitForSeconds(timePlayerStun);
 
