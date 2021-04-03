@@ -18,8 +18,8 @@ public class PlayerSwitch : MonoBehaviour
     [SerializeField] private float timePlayerStun;
 
     [Header("Sign/Feedback")]
-    [SerializeField] private GameObject signCanSwitch;
-
+    //[SerializeField] private GameObject signCanSwitch;
+    
 
     private bool OnSwitch;
     // Start is called before the first frame update
@@ -69,11 +69,11 @@ public class PlayerSwitch : MonoBehaviour
         OnSwitch = false;
     }
 
-    public void ChangeSignEnable(bool etat)
+    /*public void ChangeSignEnable(bool etat)
     {
         
         signCanSwitch.SetActive(etat);
-    }
+    }*/
 
 
 }
