@@ -116,7 +116,7 @@ MonoBehaviour:
     x: -1714
     y: -1178
     width: 7536
-    height: 3161
+    height: 3163
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2710,8 +2710,7 @@ VisualEffectResource:
       VFX_USE_VELOCITY_CURRENT 1\n#define VFX_USE_SIZE_CURRENT 1\n#define VFX_USE_AGE_CURRENT
       1\n#define VFX_USE_ALIVE_CURRENT 1\n#define VFX_WORLD_SPACE 1\n#include \"Packages/com.unity.render-pipelines.high-definition/Runtime/VFXGraph/Shaders/VFXDefines.hlsl\"\n\n\r\nCBUFFER_START(parameters)\n   
       float4x4 uniform_a;\n    float4 uniform_b;\n    float4 uniform_c;\n    float3
-      ArcCircle_circle_center_b;\n    uint PADDING_0;\n    float3 axis_start_d;\n   
-      uint PADDING_1;\n    float3 normalizedDir_d;\n    uint PADDING_2;\nCBUFFER_END\n\nstruct
+      axis_start_d;\n    uint PADDING_0;\n    float3 normalizedDir_d;\n    uint PADDING_1;\nCBUFFER_END\n\nstruct
       Attributes\n{\n    float lifetime;\n    uint seed;\n    float3 position;\n   
       float3 direction;\n    float3 velocity;\n    float size;\n    float age;\n   
       bool alive;\n};\n\nstruct SourceAttributes\n{\n};\n\n\n\r\n\r\n#define USE_DEAD_LIST
@@ -2787,21 +2786,21 @@ VisualEffectResource:
       stripData);\r\n\t\t// TODO Change seed to be sure we're deterministic on random
       with strip\r\n#endif\r\n        \r\n        {\n            SetAttribute_F0142B34(
       /*inout */attributes.lifetime,  /*inout */attributes.seed, (float)0.200000003,
-      (float)3);\n        }\n        {\n            float tmp_bf = pow((float)1,
-      (float)0.5);\n            float tmp_bh = tmp_bf * (float)3;\n            float
-      tmp_bj = Rand(attributes.seed);\n            float tmp_bk = (float)6.28318548
-      * tmp_bj;\n            float tmp_bl = sin(tmp_bk);\n            float tmp_bm
-      = cos(tmp_bk);\n            PositionCircle_0( /*inout */attributes.position, 
-      /*inout */attributes.seed,  /*inout */attributes.direction, tmp_bh, tmp_bl,
-      tmp_bm, ArcCircle_circle_center_b);\n        }\n        {\n            float3
-      tmp_bd = mul(uniform_a, float4(attributes.position, 1.0)).xyz;\n           
-      SetAttribute_CAC29747( /*inout */attributes.position, tmp_bd);\n        }\n       
-      {\n            float tmp_be = attributes.age / attributes.lifetime;\n           
-      float tmp_bf = SampleCurve(uniform_b,tmp_be);\n            float tmp_bg = (float)0.100000001
-      * tmp_bf;\n            float tmp_bi = SampleCurve(uniform_c,tmp_be);\n           
-      float tmp_bj = (float)0.400000006 * tmp_bi;\n            VelocityTangent_18C(
+      (float)3);\n        }\n        {\n            float tmp_be = pow((float)1,
+      (float)0.5);\n            float tmp_bg = tmp_be * (float)3;\n            float
+      tmp_bi = Rand(attributes.seed);\n            float tmp_bj = (float)6.28318548
+      * tmp_bi;\n            float tmp_bk = sin(tmp_bj);\n            float tmp_bl
+      = cos(tmp_bj);\n            PositionCircle_0( /*inout */attributes.position, 
+      /*inout */attributes.seed,  /*inout */attributes.direction, tmp_bg, tmp_bk,
+      tmp_bl, float3(0, 0, 0));\n        }\n        {\n            float3 tmp_bc
+      = mul(uniform_a, float4(attributes.position, 1.0)).xyz;\n            SetAttribute_CAC29747(
+      /*inout */attributes.position, tmp_bc);\n        }\n        {\n           
+      float tmp_bd = attributes.age / attributes.lifetime;\n            float tmp_be
+      = SampleCurve(uniform_b,tmp_bd);\n            float tmp_bf = (float)0.100000001
+      * tmp_be;\n            float tmp_bh = SampleCurve(uniform_c,tmp_bd);\n           
+      float tmp_bi = (float)0.400000006 * tmp_bh;\n            VelocityTangent_18C(
       /*inout */attributes.velocity,  /*inout */attributes.direction,  /*inout */attributes.seed,
-      attributes.position, axis_start_d, tmp_bg, tmp_bj, (float)1, normalizedDir_d);\n       
+      attributes.position, axis_start_d, tmp_bf, tmp_bi, (float)1, normalizedDir_d);\n       
       }\n        {\n            SetAttribute_3278B09A( /*inout */attributes.size, 
       /*inout */attributes.seed, (float)0.100000001, (float)0.300000012);\n       
       }\n        \n\r\n\t\t\r\n#if VFX_USE_ALIVE_CURRENT\r\n        if (attributes.alive)\r\n#endif      
@@ -7358,8 +7357,6 @@ VisualEffectResource:
         index: 24
       temporaryBuffers: []
       values:
-      - nameId: ArcCircle_circle_center_b
-        index: 34
       - nameId: uniform_a
         index: 48
       - nameId: axis_start_d
@@ -15229,8 +15226,7 @@ MonoBehaviour:
       m_Regex: 
       m_RegexMaxLength: 0
   m_Direction: 0
-  m_LinkedSlots:
-  - {fileID: 8926484042661616320}
+  m_LinkedSlots: []
 --- !u!114 &8926484042661615134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23899,8 +23895,6 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661616320}
       inputSlot: {fileID: 8926484042661616384}
-    - outputSlot: {fileID: 8926484042661616320}
-      inputSlot: {fileID: 8926484042661615133}
     position: {x: -244, y: 82}
     expandedSlots: []
     expanded: 0
@@ -23975,7 +23969,6 @@ MonoBehaviour:
   - {fileID: 8926484042661616428}
   - {fileID: 8926484042661616450}
   - {fileID: 8926484042661616472}
-  - {fileID: 8926484042661615133}
 --- !u!114 &8926484042661616321
 MonoBehaviour:
   m_ObjectHideFlags: 0
