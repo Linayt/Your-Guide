@@ -2169,7 +2169,7 @@ VisualEffectResource:
       OffsetTexture__ = (float)0;{\n\t\t\t        \n\t\t\t        OffsetTexture__
       = (float)-1.12;\n\t\t\t    }\n\t\t\t    o.OffsetTexture = OffsetTexture__;float2
       TilingTexture__ = (float2)0;{\n\t\t\t        \n\t\t\t        TilingTexture__
-      = float2(0.949999988, 1);\n\t\t\t    }\n\t\t\t    o.TilingTexture = TilingTexture__;float
+      = float2(4, 1);\n\t\t\t    }\n\t\t\t    o.TilingTexture = TilingTexture__;float
       FadeLeft__ = (float)0;{\n\t\t\t        \n\t\t\t        FadeLeft__ = (float)11;\n\t\t\t   
       }\n\t\t\t    o.FadeLeft = FadeLeft__;float FadeRight__ = (float)0;{\n\t\t\t       
       \n\t\t\t        FadeRight__ = (float)1.82000005;\n\t\t\t    }\n\t\t\t    o.FadeRight
@@ -2463,7 +2463,7 @@ VisualEffectResource:
       OffsetTexture__ = (float)0;{\n\t\t\t        \n\t\t\t        OffsetTexture__
       = (float)-1.12;\n\t\t\t    }\n\t\t\t    o.OffsetTexture = OffsetTexture__;float2
       TilingTexture__ = (float2)0;{\n\t\t\t        \n\t\t\t        TilingTexture__
-      = float2(0.949999988, 1);\n\t\t\t    }\n\t\t\t    o.TilingTexture = TilingTexture__;float
+      = float2(4, 1);\n\t\t\t    }\n\t\t\t    o.TilingTexture = TilingTexture__;float
       FadeLeft__ = (float)0;{\n\t\t\t        \n\t\t\t        FadeLeft__ = (float)11;\n\t\t\t   
       }\n\t\t\t    o.FadeLeft = FadeLeft__;float FadeRight__ = (float)0;{\n\t\t\t       
       \n\t\t\t        FadeRight__ = (float)1.82000005;\n\t\t\t    }\n\t\t\t    o.FadeRight
@@ -3873,7 +3873,7 @@ VisualEffectResource:
       m_Vector2f:
         m_Array:
         - m_ExpressionIndex: 31
-          m_Value: {x: 0.95, y: 1}
+          m_Value: {x: 4, y: 1}
         - m_ExpressionIndex: 44
           m_Value: {x: 1, y: 1}
         - m_ExpressionIndex: 46
@@ -4275,13 +4275,13 @@ VisualEffectResource:
         - m_ExpressionIndex: 73
           m_Value: {fileID: 2800000, guid: a33160e9c3fa42c40af7148483e9ce95, type: 3}
         - m_ExpressionIndex: 49
-          m_Value: {fileID: 7472906474033900809, guid: ba83bebe6af7dc142a396ff1e3dce7ae,
+          m_Value: {fileID: 7472906474033900809, guid: 94dce2c95404f884bb24a05666687eb1,
             type: 3}
         - m_ExpressionIndex: 51
-          m_Value: {fileID: -6091357556476429806, guid: ef3ed1df077e4bd49a25141c295558d2,
+          m_Value: {fileID: -6091357556476429806, guid: 897c197f8c53db64783728fd9566cbe1,
             type: 3}
         - m_ExpressionIndex: 52
-          m_Value: {fileID: -5946365690778709957, guid: a87dab45a1ee13344a53ba68c871cbde,
+          m_Value: {fileID: -5946365690778709957, guid: acd9ad7d8b2ac144fb0e23b7ef6394ec,
             type: 3}
       m_Bool:
         m_Array: []
@@ -6233,7 +6233,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":7472906474033900809,"guid":"ba83bebe6af7dc142a396ff1e3dce7ae","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":7472906474033900809,"guid":"94dce2c95404f884bb24a05666687eb1","type":3}}'
     m_Space: 2147483647
   m_Property:
     name: mesh
@@ -7839,7 +7839,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":-6091357556476429806,"guid":"ef3ed1df077e4bd49a25141c295558d2","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":-6091357556476429806,"guid":"897c197f8c53db64783728fd9566cbe1","type":3}}'
     m_Space: 2147483647
   m_Property:
     name: mesh
@@ -10759,7 +10759,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":-5946365690778709957,"guid":"a87dab45a1ee13344a53ba68c871cbde","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":-5946365690778709957,"guid":"acd9ad7d8b2ac144fb0e23b7ef6394ec","type":3}}'
     m_Space: 2147483647
   m_Property:
     name: mesh
@@ -10884,7 +10884,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614978}
   - {fileID: 8926484042661614979}
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_MasterSlot: {fileID: 8926484042661614977}
   m_MasterData:
@@ -10893,7 +10893,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.949999988079071,"y":1.0}'
+      m_SerializableObject: '{"x":4.0,"y":1.0}'
     m_Space: 2147483647
   m_Property:
     name: TilingTexture
@@ -16785,3 +16785,27 @@ MonoBehaviour:
     attributes: []
   m_Direction: 0
   m_LinkedSlots: []
+--- !u!114 &8926484042661615826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78581a96eae8bf4398c282eb0b098bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  title: 
+  m_Owners: []
+  dataType: 0
+  capacity: 128
+  stripCapacity: 16
+  particlePerStripCount: 16
+  m_Space: 0
