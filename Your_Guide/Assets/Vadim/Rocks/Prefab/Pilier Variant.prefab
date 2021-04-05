@@ -218,6 +218,21 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6347224312010178446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5237346704096364907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad0e377719c537549b664bb25b38c6ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 227148420}
+  triggerName: start
+  maxTimeToStart: 2
 --- !u!95 &227148420
 Animator:
   serializedVersion: 3
@@ -336,6 +351,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 7566687b29d55484b8eb6e95a4cfbcb0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7854c8481e53b048bd8cbed922b3f1a, type: 3}
+--- !u!1 &5237346704096364907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c7854c8481e53b048bd8cbed922b3f1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4931339087261414458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4892347050475803601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c7854c8481e53b048bd8cbed922b3f1a,
