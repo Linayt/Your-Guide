@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/SoundFmod/Desktop/Ambiant.bank
   Name: Ambiant
-  lastModified: 637527023117997049
+  lastModified: 637527024323204499
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/SoundFmod/Desktop/Character.bank
   Name: Character
-  lastModified: 637527023136784730
+  lastModified: 637527024323264326
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/SoundFmod/Desktop/DistanceEnnemy.bank
   Name: DistanceEnnemy
-  lastModified: 637527023161121729
+  lastModified: 637527024323453819
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/SoundFmod/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637527023167747620
+  lastModified: 637527024323493716
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/SoundFmod/Desktop/Master.bank
   Name: Master
-  lastModified: 637527023167438163
+  lastModified: 637527024323483742
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/SoundFmod/Desktop/Receptacle.bank
   Name: Receptacle
-  lastModified: 637527023184610534
+  lastModified: 637527024323643320
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -423,7 +423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/SoundFmod/Desktop/MeleeEnemy.bank
   Name: MeleeEnemy
-  lastModified: 637527023172818578
+  lastModified: 637527024323553563
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -602,7 +602,7 @@ MonoBehaviour:
   - {fileID: -6014036010083475283}
   StringsBanks:
   - {fileID: -6467738505587748948}
-  stringsBankWriteTime: 637527023167747620
+  stringsBankWriteTime: 637527024323493716
   cacheVersion: 5
 --- !u!114 &18658978612018849
 MonoBehaviour:
@@ -733,7 +733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/SoundFmod/Desktop/Fight.bank
   Name: Fight
-  lastModified: 637527023167358378
+  lastModified: 637527024323473770
   LoadResult: 0
   FileSizes: []
   Exists: 1

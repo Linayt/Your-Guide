@@ -58,7 +58,7 @@ public class PlayerControler : MonoBehaviour
     void Update()
     {
         pAdrenaline.SetJaugeFillValue();
-        pAdrenaline.SetFeedBackColor();
+        pAdrenaline.SetFeedBack();
         pMovement.Move(pInput.GetDirectionInput(), pCharacterController);
     }
 
