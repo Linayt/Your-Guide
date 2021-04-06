@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Foliage_wind 1
+  m_Name: moss_wind 1
   m_Shader: {fileID: -6465566751694194690, guid: 12ceba43c9f98fe41b5abbd2db7bce93,
     type: 3}
   m_ShaderKeywords: _ALPHATEST_ON _DOUBLESIDED_ON
