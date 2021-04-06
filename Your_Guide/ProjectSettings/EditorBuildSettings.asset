@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/TestMenu.unity
     guid: 3c6ae95ef54b87e468b6779db0bb3357
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Trash/Test_LD.unity
     guid: d795958173d8ba64ca36058ff26b3b51
   - enabled: 1
     path: Assets/Scene/Test_Quentin.unity
     guid: d99cad3d51fe17f4ca1a383483061a66
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/GYM_Arnaud.unity
     guid: 3de7d9f5622b3c04486ba87e82f2438b
   - enabled: 1
