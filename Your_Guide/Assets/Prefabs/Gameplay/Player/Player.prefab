@@ -316,7 +316,8 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
-  maxEmissionIntensity: 0
+  maxEmissionIntensity: 100
+  minEmissionIntensity: 5
   adrenalineValue: 0
 --- !u!114 &5184241589688764269
 MonoBehaviour:
@@ -1043,6 +1044,7 @@ VFXRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

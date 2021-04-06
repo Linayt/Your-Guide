@@ -16,9 +16,11 @@ public class PlayerAdrenaline : MonoBehaviour
 
     [Header("Sign/Feedback")]
     [SerializeField] private SkinnedMeshRenderer hatMeshRenderer;
+    private Material hatMaterial;
     
     [SerializeField] private Gradient EmissionColor;
     [SerializeField] private float maxEmissionIntensity;
+    [SerializeField] private float minEmissionIntensity;
     private enum adrenalineEtat { Nothing, Switch,Heal}
     private adrenalineEtat etat;
 
@@ -31,6 +33,8 @@ public class PlayerAdrenaline : MonoBehaviour
         adrenalineValue = adrenalineStartValue;
         pControler = transform.GetComponent<PlayerControler>();
         etat = adrenalineEtat.Nothing;
+        hatMaterial = hatMeshRenderer.material;
+        hatMaterial.EnableKeyword("_EmissiveIntensity");
     }
 
     public void SetJaugeFillValue()
@@ -60,17 +64,23 @@ public class PlayerAdrenaline : MonoBehaviour
     }
 
 
-    public void SetFeedBackColor()
+    public void SetFeedBack()
     {
         bool canSwitch = pControler.pSwitch.IsInRange() && IsAdrenalineMax();
         bool canheal = canHeal();
-        Material hatMateriel = hatMeshRenderer.material;
+       
 
-        if (canSwitch/*&&!canheal*/)
+        float pourcentageValue = adrenalineValue / adrenalineMaxValue;
+
+        float IntensityValue = Mathf.Clamp(maxEmissionIntensity * pourcentageValue, minEmissionIntensity, maxEmissionIntensity);
+
+        if (canSwitch)
         {
-            //hatMateriel.SetColor("_EmissiveColor", EmissionColor.Evaluate(0));
-            hatMateriel.SetColor("_BaseColor", EmissionColor.Evaluate(0));
-            Debug.Log("ColorChange");
+            
+            hatMaterial.SetColor("_BaseColor", EmissionColor.Evaluate(0));
+            //Debug.Log("ColorChange");
+
+            hatMaterial.SetColor("_EmissiveColor", EmissionColor.Evaluate(0) * IntensityValue);
         }
         else if (canheal)
         {
@@ -78,8 +88,27 @@ public class PlayerAdrenaline : MonoBehaviour
         }
         else
         {
-            //hatMateriel.SetColor("_EmissiveColor", EmissionColor.Evaluate(0.5f));
-            hatMateriel.SetColor("_BaseColor", EmissionColor.Evaluate(0.5f));
+            
+            hatMaterial.SetColor("_BaseColor", EmissionColor.Evaluate(0.5f));
+            hatMaterial.SetColor("_EmissiveColor", EmissionColor.Evaluate(0.5f) * IntensityValue);
         }
     }
+
+    /*public void SetFeedBackColor()
+    {
+        
+    }
+
+    public void SetFeedBackIntensity()
+    {
+        //Material hatMateriel = hatMeshRenderer.material;
+
+        
+
+        
+        //hatMaterial.SetFloat("_EmissiveIntensity", IntensityValue);
+        //hatMaterial.SetFloat("_EmissiveExposureWeight", pourcentageValue);
+
+    }*/
+
 }
