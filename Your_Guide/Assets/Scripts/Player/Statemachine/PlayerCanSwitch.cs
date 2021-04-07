@@ -25,7 +25,7 @@ public class PlayerCanSwitch : StateMachineBehaviour
 
         if (pControler.pInput.GetSwitchInputDown() && canSwitch)
         {
-            pControler.pSwitch.StartCoroutine(pControler.pSwitch.Switch());
+            pControler.pSwitch.StartSwitch();
             Debug.Log("Switch");
         }
        
