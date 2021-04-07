@@ -1133,10 +1133,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   degatValue: 1
-  forceDegatPlayer: 500
+  forceDegatPlayer: 10
   upwardForceModifier: 1
   origineAtt: {fileID: 4692868914616454549}
   timeBumpPlayer: 1
+  timeBumpReceptacle: 1
   colliderAttackLayer:
     serializedVersion: 2
     m_Bits: 3072

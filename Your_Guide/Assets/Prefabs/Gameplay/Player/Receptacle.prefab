@@ -244,7 +244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 762565663794915687}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Foot_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4259696114718435956}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Eye02_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5835601031772930511}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Knee_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5230558958931961610}
   - component: {fileID: 4158792793550460309}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3430622088220846085}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lid03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,7 +546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6332803029037977039}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Control_Foot_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2107550961956067216}
   - component: {fileID: 1468152778878929538}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Receptacle_V1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -634,7 +634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3691891088551280970}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Recep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -670,7 +670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3320097369988377516}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: LifeBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -707,7 +707,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8036772638077334597}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spine01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -738,7 +738,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8879727178238197277}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Eye02_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -768,7 +768,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7109174265023927419}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: R_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -799,7 +799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2396784701706026925}
   - component: {fileID: 2930299273623940738}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Top_Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -888,7 +888,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4054153090092118775}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: L_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1345,7 +1345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7505134929622075610}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Eye01_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1376,7 +1376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7446972770054169670}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Eye01_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1407,7 +1407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3686364873290797922}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hip_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1445,8 +1445,9 @@ GameObject:
   - component: {fileID: 1762996966111480981}
   - component: {fileID: 1343277774501441975}
   - component: {fileID: 9170988876606712523}
-  - component: {fileID: 4726094910039745582}
   - component: {fileID: 3318924120630837509}
+  - component: {fileID: 2412516740944635893}
+  - component: {fileID: 4726094910039745582}
   - component: {fileID: 4516966795216561758}
   m_Layer: 11
   m_Name: Receptacle
@@ -1469,6 +1470,7 @@ Transform:
   - {fileID: 1047985791337665638}
   - {fileID: 7183840227641138007}
   - {fileID: 5585290338284602945}
+  - {fileID: 6736582813798991567}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1564,7 +1566,8 @@ MonoBehaviour:
   receptacleAnimator: {fileID: 1468152778878929538}
   followParameterName: follow
   sprintParameterName: sprint
-  stunParameterName: stun
+  stunParameterName: StunBool
+  stunTriggerParameterName: Stun
   scaredParameterName: scared
   switchParametername: Switch
   switchTriggerParametername: SwitchTrigger
@@ -1601,6 +1604,32 @@ MonoBehaviour:
   initialLifeValue: 10
   godMode: 0
   lifeBarFill: {fileID: 2854833231407065243}
+--- !u!114 &3318924120630837509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5321679421470890324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcef0ed7c4d67394f9fc2ad252f47298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 4516966795216561758}
+--- !u!114 &2412516740944635893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5321679421470890324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b96a10713c8a2434d8368d0df8fd6d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SwitchParticule: {fileID: 6225694198212866599}
 --- !u!114 &4726094910039745582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1618,19 +1647,8 @@ MonoBehaviour:
   rStatue: {fileID: 0}
   rLife: {fileID: 0}
   rSFX: {fileID: 0}
---- !u!114 &3318924120630837509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5321679421470890324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcef0ed7c4d67394f9fc2ad252f47298, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: {fileID: 4516966795216561758}
+  rFX: {fileID: 0}
+  rigid: {fileID: 0}
 --- !u!82 &4516966795216561758
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1736,7 +1754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3246825617452529630}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lid01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1767,7 +1785,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8921284970853983914}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1804,7 +1822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5847512072651125629}
   - component: {fileID: 8325080277534998337}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1895,7 +1913,7 @@ GameObject:
   - component: {fileID: 8062827887792013069}
   - component: {fileID: 516494588298120298}
   - component: {fileID: 2854833231407065243}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: LifeFill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1967,7 +1985,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 172106520136404531}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spine02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1998,7 +2016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8067034854633903902}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Control_Foot_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2029,7 +2047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7136371813142203428}
   - component: {fileID: 1015134525416556882}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2119,7 +2137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4730633654582830946}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Knee_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2153,7 +2171,7 @@ GameObject:
   - component: {fileID: 2015251209552812547}
   - component: {fileID: 5501087922982489135}
   - component: {fileID: 4621530418155155752}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2251,7 +2269,7 @@ GameObject:
   - component: {fileID: 4817831127963405534}
   - component: {fileID: 3447900790169604158}
   - component: {fileID: 1934995089646614193}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: LifeFont
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2354,7 +2372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3576157709855635405}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Foot_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2385,7 +2403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4189915204291790274}
   - component: {fileID: 4356926060613833172}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2482,7 +2500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6106778529431186282}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Lid02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2514,7 +2532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3554443612463217726}
   - component: {fileID: 8434228482802403900}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2607,7 +2625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7212879604396643823}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: nurbsCircle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2637,7 +2655,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1318924657458551480}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hip_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2659,6 +2677,87 @@ Transform:
   m_Father: {fileID: 8921284970853983914}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1744492898419441427
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6630515709981190761}
+    m_Modifications:
+    - target: {fileID: 2788708284555938200, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_Name
+      value: FX_RecepSwitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 890b7dd6da2d4c14797e8a2c52397141, type: 3}
+--- !u!4 &6736582813798991567 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4992391287966988764, guid: 890b7dd6da2d4c14797e8a2c52397141,
+    type: 3}
+  m_PrefabInstance: {fileID: 1744492898419441427}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6225694198212866599 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5644053697685835060, guid: 890b7dd6da2d4c14797e8a2c52397141,
+    type: 3}
+  m_PrefabInstance: {fileID: 1744492898419441427}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3956581966459613857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2726,18 +2825,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesh_Tissue 2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 876c5e12512d64d44a91606075996ac1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -7511558181221131132, guid: 876c5e12512d64d44a91606075996ac1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 876c5e12512d64d44a91606075996ac1, type: 3}
---- !u!4 &3558445312785241418 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 876c5e12512d64d44a91606075996ac1,
-    type: 3}
-  m_PrefabInstance: {fileID: 3956581966459613857}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4191148676766732272 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 876c5e12512d64d44a91606075996ac1,
+    type: 3}
+  m_PrefabInstance: {fileID: 3956581966459613857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3558445312785241418 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 876c5e12512d64d44a91606075996ac1,
     type: 3}
   m_PrefabInstance: {fileID: 3956581966459613857}
   m_PrefabAsset: {fileID: 0}
@@ -2807,6 +2911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FX_Walk_Recep
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267681531823004981, guid: 6fb2e3b08d9c8c4409a465b5570eb0fe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fb2e3b08d9c8c4409a465b5570eb0fe, type: 3}

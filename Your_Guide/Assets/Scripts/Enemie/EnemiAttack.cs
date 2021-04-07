@@ -14,6 +14,7 @@ public class EnemiAttack : MonoBehaviour
     public Transform origineAtt;
 
     public float timeBumpPlayer;
+    public float timeBumpReceptacle;
 
     public LayerMask colliderAttackLayer;
 
@@ -40,6 +41,7 @@ public class EnemiAttack : MonoBehaviour
                 if (rControler)
                 {
                     rControler.rLife.TakeDamage(degat);
+                    rControler.rStatue.StartBump(knockBackDirection, timeBumpReceptacle);
                     //eControler.eFx.StartFxDegat(rControler.transform.position);
                 }
                 else
