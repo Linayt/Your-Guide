@@ -22,6 +22,8 @@ public class PlayerSwitch : MonoBehaviour
     
 
     private bool OnSwitch;
+    private Vector3 newPosPlayer;
+    private Vector3 newPosReceptacle;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -43,17 +45,28 @@ public class PlayerSwitch : MonoBehaviour
         return false;
     }
 
+    public void StartSwitch()
+    {
+        if (!OnSwitch)
+        {
+            newPosPlayer = rControler.transform.position;
+            newPosReceptacle = transform.position;
+            Debug.Log(newPosPlayer);
+            Debug.Log(newPosReceptacle);
+
+            StartCoroutine(Switch());
+        }
+    }
+
+
     public IEnumerator Switch()
     {
         OnSwitch = true;
         pControler.pAdrenaline.adrenalineValue = 0;
+        pControler.pCharacterController.enabled = false;
 
-        rControler.rAnimator.receptacleAnimator.SetBool(rControler.rAnimator.switchParametername, true);
-        rControler.rAnimator.receptacleAnimator.SetTrigger(rControler.rAnimator.switchTriggerParametername);
-        pControler.pAnimator.TriggerSwitchParameter();
-
-        Vector3 newPosPlayer = rControler.transform.position;
-        Vector3 newPosReceptacle = transform.position;
+        /*Vector3 newPosPlayer = rControler.transform.position;
+        Vector3 newPosReceptacle = transform.position;*/
 
         yield return new WaitForSeconds(timeToSwitch);
 
@@ -64,15 +77,21 @@ public class PlayerSwitch : MonoBehaviour
 
         rControler.rFX.PlaySwitchParticule();
 
+        rControler.rAnimator.receptacleAnimator.SetBool(rControler.rAnimator.switchParametername, true);
+        rControler.rAnimator.receptacleAnimator.SetTrigger(rControler.rAnimator.switchTriggerParametername);
+        pControler.pAnimator.TriggerSwitchParameter();
+
         yield return new WaitForSeconds(timeAnimeAttSwitch);
 
        // pControler.pAnimator.TriggerAttparameter();
 
+        
         yield return new WaitForSeconds(timePlayerStun);
 
         pControler.pAnimator.TriggerAttparameter();
         rControler.rAnimator.receptacleAnimator.SetBool(rControler.rAnimator.switchParametername, false);
 
+        pControler.pCharacterController.enabled = true;
         OnSwitch = false;
     }
 
