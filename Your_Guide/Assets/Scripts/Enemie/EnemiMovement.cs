@@ -40,9 +40,14 @@ public class EnemiMovement : AiMovementWithVelocity
 
     public bool IsInRangeToFollowReceptacle()
     {
-        float distance = Vector3.Distance(rControler.transform.position, transform.position);
-        bool inRange = distance <= minDistanceToFollowReceptacle;
-        return inRange;
+        if (rControler != null)
+        {
+            float distance = Vector3.Distance(rControler.transform.position, transform.position);
+            bool inRange = distance <= minDistanceToFollowReceptacle;
+            return inRange;
+
+        }
+        return false;
     }
 
     public bool IsInRangeToFollowPlayer()

@@ -30,25 +30,29 @@ public class ReceptacleFollow : StateMachineBehaviour
             {
                 animator.SetFloat(rControler.rAnimator.vitesseParameterName, 1f);
                 float vitesse = rControler.rMovement.vitesseSprint;
-                rControler.rMovement.Follow(vitesse);
+                float emission = rControler.rMovement.emissionRateRun;
+                rControler.rMovement.Follow(vitesse, emission);
             }
             else
             {
                 animator.SetFloat(rControler.rAnimator.vitesseParameterName, 0.5f);
                 float vitesse = rControler.rMovement.vitesseFollow;
-                rControler.rMovement.Follow(vitesse);
+                float emission = rControler.rMovement.emissionRateWalk;
+                rControler.rMovement.Follow(vitesse, emission);
 
             }
         }
         else if (isScared)
         {
             animator.SetFloat(rControler.rAnimator.vitesseParameterName, -1f);
+            rControler.rMovement.SetEmissionParticuleToNull();
             /*alreadyScared = true;
             animator.SetBool(rControler.rAnimator.scaredParameterName, true);*/
         }
         else
         {
-            animator.SetFloat(rControler.rAnimator.vitesseParameterName, 0f);                          
+            animator.SetFloat(rControler.rAnimator.vitesseParameterName, 0f);
+            rControler.rMovement.SetEmissionParticuleToNull();
         }
 
         /*if (canStop)

@@ -33,9 +33,14 @@ public class PlayerSwitch : MonoBehaviour
 
     public bool IsInRange()
     {
-        float distanceReceptacle = Vector3.Distance(transform.position, rControler.transform.position);
-        bool inRange = distanceReceptacle <= maxDistanceToSwtich && distanceReceptacle >= minDistanceToSwtich;
-        return inRange;
+        if (rControler != null)
+        {
+            float distanceReceptacle = Vector3.Distance(transform.position, rControler.transform.position);
+            bool inRange = distanceReceptacle <= maxDistanceToSwtich && distanceReceptacle >= minDistanceToSwtich;
+            return inRange;
+
+        }
+        return false;
     }
 
     public IEnumerator Switch()

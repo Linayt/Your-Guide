@@ -34,4 +34,9 @@ public class EnemiLife : LifeGestion
         }
     }
 
+    public override void TakeDamage(int DamageValue)
+    {
+        base.TakeDamage(DamageValue);
+        eControler.eFx.PlayDegatFx();
+    }
 }

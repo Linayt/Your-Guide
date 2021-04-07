@@ -147,6 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b54c9ce76e919324bafae9f3d935388d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particuleDeath: {fileID: 1905671688649153519, guid: 44a5316415784b94abf53e3fc2165d2e,
+    type: 3}
 --- !u!1101 &-5737699584643609004
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

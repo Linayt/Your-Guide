@@ -811,11 +811,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   degatValue: 1
-  attRange: 3
-  bumpForce: 10
+  attRange: 4
+  bumpForce: 12
   getAdrenaline: 1
   useConeDetection: 1
-  effectiveRange: 0.2
+  effectiveRange: -0.5
   effectiveTimeBeforeDegat: 0.1
   typeOfAttack: 0
 --- !u!1102 &-5032788426620246602
@@ -1700,11 +1700,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   degatValue: 1
-  attRange: 3
-  bumpForce: 12
+  attRange: 4
+  bumpForce: 18
   getAdrenaline: 1
   useConeDetection: 1
-  effectiveRange: 0.2
+  effectiveRange: -0.5
   effectiveTimeBeforeDegat: 0.2
   typeOfAttack: 1
 --- !u!114 &-135529178549307797
@@ -1817,8 +1817,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   degatValue: 2
-  attRange: 4
-  bumpForce: 15
+  attRange: 5
+  bumpForce: 22
   getAdrenaline: 1
   useConeDetection: 0
   effectiveRange: 0

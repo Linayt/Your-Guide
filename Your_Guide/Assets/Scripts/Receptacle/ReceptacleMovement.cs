@@ -17,6 +17,12 @@ public class ReceptacleMovement : AiMovementWithVelocity
     [Header("Timer")]
     [SerializeField] private float refreshFrequency = 0.25f;
 
+    [Header("FeedBack")]
+    [SerializeField] private ParticleSystem walkParticule;
+    public float emissionRateWalk;
+    public float emissionRateRun;
+
+
     private PlayerControler player;
     private ReceptacleControler rControler;
 
@@ -86,7 +92,7 @@ public class ReceptacleMovement : AiMovementWithVelocity
         Calculatepath(player.transform);
     }
 
-    public void Follow(float speed)
+    public void Follow(float speed, float emissionRate)
     {
         
         CheckTargetReach(player.transform);
@@ -95,7 +101,8 @@ public class ReceptacleMovement : AiMovementWithVelocity
         if(!rControler.rStatue.isStun && !rControler.rStatue.isScared)
         {
             MoveToCible(speed);
-
+            var emission = walkParticule.emission;
+            emission.rateOverTime = emissionRate;
         }
 
         if(!shouldMove && IsInRangeToFollow())
@@ -123,5 +130,11 @@ public class ReceptacleMovement : AiMovementWithVelocity
     public override void OnDrawGizmos()
     {
         base.OnDrawGizmos();
+    }
+
+    public void SetEmissionParticuleToNull()
+    {
+        var emission = walkParticule.emission;
+        emission.rateOverTime = 0;
     }
 }

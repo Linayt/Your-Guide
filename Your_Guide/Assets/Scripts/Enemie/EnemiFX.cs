@@ -7,10 +7,16 @@ public class EnemiFX : MonoBehaviour
 {
     EnemiControler eControler;
 
+    [Header("Attack")]
     [SerializeField] private VisualEffect attaqueFX;
     [SerializeField] private string eventAttackName;
-    [SerializeField] private string eventDegatName;
     [SerializeField] private string positionSpawnDegatName;
+
+    [Header("TakeDamage")]
+    [SerializeField] private VisualEffect degatFX;
+    [SerializeField] private string eventDegatName;
+
+
 
     private void Awake()
     {
@@ -29,10 +35,15 @@ public class EnemiFX : MonoBehaviour
         StartCoroutine(StartFxAttack(time));
     }
 
-    public void StartFxDegat(Vector3 position)
+    /*public void StartFxDegat(Vector3 position)
     {
         attaqueFX.SetVector3(positionSpawnDegatName, position);
         attaqueFX.SendEvent(eventDegatName);
+    }*/
+
+    public void PlayDegatFx()
+    {
+        degatFX.SendEvent(eventDegatName);
     }
 
 }

@@ -69,7 +69,9 @@ public class PlayerMovement : MonoBehaviour
             axeRota.rotation = Quaternion.Euler(0f, angle, 0f);
 
             moveDirec = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward * speed ;
-            float accelerationValue = accelerationCurve.Evaluate(timer / accelerationDuration);
+            float effectiveTime = timer / accelerationDuration;
+            float accelerationValue = accelerationCurve.Evaluate(effectiveTime);
+            pControler.pFX.SetWalkParticuleEmissionRate(effectiveTime);
             moveDirec *= accelerationValue;
             //Debug.Log(moveDirec);
             
@@ -78,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
         {
             timer = 0;
             moveDirec = Vector3.zero;
+            pControler.pFX.SetWalkParticuleEmissionRate(0);
             /*Vector3 velocity = Vector3.zero;
             velocity.y = rigid.velocity.y;
             rigid.velocity = velocity;*/

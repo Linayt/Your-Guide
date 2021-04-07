@@ -12,11 +12,17 @@ public class PlayerFX : MonoBehaviour
 
     public string positionDegatParameterName;
 
-    [Header("Visual Effect")]
-    [SerializeField] private VisualEffect Attack1;
-    [SerializeField] private VisualEffect Attack2;
-    [SerializeField] private VisualEffect Attack3;
-    [SerializeField] private VisualEffect Switch;
+    [Header("Attack VFX")]
+    [SerializeField] private VisualEffect attack1;
+    [SerializeField] private VisualEffect attack2;
+    [SerializeField] private VisualEffect attack3;
+    [SerializeField] private VisualEffect attack3Impact;
+    [SerializeField] private VisualEffect switchFX;
+
+    [Header("Mouvement")]
+    [SerializeField] private ParticleSystem walkParticule;
+    public float maxParticuleEmissionRate;
+    public AnimationCurve particuleEmissionOverAcceleration = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
 
     private void Awake()
@@ -31,23 +37,24 @@ public class PlayerFX : MonoBehaviour
         {
             case typeOfAttack.Attack1:
 
-                Attack1.SendEvent(attackEventName);
+                attack1.SendEvent(attackEventName);
             
                 break;
 
             case typeOfAttack.Attack2:
 
-                Attack2.SendEvent(attackEventName);
+                attack2.SendEvent(attackEventName);
 
                 break;
 
             case typeOfAttack.Attack3:
 
-                Attack3.SendEvent(attackEventName);
+                attack3.SendEvent(attackEventName);
+                attack3Impact.SendEvent(attackEventName);
 
                 break;
             case typeOfAttack.Switch:
-                Switch.SendEvent(attackEventName);
+                switchFX.SendEvent(attackEventName);
 
                 break;
 
@@ -66,28 +73,35 @@ public class PlayerFX : MonoBehaviour
         StartCoroutine(StartFXAttackTiming(type, effectiveTime));
     }
 
-    public void startFXDegat(typeOfAttack type, Vector3 position)
+    public void SetWalkParticuleEmissionRate(float effectiveTimeAcceleration)
+    {
+        var emission = walkParticule.emission;
+        float newEmission = particuleEmissionOverAcceleration.Evaluate(effectiveTimeAcceleration) * maxParticuleEmissionRate;
+        emission.rateOverTime = newEmission;
+    }
+
+   /* public void startFXDegat(typeOfAttack type, Vector3 position)
     {
         switch (type)
         {
             case typeOfAttack.Attack1:
-                Attack1.SetVector3(positionDegatParameterName, position);
-                Attack1.SendEvent(degatEventName);
+                attack1.SetVector3(positionDegatParameterName, position);
+                attack1.SendEvent(degatEventName);
 
                 break;
 
             case typeOfAttack.Attack2:
-                Attack2.SetVector3(positionDegatParameterName, position);
-                Attack2.SendEvent(degatEventName);
+                attack2.SetVector3(positionDegatParameterName, position);
+                attack2.SendEvent(degatEventName);
 
                 break;
 
             case typeOfAttack.Switch:
-                Switch.SetVector3(positionDegatParameterName, position);
+                awitch.SetVector3(positionDegatParameterName, position);
                 Switch.SendEvent(degatEventName);
                 break;
         }
-    }
+    }*/
 
 
 

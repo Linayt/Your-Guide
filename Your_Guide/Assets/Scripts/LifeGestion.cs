@@ -15,7 +15,7 @@ public class LifeGestion : MonoBehaviour
         lifeValue = initialLifeValue;
     }
 
-    public void TakeDamage(int DamageValue)
+    public virtual void TakeDamage(int DamageValue)
     {
         lifeValue -= DamageValue;
         lifeValue = Mathf.Clamp(lifeValue, 0, maxLifeValue);
