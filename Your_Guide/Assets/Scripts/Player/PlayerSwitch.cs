@@ -62,6 +62,8 @@ public class PlayerSwitch : MonoBehaviour
         rControler.transform.position = newPosReceptacle;
         transform.position = newPosPlayer;
 
+        rControler.rFX.PlaySwitchParticule();
+
         yield return new WaitForSeconds(timeAnimeAttSwitch);
 
        // pControler.pAnimator.TriggerAttparameter();

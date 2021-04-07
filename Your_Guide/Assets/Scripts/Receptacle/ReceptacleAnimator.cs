@@ -12,6 +12,7 @@ public class ReceptacleAnimator : MonoBehaviour
     public string followParameterName;
     public string sprintParameterName;
     public string stunParameterName;
+    public string stunTriggerParameterName;
     public string scaredParameterName;
     public string switchParametername;
     public string switchTriggerParametername;

@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
     public IEnumerator FakeRootMotion(float vitesse, AnimationCurve curve, float duration)
     {
         pControler.pStatue.onRootMotion = true;
-        Debug.Log("rootMotionOn");
+        //Debug.Log("rootMotionOn");
         //Rigidbody rigid = pControler.rigid;
         CharacterController charaController = pControler.pCharacterController;
         Vector3 direction = axeRota.forward.normalized;
@@ -115,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         pControler.pStatue.onRootMotion = false;
-        Debug.Log("rootMotionOff");
+        //Debug.Log("rootMotionOff");
     }
 
 }
